@@ -1,0 +1,1125 @@
+{
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Surgical Oncologist in Chennai | Dr Varadharajan V",
+      "titleLen": 50,
+      "desc": "Expert surgical oncologist in Chennai specializing in breast, GI, gynecologic, thoracic and peritoneal cancers with advanced robotic and minimally invasive care.",
+      "descLen": 161,
+      "h1": "Integrated Oncosurgical Care in Chennai",
+      "h1count": 1,
+      "words": 1627,
+      "imgs": 19,
+      "imgsNoAlt": 0,
+      "bigImgs": [
+        "/images/update-1.jpg(2105KB)"
+      ],
+      "linksOut": 35,
+      "linksIn": 221,
+      "ldTypes": "Physician+MedicalOrganization+FAQPage",
+      "canonical": "https://drvaradharajan.com",
+      "robotsMeta": "",
+      "og": false,
+      "tw": true,
+      "htmlKB": 147,
+      "headingSkips": "h2→h4",
+      "nmc": "leading",
+      "faqSchema": 12,
+      "faqVisible": 12,
+      "placeholders": ""
+    },
+    {
+      "route": "/specialities",
+      "status": 200,
+      "title": "Our Specialities - Dr. Varadharajan V | Chennai",
+      "titleLen": 47,
+      "desc": "Explore the full range of surgical oncology specialities offered by Dr. Varadharajan V in Chennai.",
+      "descLen": 98,
+      "h1": "Our Specialities",
+      "h1count": 1,
+      "words": 157,
+      "imgs": 16,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 47,
+      "linksIn": 102,
+      "ldTypes": "Physician+MedicalOrganization",
+      "canonical": "https://drvaradharajan.com/specialities",
+      "robotsMeta": "",
+      "og": false,
+      "tw": true,
+      "htmlKB": 60,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 0,
+      "faqVisible": 0,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/surgical-oncology",
+      "status": 200,
+      "title": "Surgical Oncology - Dr. Varadharajan V | Chennai",
+      "titleLen": 48,
+      "desc": "General surgical oncology care spanning breast, GI, gynaecological, thoracic and peritoneal cancers.",
+      "descLen": 100,
+      "h1": "Surgical Oncology",
+      "h1count": 1,
+      "words": 877,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 19,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/surgical-oncology",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 101,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/breast-cancer-surgeries",
+      "status": 200,
+      "title": "Breast Cancer Surgeries - Dr. Varadharajan V | Chennai",
+      "titleLen": 54,
+      "desc": "Expert surgical removal of breast tumors with focus on preservation and aesthetics.",
+      "descLen": 83,
+      "h1": "Breast Cancer Surgeries",
+      "h1count": 1,
+      "words": 823,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/breast-cancer-surgeries",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 101,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/breast-oncoplasty",
+      "status": 200,
+      "title": "Breast Oncoplasty - Dr. Varadharajan V | Chennai",
+      "titleLen": 48,
+      "desc": "Combines cancer removal with cosmetic reconstruction for optimal appearance.",
+      "descLen": 76,
+      "h1": "Breast Oncoplasty",
+      "h1count": 1,
+      "words": 690,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/breast-oncoplasty",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 97,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/benign-breast-condition-surgery",
+      "status": 200,
+      "title": "Benign Breast Condition Surgery - Dr. Varadharajan V | Chennai",
+      "titleLen": 62,
+      "desc": "Treatment of non-cancerous breast conditions using minimally invasive techniques.",
+      "descLen": 81,
+      "h1": "Benign Breast Condition Surgery",
+      "h1count": 1,
+      "words": 777,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/benign-breast-condition-surgery",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 100,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/gi-oncology",
+      "status": 200,
+      "title": "GI Oncology - Dr. Varadharajan V | Chennai",
+      "titleLen": 42,
+      "desc": "Comprehensive surgical treatment for gastrointestinal cancers and tumors.",
+      "descLen": 73,
+      "h1": "GI Oncology",
+      "h1count": 1,
+      "words": 781,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/gi-oncology",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 99,
+      "headingSkips": "",
+      "nmc": "best",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/hipec",
+      "status": 200,
+      "title": "HIPEC - Dr. Varadharajan V | Chennai",
+      "titleLen": 36,
+      "desc": "Advanced heated chemotherapy delivered directly during abdominal surgery.",
+      "descLen": 73,
+      "h1": "HIPEC",
+      "h1count": 1,
+      "words": 668,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/hipec",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 87,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/laparoscopic-robotic-gi-surgery",
+      "status": 200,
+      "title": "Laparoscopic & Robotic GI Surgery - Dr. Varadharajan V | Chennai",
+      "titleLen": 64,
+      "desc": "Minimally invasive cancer surgery using advanced robotic technology.",
+      "descLen": 68,
+      "h1": "Laparoscopic & Robotic GI Surgery",
+      "h1count": 1,
+      "words": 739,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/laparoscopic-robotic-gi-surgery",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 101,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/retroperitoneal-tumor-surgery",
+      "status": 200,
+      "title": "Retroperitoneal Tumor Surgery - Dr. Varadharajan V | Chennai",
+      "titleLen": 60,
+      "desc": "Specialized surgery for tumors located in the retroperitoneal space.",
+      "descLen": 68,
+      "h1": "Retroperitoneal Tumor Surgery",
+      "h1count": 1,
+      "words": 788,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/retroperitoneal-tumor-surgery",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 100,
+      "headingSkips": "",
+      "nmc": "best;leading",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/minimal-access-surgery",
+      "status": 200,
+      "title": "Minimal Access Surgery - Dr. Varadharajan V | Chennai",
+      "titleLen": 53,
+      "desc": "Less invasive cancer surgery with faster recovery and smaller incisions.",
+      "descLen": 72,
+      "h1": "Minimal Access Surgery",
+      "h1count": 1,
+      "words": 724,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/minimal-access-surgery",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 99,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/gynaecological-malignancies",
+      "status": 200,
+      "title": "Gynaecological Malignancies - Dr. Varadharajan V | Chennai",
+      "titleLen": 58,
+      "desc": "Surgical treatment for cancers of the female reproductive system.",
+      "descLen": 65,
+      "h1": "Gynaecological Malignancies",
+      "h1count": 1,
+      "words": 719,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/gynaecological-malignancies",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 100,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/thoracic-cancer",
+      "status": 200,
+      "title": "Thoracic Cancer - Dr. Varadharajan V | Chennai",
+      "titleLen": 46,
+      "desc": "Comprehensive surgery for lung and chest cavity cancers.",
+      "descLen": 56,
+      "h1": "Thoracic Cancer",
+      "h1count": 1,
+      "words": 758,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/thoracic-cancer",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 99,
+      "headingSkips": "",
+      "nmc": "best",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/vats-lobectomy",
+      "status": 200,
+      "title": "VATS Lobectomy - Dr. Varadharajan V | Chennai",
+      "titleLen": 45,
+      "desc": "Minimally invasive lung surgery using video-assisted techniques.",
+      "descLen": 64,
+      "h1": "VATS Lobectomy",
+      "h1count": 1,
+      "words": 725,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/vats-lobectomy",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 99,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/head-and-neck-cancer",
+      "status": 200,
+      "title": "Head and Neck Cancer - Dr. Varadharajan V | Chennai",
+      "titleLen": 51,
+      "desc": "Surgical treatment for oral, throat, thyroid, and neck cancers, from early-stage to advanced disease.",
+      "descLen": 101,
+      "h1": "Head and Neck Cancer",
+      "h1count": 1,
+      "words": 747,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/head-and-neck-cancer",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 99,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/services/complex-head-neck-resection",
+      "status": 200,
+      "title": "Complex Head & Neck Resection - Dr. Varadharajan V | Chennai",
+      "titleLen": 60,
+      "desc": "Advanced surgery for head and neck cancers with functional preservation.",
+      "descLen": 72,
+      "h1": "Complex Head & Neck Resection",
+      "h1count": 1,
+      "words": 804,
+      "imgs": 4,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 18,
+      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "canonical": "https://drvaradharajan.com/services/complex-head-neck-resection",
+      "robotsMeta": "",
+      "og": true,
+      "tw": true,
+      "htmlKB": 108,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 4,
+      "faqVisible": 4,
+      "placeholders": ""
+    },
+    {
+      "route": "/nonexistent-404-test",
+      "status": 404,
+      "title": "Surgical Oncologist in Chennai | Dr Varadharajan V",
+      "titleLen": 50,
+      "desc": "Expert surgical oncologist in Chennai specializing in breast, GI, gynecologic, thoracic and peritoneal cancers with advanced robotic and minimally invasive care.",
+      "descLen": 161,
+      "h1": "404",
+      "h1count": 1,
+      "words": 8,
+      "imgs": 1,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 33,
+      "linksIn": 0,
+      "ldTypes": "Physician+MedicalOrganization",
+      "canonical": "",
+      "robotsMeta": "noindex",
+      "og": false,
+      "tw": true,
+      "htmlKB": 34,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 0,
+      "faqVisible": 0,
+      "placeholders": ""
+    }
+  ],
+  "inbound": {
+    "/": 221,
+    "/specialities": 102,
+    "?mode=video": 1,
+    "/services/surgical-oncology": 19,
+    "/services/breast-cancer-surgeries": 18,
+    "/services/breast-oncoplasty": 18,
+    "/services/benign-breast-condition-surgery": 18,
+    "/services/gi-oncology": 18,
+    "/services/hipec": 18,
+    "/services/laparoscopic-robotic-gi-surgery": 18,
+    "/services/retroperitoneal-tumor-surgery": 18,
+    "/services/minimal-access-surgery": 18,
+    "/services/gynaecological-malignancies": 18,
+    "/services/thoracic-cancer": 18,
+    "/services/vats-lobectomy": 18,
+    "/services/head-and-neck-cancer": 18,
+    "/services/complex-head-neck-resection": 18
+  },
+  "brokenLinks": [],
+  "brokenAnchors": [
+    {
+      "from": "/",
+      "to": "#"
+    },
+    {
+      "from": "/",
+      "to": "#"
+    },
+    {
+      "from": "/specialities",
+      "to": "#"
+    },
+    {
+      "from": "/specialities",
+      "to": "#"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "#"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "#"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "#"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "#"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "#"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "#"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "#"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "#"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "#"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "#"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "#"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "#"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "#"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "#"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "#"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "#"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "#"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "#"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "#"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "#"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "#"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "#"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "#"
+    }
+  ],
+  "externalLinks": [
+    {
+      "from": "/",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/specialities",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/specialities",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/specialities",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/specialities",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    }
+  ],
+  "dupPairs": [],
+  "secHeaders": "x-content-type-options: MISSING\nreferrer-policy: MISSING\npermissions-policy: MISSING\nx-frame-options: MISSING\nx-powered-by: Next.js"
+}
