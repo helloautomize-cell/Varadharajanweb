@@ -34,6 +34,17 @@ body {
   color: var(--foreground);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -49,7 +60,7 @@ body {
   }
 }
 
-/* Subtle scroll-reveal for top-level sections — applied via ScrollReveal
+/* Subtle scroll-reveal for top-level sections applied via ScrollReveal
    (IntersectionObserver). Entirely absent under prefers-reduced-motion. */
 @media (prefers-reduced-motion: no-preference) {
   .reveal {

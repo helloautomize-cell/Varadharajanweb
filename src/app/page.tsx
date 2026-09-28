@@ -12,50 +12,50 @@ import FAQ from '@/components/FAQ';
 import Location from '@/components/Location';
 import ConsultCTA from '@/components/ConsultCTA';
 import { faqs } from '@/data/faqs';
+import { siteConfig } from '@/config/site';
+import { pageGraph, faqNode } from '@/lib/schema';
+import StatsStrip from '@/components/StatsStrip';
 
 export const metadata: Metadata = {
-  // absolute is required: the layout title.template only applies to nested
-  // child segments, not to the page in the layout's own segment.
-  title: { absolute: 'Surgical Oncologist in Chennai | Dr Varadharajan V' },
-  description:
-    'Expert surgical oncologist in Chennai specializing in breast, GI, gynecologic, thoracic and peritoneal cancers with advanced robotic and minimally invasive care.',
-  alternates: {
-    canonical: '/',
-  },
+ // absolute is required: the layout title.template only applies to nested
+ // child segments, not to the page in the layout's own segment.
+ title: { absolute: 'Surgical Oncologist in Chennai | Dr Varadharajan V' },
+ description:
+  'Surgical oncologist in Chennai for breast, GI, gynecologic, thoracic and peritoneal cancers. Robotic, laparoscopic and HIPEC surgery at Iswarya Hospital.',
+ alternates: {
+  canonical: '/',
+ },
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((faq) => ({
-    '@type': 'Question',
-    name: faq.question,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.answer,
-    },
-  })),
-};
+const graph = pageGraph({
+ path: '/',
+ name: siteConfig.doctorName,
+ description:
+  'Surgical oncologist in Chennai for breast, GI, gynecologic, thoracic and peritoneal cancers at Iswarya Hospital, Tharamani.',
+ image: '/og/og-default.webp',
+ extra: [faqNode(faqs)],
+});
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Hero />
-      <WhyChooseUs />
-      <DoctorProfile />
-      <Conferences />
-      <Treatments />
-      <Testimonials />
-      <Updates />
-      <Videos />
-      <Gallery />
-      <FAQ />
-      <Location />
-      <ConsultCTA />
-    </div>
-  );
+ return (
+  <div className="flex flex-col flex-1">
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+   />
+   <Hero />
+   <StatsStrip />
+   <WhyChooseUs />
+   <DoctorProfile />
+   <Conferences />
+   <Treatments />
+   <Testimonials />
+   <Updates />
+   <Videos />
+   <Gallery />
+   <FAQ />
+   <Location />
+   <ConsultCTA />
+  </div>
+ );
 }
