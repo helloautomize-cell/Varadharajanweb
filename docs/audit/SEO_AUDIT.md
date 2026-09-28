@@ -2,6 +2,24 @@
 
 Date: 2026-09-28 · Commit: `24af849` · Method: production build + `next start` on :4400 + Node fetch + cheerio (`scripts/audit-site.ts`). Raw data: `pages.csv`, `raw.json`. 17 URLs crawled (16 indexable + 404 probe).
 
+> **Update (fix pass, commit range after `75319eb`):** all P0, P1 and P2 items addressed.
+> Re-audit on :4300, 19 URLs crawled (18 indexable + 404 probe). See `FIX_REPORT.md`.
+
+## BEFORE / AFTER SCORECARD
+
+| Area | Before | After | What changed |
+|---|---|---|---|
+| Technical SEO | 7/10 | 9/10 | Security headers + CSP added, x-powered-by off, indexing guard via NEXT_PUBLIC_ALLOW_INDEXING, AI-crawler robots, icons/manifest, 308 redirect for the old profile URL, noindex 404 |
+| On-page | 8/10 | 9/10 | All titles <=60 chars, all descriptions 130-155, heading skips fixed, one H1 per page |
+| Structured data | 7/10 | 9/10 | Single @graph model with stable @ids; Physician (credentials, reg. no., languages, memberships, contactPoint), MedicalClinic (geo, hours, hasMap, areaServed), MedicalWebPage (reviewedBy, lastReviewed), BreadcrumbList on all inner pages; validate-schema.ts passes |
+| Content depth | 8/10 | 9/10 | Every service page now 938-1215 words; /specialities 157 to 500; new travel page 375 words |
+| E-E-A-T/YMYL | 5/10 | 9/10 | Visible reviewer line + reg. no. on every medical page, credentials/memberships/languages block, approved stats, medical disclaimer sitewide and per service page |
+| AEO/GEO | 6/10 | 9/10 | llms.txt + llms-full.txt (text/plain, generated), AI crawlers explicitly allowed, key-facts boxes, question-style sections, travel page |
+| Local SEO | 7/10 | 9/10 | areaServed (Tamil Nadu cities, neighbouring states, medical-travel countries), openingHoursSpecification, hasMap, /patients-from-outside-chennai, NAP identical from siteConfig |
+| Performance | 6/10 | 9/10 | 2.1MB JPG converted to 169KB WebP; no /public image over 300KB; all raw img replaced by next/image with sizes/priority |
+| Accessibility basics | 7/10 | 9/10 | Dead href="#" removed, real /privacy and /terms, form labels with htmlFor + autocomplete + inputmode, FAQ aria-expanded/aria-controls, skip link, focus-visible rings, lang="en-IN" |
+| Conversion | 7/10 | 8/10 | Form uses NEXT_PUBLIC_WEB3FORMS_KEY with call/WhatsApp fallback when unset, honeypot, consent checkbox, aria-live states; WhatsApp video-consult path on contact, footer, travel page and service CTAs |
+
 ## SCORECARD
 
 | Area | Score | Key reason |

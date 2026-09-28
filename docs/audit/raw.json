@@ -5,26 +5,24 @@
       "status": 200,
       "title": "Surgical Oncologist in Chennai | Dr Varadharajan V",
       "titleLen": 50,
-      "desc": "Expert surgical oncologist in Chennai specializing in breast, GI, gynecologic, thoracic and peritoneal cancers with advanced robotic and minimally invasive care.",
-      "descLen": 161,
+      "desc": "Surgical oncologist in Chennai for breast, GI, gynecologic, thoracic and peritoneal cancers. Robotic, laparoscopic and HIPEC surgery at Iswarya Hospital.",
+      "descLen": 153,
       "h1": "Integrated Oncosurgical Care in Chennai",
       "h1count": 1,
-      "words": 1627,
+      "words": 1712,
       "imgs": 19,
       "imgsNoAlt": 0,
-      "bigImgs": [
-        "/images/update-1.jpg(2105KB)"
-      ],
-      "linksOut": 35,
-      "linksIn": 221,
-      "ldTypes": "Physician+MedicalOrganization+FAQPage",
+      "bigImgs": [],
+      "linksOut": 38,
+      "linksIn": 277,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+FAQPage",
       "canonical": "https://drvaradharajan.com",
-      "robotsMeta": "",
-      "og": false,
+      "robotsMeta": "noindex, nofollow",
+      "og": true,
       "tw": true,
-      "htmlKB": 147,
-      "headingSkips": "h2→h4",
-      "nmc": "leading",
+      "htmlKB": 182,
+      "headingSkips": "",
+      "nmc": "",
       "faqSchema": 12,
       "faqVisible": 12,
       "placeholders": ""
@@ -32,24 +30,105 @@
     {
       "route": "/specialities",
       "status": 200,
-      "title": "Our Specialities - Dr. Varadharajan V | Chennai",
+      "title": "Our Specialities in Chennai | Dr Varadharajan V",
       "titleLen": 47,
-      "desc": "Explore the full range of surgical oncology specialities offered by Dr. Varadharajan V in Chennai.",
-      "descLen": 98,
+      "desc": "All surgical oncology specialities at Iswarya Hospital, Chennai: breast, GI, gynaecological, thoracic, head and neck, HIPEC and minimal access surgery.",
+      "descLen": 151,
       "h1": "Our Specialities",
       "h1count": 1,
-      "words": 157,
+      "words": 500,
       "imgs": 16,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 47,
-      "linksIn": 102,
-      "ldTypes": "Physician+MedicalOrganization",
+      "linksOut": 52,
+      "linksIn": 134,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList",
       "canonical": "https://drvaradharajan.com/specialities",
-      "robotsMeta": "",
-      "og": false,
+      "robotsMeta": "noindex, nofollow",
+      "og": true,
       "tw": true,
-      "htmlKB": 60,
+      "htmlKB": 97,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 0,
+      "faqVisible": 0,
+      "placeholders": ""
+    },
+    {
+      "route": "/patients-from-outside-chennai",
+      "status": 200,
+      "title": "Patients from Outside Chennai | Dr Varadharajan V",
+      "titleLen": 49,
+      "desc": "Guidance for patients travelling to Iswarya Hospital, Chennai for cancer surgery: WhatsApp video consults, what to bring, travel and stay information.",
+      "descLen": 150,
+      "h1": "Coming to Chennai for Treatment",
+      "h1count": 1,
+      "words": 375,
+      "imgs": 1,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 37,
+      "linksIn": 50,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList",
+      "canonical": "https://drvaradharajan.com/patients-from-outside-chennai",
+      "robotsMeta": "noindex, nofollow",
+      "og": true,
+      "tw": true,
+      "htmlKB": 74,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 0,
+      "faqVisible": 0,
+      "placeholders": ""
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "title": "Privacy Policy | Dr. Varadharajan V, Chennai",
+      "titleLen": 44,
+      "desc": "How this website collects, uses and protects your personal information, including appointment form details and WhatsApp communication.",
+      "descLen": 134,
+      "h1": "Privacy Policy",
+      "h1count": 1,
+      "words": 300,
+      "imgs": 1,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 36,
+      "linksIn": 20,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList",
+      "canonical": "https://drvaradharajan.com/privacy",
+      "robotsMeta": "noindex, nofollow",
+      "og": true,
+      "tw": true,
+      "htmlKB": 63,
+      "headingSkips": "",
+      "nmc": "",
+      "faqSchema": 0,
+      "faqVisible": 0,
+      "placeholders": ""
+    },
+    {
+      "route": "/terms",
+      "status": 200,
+      "title": "Terms of Use | Dr. Varadharajan V, Chennai",
+      "titleLen": 42,
+      "desc": "Terms of use for this website: informational content, appointment requests, WhatsApp video consultations, and medical emergency guidance.",
+      "descLen": 137,
+      "h1": "Terms of Use",
+      "h1count": 1,
+      "words": 254,
+      "imgs": 1,
+      "imgsNoAlt": 0,
+      "bigImgs": [],
+      "linksOut": 36,
+      "linksIn": 20,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList",
+      "canonical": "https://drvaradharajan.com/terms",
+      "robotsMeta": "noindex, nofollow",
+      "og": true,
+      "tw": true,
+      "htmlKB": 64,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 0,
@@ -59,24 +138,24 @@
     {
       "route": "/services/surgical-oncology",
       "status": 200,
-      "title": "Surgical Oncology - Dr. Varadharajan V | Chennai",
+      "title": "Surgical Oncology in Chennai | Dr Varadharajan V",
       "titleLen": 48,
-      "desc": "General surgical oncology care spanning breast, GI, gynaecological, thoracic and peritoneal cancers.",
-      "descLen": 100,
+      "desc": "Surgical oncology in Chennai for breast, GI, gynaecological, thoracic and peritoneal cancers. Tumour-board planned care at Iswarya Hospital.",
+      "descLen": 140,
       "h1": "Surgical Oncology",
       "h1count": 1,
-      "words": 877,
-      "imgs": 4,
+      "words": 1072,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 19,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 43,
+      "linksIn": 28,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/surgical-oncology",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 101,
+      "htmlKB": 146,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -86,24 +165,24 @@
     {
       "route": "/services/breast-cancer-surgeries",
       "status": 200,
-      "title": "Breast Cancer Surgeries - Dr. Varadharajan V | Chennai",
+      "title": "Breast Cancer Surgeries in Chennai | Dr Varadharajan V",
       "titleLen": 54,
-      "desc": "Expert surgical removal of breast tumors with focus on preservation and aesthetics.",
-      "descLen": 83,
+      "desc": "Breast cancer surgery in Chennai: lumpectomy, mastectomy and sentinel node biopsy with clear margins, at Iswarya Hospital, Tharamani.",
+      "descLen": 133,
       "h1": "Breast Cancer Surgeries",
       "h1count": 1,
-      "words": 823,
-      "imgs": 4,
+      "words": 1215,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 44,
+      "linksIn": 25,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/breast-cancer-surgeries",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 101,
+      "htmlKB": 165,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -113,24 +192,24 @@
     {
       "route": "/services/breast-oncoplasty",
       "status": 200,
-      "title": "Breast Oncoplasty - Dr. Varadharajan V | Chennai",
+      "title": "Breast Oncoplasty in Chennai | Dr Varadharajan V",
       "titleLen": 48,
-      "desc": "Combines cancer removal with cosmetic reconstruction for optimal appearance.",
-      "descLen": 76,
+      "desc": "Breast oncoplasty in Chennai: tumour removal with plastic surgical reshaping to preserve breast shape. Performed at Iswarya Hospital by Dr. Varadharajan V.",
+      "descLen": 155,
       "h1": "Breast Oncoplasty",
       "h1count": 1,
-      "words": 690,
-      "imgs": 4,
+      "words": 1055,
+      "imgs": 6,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 42,
+      "linksIn": 24,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/breast-oncoplasty",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 97,
+      "htmlKB": 159,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -140,24 +219,24 @@
     {
       "route": "/services/benign-breast-condition-surgery",
       "status": 200,
-      "title": "Benign Breast Condition Surgery - Dr. Varadharajan V | Chennai",
-      "titleLen": 62,
-      "desc": "Treatment of non-cancerous breast conditions using minimally invasive techniques.",
-      "descLen": 81,
+      "title": "Benign Breast Condition Surgery | Dr Varadharajan V",
+      "titleLen": 51,
+      "desc": "Surgery for benign breast conditions in Chennai: fibroadenoma and cyst removal, usually as a day procedure, at Iswarya Hospital by Dr. Varadharajan V.",
+      "descLen": 150,
       "h1": "Benign Breast Condition Surgery",
       "h1count": 1,
-      "words": 777,
-      "imgs": 4,
+      "words": 963,
+      "imgs": 6,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 42,
+      "linksIn": 23,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/benign-breast-condition-surgery",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 100,
+      "htmlKB": 143,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -167,26 +246,26 @@
     {
       "route": "/services/gi-oncology",
       "status": 200,
-      "title": "GI Oncology - Dr. Varadharajan V | Chennai",
+      "title": "GI Oncology in Chennai | Dr Varadharajan V",
       "titleLen": 42,
-      "desc": "Comprehensive surgical treatment for gastrointestinal cancers and tumors.",
-      "descLen": 73,
+      "desc": "GI cancer surgery in Chennai for stomach, colorectal, liver and pancreatic cancers, using laparoscopic and robotic techniques at Iswarya Hospital.",
+      "descLen": 146,
       "h1": "GI Oncology",
       "h1count": 1,
-      "words": 781,
-      "imgs": 4,
+      "words": 1150,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 43,
+      "linksIn": 28,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/gi-oncology",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 99,
+      "htmlKB": 162,
       "headingSkips": "",
-      "nmc": "best",
+      "nmc": "",
       "faqSchema": 4,
       "faqVisible": 4,
       "placeholders": ""
@@ -194,24 +273,24 @@
     {
       "route": "/services/hipec",
       "status": 200,
-      "title": "HIPEC - Dr. Varadharajan V | Chennai",
+      "title": "HIPEC in Chennai | Dr Varadharajan V",
       "titleLen": 36,
-      "desc": "Advanced heated chemotherapy delivered directly during abdominal surgery.",
-      "descLen": 73,
+      "desc": "HIPEC in Chennai: heated chemotherapy delivered inside the abdomen after tumour removal, for selected peritoneal cancers, at Iswarya Hospital.",
+      "descLen": 142,
       "h1": "HIPEC",
       "h1count": 1,
-      "words": 668,
-      "imgs": 4,
+      "words": 1044,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 43,
+      "linksIn": 25,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/hipec",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 87,
+      "htmlKB": 150,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -221,24 +300,24 @@
     {
       "route": "/services/laparoscopic-robotic-gi-surgery",
       "status": 200,
-      "title": "Laparoscopic & Robotic GI Surgery - Dr. Varadharajan V | Chennai",
-      "titleLen": 64,
-      "desc": "Minimally invasive cancer surgery using advanced robotic technology.",
-      "descLen": 68,
+      "title": "Laparoscopic & Robotic GI Surgery | Dr Varadharajan V",
+      "titleLen": 53,
+      "desc": "Laparoscopic and robotic GI surgery in Chennai for colorectal, stomach and other abdominal conditions, with faster recovery, at Iswarya Hospital.",
+      "descLen": 145,
       "h1": "Laparoscopic & Robotic GI Surgery",
       "h1count": 1,
-      "words": 739,
-      "imgs": 4,
+      "words": 1103,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 44,
+      "linksIn": 24,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/laparoscopic-robotic-gi-surgery",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 101,
+      "htmlKB": 164,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -248,26 +327,26 @@
     {
       "route": "/services/retroperitoneal-tumor-surgery",
       "status": 200,
-      "title": "Retroperitoneal Tumor Surgery - Dr. Varadharajan V | Chennai",
+      "title": "Retroperitoneal Tumor Surgery in Chennai | Dr Varadharajan V",
       "titleLen": 60,
-      "desc": "Specialized surgery for tumors located in the retroperitoneal space.",
-      "descLen": 68,
+      "desc": "Retroperitoneal tumour surgery in Chennai: planned en-bloc removal of sarcomas and retroperitoneal masses, at Iswarya Hospital by Dr. Varadharajan V.",
+      "descLen": 149,
       "h1": "Retroperitoneal Tumor Surgery",
       "h1count": 1,
-      "words": 788,
-      "imgs": 4,
+      "words": 1150,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 44,
+      "linksIn": 22,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/retroperitoneal-tumor-surgery",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 100,
+      "htmlKB": 164,
       "headingSkips": "",
-      "nmc": "best;leading",
+      "nmc": "leading",
       "faqSchema": 4,
       "faqVisible": 4,
       "placeholders": ""
@@ -275,24 +354,24 @@
     {
       "route": "/services/minimal-access-surgery",
       "status": 200,
-      "title": "Minimal Access Surgery - Dr. Varadharajan V | Chennai",
+      "title": "Minimal Access Surgery in Chennai | Dr Varadharajan V",
       "titleLen": 53,
-      "desc": "Less invasive cancer surgery with faster recovery and smaller incisions.",
-      "descLen": 72,
+      "desc": "Minimal access surgery in Chennai: laparoscopic and robotic procedures with smaller incisions and quicker recovery, at Iswarya Hospital.",
+      "descLen": 136,
       "h1": "Minimal Access Surgery",
       "h1count": 1,
-      "words": 724,
-      "imgs": 4,
+      "words": 1090,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 43,
+      "linksIn": 26,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/minimal-access-surgery",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 99,
+      "htmlKB": 162,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -302,24 +381,24 @@
     {
       "route": "/services/gynaecological-malignancies",
       "status": 200,
-      "title": "Gynaecological Malignancies - Dr. Varadharajan V | Chennai",
+      "title": "Gynaecological Malignancies in Chennai | Dr Varadharajan V",
       "titleLen": 58,
-      "desc": "Surgical treatment for cancers of the female reproductive system.",
-      "descLen": 65,
+      "desc": "Gynaecological cancer surgery in Chennai for uterine, cervical and ovarian cancers, including staging and cytoreduction, at Iswarya Hospital.",
+      "descLen": 141,
       "h1": "Gynaecological Malignancies",
       "h1count": 1,
-      "words": 719,
-      "imgs": 4,
+      "words": 1067,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 44,
+      "linksIn": 22,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/gynaecological-malignancies",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 100,
+      "htmlKB": 164,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -329,26 +408,26 @@
     {
       "route": "/services/thoracic-cancer",
       "status": 200,
-      "title": "Thoracic Cancer - Dr. Varadharajan V | Chennai",
+      "title": "Thoracic Cancer in Chennai | Dr Varadharajan V",
       "titleLen": 46,
-      "desc": "Comprehensive surgery for lung and chest cavity cancers.",
-      "descLen": 56,
+      "desc": "Thoracic cancer surgery in Chennai for lung and chest tumours, including VATS keyhole resection where suitable, at Iswarya Hospital.",
+      "descLen": 132,
       "h1": "Thoracic Cancer",
       "h1count": 1,
-      "words": 758,
-      "imgs": 4,
+      "words": 947,
+      "imgs": 7,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 44,
+      "linksIn": 22,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/thoracic-cancer",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 99,
+      "htmlKB": 144,
       "headingSkips": "",
-      "nmc": "best",
+      "nmc": "",
       "faqSchema": 4,
       "faqVisible": 4,
       "placeholders": ""
@@ -356,24 +435,24 @@
     {
       "route": "/services/vats-lobectomy",
       "status": 200,
-      "title": "VATS Lobectomy - Dr. Varadharajan V | Chennai",
+      "title": "VATS Lobectomy in Chennai | Dr Varadharajan V",
       "titleLen": 45,
-      "desc": "Minimally invasive lung surgery using video-assisted techniques.",
-      "descLen": 64,
+      "desc": "VATS lobectomy in Chennai: keyhole lung lobe removal with small incisions and faster recovery, at Iswarya Hospital by Dr. Varadharajan V.",
+      "descLen": 137,
       "h1": "VATS Lobectomy",
       "h1count": 1,
-      "words": 725,
-      "imgs": 4,
+      "words": 1069,
+      "imgs": 6,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 42,
+      "linksIn": 24,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/vats-lobectomy",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 99,
+      "htmlKB": 160,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -383,24 +462,24 @@
     {
       "route": "/services/head-and-neck-cancer",
       "status": 200,
-      "title": "Head and Neck Cancer - Dr. Varadharajan V | Chennai",
+      "title": "Head and Neck Cancer in Chennai | Dr Varadharajan V",
       "titleLen": 51,
-      "desc": "Surgical treatment for oral, throat, thyroid, and neck cancers, from early-stage to advanced disease.",
-      "descLen": 101,
+      "desc": "Head and neck cancer surgery in Chennai for oral, throat, thyroid and neck cancers, planned to protect function, at Iswarya Hospital.",
+      "descLen": 133,
       "h1": "Head and Neck Cancer",
       "h1count": 1,
-      "words": 747,
-      "imgs": 4,
+      "words": 938,
+      "imgs": 6,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 42,
+      "linksIn": 23,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/head-and-neck-cancer",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 99,
+      "htmlKB": 143,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -410,24 +489,24 @@
     {
       "route": "/services/complex-head-neck-resection",
       "status": 200,
-      "title": "Complex Head & Neck Resection - Dr. Varadharajan V | Chennai",
+      "title": "Complex Head & Neck Resection in Chennai | Dr Varadharajan V",
       "titleLen": 60,
-      "desc": "Advanced surgery for head and neck cancers with functional preservation.",
-      "descLen": 72,
+      "desc": "Complex head and neck resection with free flap reconstruction in Chennai, restoring speech, swallowing and appearance, at Iswarya Hospital.",
+      "descLen": 139,
       "h1": "Complex Head & Neck Resection",
       "h1count": 1,
-      "words": 804,
-      "imgs": 4,
+      "words": 1178,
+      "imgs": 6,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
-      "linksIn": 18,
-      "ldTypes": "Physician+MedicalOrganization+MedicalProcedure+FAQPage",
+      "linksOut": 43,
+      "linksIn": 22,
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization+MedicalWebPage+BreadcrumbList+MedicalProcedure+FAQPage",
       "canonical": "https://drvaradharajan.com/services/complex-head-neck-resection",
-      "robotsMeta": "",
+      "robotsMeta": "noindex, nofollow",
       "og": true,
       "tw": true,
-      "htmlKB": 108,
+      "htmlKB": 170,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 4,
@@ -437,24 +516,24 @@
     {
       "route": "/nonexistent-404-test",
       "status": 404,
-      "title": "Surgical Oncologist in Chennai | Dr Varadharajan V",
-      "titleLen": 50,
-      "desc": "Expert surgical oncologist in Chennai specializing in breast, GI, gynecologic, thoracic and peritoneal cancers with advanced robotic and minimally invasive care.",
-      "descLen": 161,
-      "h1": "404",
+      "title": "Page Not Found | Dr Varadharajan V",
+      "titleLen": 34,
+      "desc": "Surgical oncologist in Chennai for breast, GI, gynecologic, thoracic and peritoneal cancers. Laparoscopic, robotic and HIPEC surgery at Iswarya Hospital, Tharamani.",
+      "descLen": 164,
+      "h1": "Page not found",
       "h1count": 1,
-      "words": 8,
+      "words": 20,
       "imgs": 1,
       "imgsNoAlt": 0,
       "bigImgs": [],
-      "linksOut": 33,
+      "linksOut": 37,
       "linksIn": 0,
-      "ldTypes": "Physician+MedicalOrganization",
+      "ldTypes": "WebSite+Physician+MedicalClinic+MedicalOrganization",
       "canonical": "",
       "robotsMeta": "noindex",
-      "og": false,
+      "og": true,
       "tw": true,
-      "htmlKB": 34,
+      "htmlKB": 54,
       "headingSkips": "",
       "nmc": "",
       "faqSchema": 0,
@@ -463,167 +542,56 @@
     }
   ],
   "inbound": {
-    "/": 221,
-    "/specialities": 102,
-    "?mode=video": 1,
-    "/services/surgical-oncology": 19,
-    "/services/breast-cancer-surgeries": 18,
-    "/services/breast-oncoplasty": 18,
-    "/services/benign-breast-condition-surgery": 18,
-    "/services/gi-oncology": 18,
-    "/services/hipec": 18,
-    "/services/laparoscopic-robotic-gi-surgery": 18,
-    "/services/retroperitoneal-tumor-surgery": 18,
-    "/services/minimal-access-surgery": 18,
-    "/services/gynaecological-malignancies": 18,
-    "/services/thoracic-cancer": 18,
-    "/services/vats-lobectomy": 18,
-    "/services/head-and-neck-cancer": 18,
-    "/services/complex-head-neck-resection": 18
+    "/": 277,
+    "/specialities": 134,
+    "/services/surgical-oncology": 28,
+    "/patients-from-outside-chennai": 50,
+    "/services/breast-cancer-surgeries": 25,
+    "/services/breast-oncoplasty": 24,
+    "/services/benign-breast-condition-surgery": 23,
+    "/services/gi-oncology": 28,
+    "/services/hipec": 25,
+    "/services/laparoscopic-robotic-gi-surgery": 24,
+    "/services/retroperitoneal-tumor-surgery": 22,
+    "/services/minimal-access-surgery": 26,
+    "/services/gynaecological-malignancies": 22,
+    "/services/thoracic-cancer": 22,
+    "/services/vats-lobectomy": 24,
+    "/services/head-and-neck-cancer": 23,
+    "/services/complex-head-neck-resection": 22,
+    "/terms": 20,
+    "/privacy": 20
   },
   "brokenLinks": [],
-  "brokenAnchors": [
-    {
-      "from": "/",
-      "to": "#"
-    },
-    {
-      "from": "/",
-      "to": "#"
-    },
-    {
-      "from": "/specialities",
-      "to": "#"
-    },
-    {
-      "from": "/specialities",
-      "to": "#"
-    },
-    {
-      "from": "/services/surgical-oncology",
-      "to": "#"
-    },
-    {
-      "from": "/services/surgical-oncology",
-      "to": "#"
-    },
-    {
-      "from": "/services/breast-cancer-surgeries",
-      "to": "#"
-    },
-    {
-      "from": "/services/breast-cancer-surgeries",
-      "to": "#"
-    },
-    {
-      "from": "/services/breast-oncoplasty",
-      "to": "#"
-    },
-    {
-      "from": "/services/breast-oncoplasty",
-      "to": "#"
-    },
-    {
-      "from": "/services/benign-breast-condition-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/benign-breast-condition-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/gi-oncology",
-      "to": "#"
-    },
-    {
-      "from": "/services/gi-oncology",
-      "to": "#"
-    },
-    {
-      "from": "/services/hipec",
-      "to": "#"
-    },
-    {
-      "from": "/services/hipec",
-      "to": "#"
-    },
-    {
-      "from": "/services/laparoscopic-robotic-gi-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/laparoscopic-robotic-gi-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/retroperitoneal-tumor-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/retroperitoneal-tumor-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/minimal-access-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/minimal-access-surgery",
-      "to": "#"
-    },
-    {
-      "from": "/services/gynaecological-malignancies",
-      "to": "#"
-    },
-    {
-      "from": "/services/gynaecological-malignancies",
-      "to": "#"
-    },
-    {
-      "from": "/services/thoracic-cancer",
-      "to": "#"
-    },
-    {
-      "from": "/services/thoracic-cancer",
-      "to": "#"
-    },
-    {
-      "from": "/services/vats-lobectomy",
-      "to": "#"
-    },
-    {
-      "from": "/services/vats-lobectomy",
-      "to": "#"
-    },
-    {
-      "from": "/services/head-and-neck-cancer",
-      "to": "#"
-    },
-    {
-      "from": "/services/head-and-neck-cancer",
-      "to": "#"
-    },
-    {
-      "from": "/services/complex-head-neck-resection",
-      "to": "#"
-    },
-    {
-      "from": "/services/complex-head-neck-resection",
-      "to": "#"
-    },
-    {
-      "from": "/nonexistent-404-test",
-      "to": "#"
-    },
-    {
-      "from": "/nonexistent-404-test",
-      "to": "#"
-    }
-  ],
+  "brokenAnchors": [],
   "externalLinks": [
     {
       "from": "/",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -653,6 +621,18 @@
     },
     {
       "from": "/specialities",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/specialities",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/specialities",
       "to": "https://www.facebook.com/dr.varadharajan/",
       "rel": "noopener noreferrer",
       "target": "_blank"
@@ -676,8 +656,146 @@
       "target": "_blank"
     },
     {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://indianvisaonline.gov.in",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/patients-from-outside-chennai",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/privacy",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/privacy",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/privacy",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/privacy",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/privacy",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/terms",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/terms",
+      "to": "https://www.facebook.com/dr.varadharajan/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/terms",
+      "to": "https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/terms",
+      "to": "https://www.instagram.com/answers.to.cancer?utm_source=qr&igsh=MXI1ZHhlZndtcHZoZg%3D%3D",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/terms",
+      "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
       "from": "/services/surgical-oncology",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/surgical-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -707,7 +825,37 @@
     },
     {
       "from": "/services/breast-cancer-surgeries",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-cancer-surgeries",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -737,7 +885,37 @@
     },
     {
       "from": "/services/breast-oncoplasty",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/breast-oncoplasty",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -767,7 +945,37 @@
     },
     {
       "from": "/services/benign-breast-condition-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/benign-breast-condition-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -797,7 +1005,37 @@
     },
     {
       "from": "/services/gi-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gi-oncology",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -827,7 +1065,37 @@
     },
     {
       "from": "/services/hipec",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/hipec",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -857,7 +1125,37 @@
     },
     {
       "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/laparoscopic-robotic-gi-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -887,7 +1185,37 @@
     },
     {
       "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/retroperitoneal-tumor-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -917,7 +1245,37 @@
     },
     {
       "from": "/services/minimal-access-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/minimal-access-surgery",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -947,7 +1305,37 @@
     },
     {
       "from": "/services/gynaecological-malignancies",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/gynaecological-malignancies",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -977,7 +1365,37 @@
     },
     {
       "from": "/services/thoracic-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/thoracic-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -1007,7 +1425,37 @@
     },
     {
       "from": "/services/vats-lobectomy",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/vats-lobectomy",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -1037,7 +1485,37 @@
     },
     {
       "from": "/services/head-and-neck-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/head-and-neck-cancer",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -1067,7 +1545,37 @@
     },
     {
       "from": "/services/complex-head-neck-resection",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
       "to": "https://www.google.com/maps/search/?api=1&query=12.9803155,80.2529862",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/services/complex-head-neck-resection",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -1092,6 +1600,12 @@
     {
       "from": "/services/complex-head-neck-resection",
       "to": "https://wa.me/919444264315",
+      "rel": "noopener noreferrer",
+      "target": "_blank"
+    },
+    {
+      "from": "/nonexistent-404-test",
+      "to": "https://wa.me/919444264315?text=Hello%20Doctor%2C%20I%20would%20like%20to%20book%20a%20video%20consultation.",
       "rel": "noopener noreferrer",
       "target": "_blank"
     },
@@ -1120,6 +1634,8 @@
       "target": "_blank"
     }
   ],
-  "dupPairs": [],
-  "secHeaders": "x-content-type-options: MISSING\nreferrer-policy: MISSING\npermissions-policy: MISSING\nx-frame-options: MISSING\nx-powered-by: Next.js"
+  "dupPairs": [
+    "\"Medically reviewed by Dr. Varadharajan V, Surgical Oncologist (M.Ch Surgical Onc…\" on /specialities, /services/surgical-oncology, /services/breast-cancer-surgeries, /services/breast-oncoplasty, /services/benign-breast-condition-surgery, /services/gi-oncology, /services/hipec, /services/laparoscopic-robotic-gi-surgery, /services/retroperitoneal-tumor-surgery, /services/minimal-access-surgery, /services/gynaecological-malignancies, /services/thoracic-cancer, /services/vats-lobectomy, /services/head-and-neck-cancer, /services/complex-head-neck-resection"
+  ],
+  "secHeaders": "x-content-type-options: nosniff\nreferrer-policy: strict-origin-when-cross-origin\npermissions-policy: camera=(), microphone=(), geolocation=()\nx-frame-options: SAMEORIGIN\nx-powered-by: MISSING"
 }

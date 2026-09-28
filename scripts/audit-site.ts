@@ -3,9 +3,9 @@ import * as cheerio from 'cheerio';
 import { writeFileSync, mkdirSync } from 'fs';
 
 async function main() {
-const BASE = 'http://localhost:4400';
+const BASE = process.env.AUDIT_BASE ?? 'http://localhost:4300';
 const ROUTES = [
-  '/', '/specialities',
+  '/', '/specialities', '/patients-from-outside-chennai', '/privacy', '/terms',
   '/services/surgical-oncology', '/services/breast-cancer-surgeries',
   '/services/breast-oncoplasty', '/services/benign-breast-condition-surgery',
   '/services/gi-oncology', '/services/hipec',
@@ -42,7 +42,7 @@ const internalHrefs = new Set<string>();
 const externalLinks: { from: string; to: string; rel: string; target: string }[] = [];
 
 for (const route of ROUTES) {
-  const { status, headers, body } = await get(BASE + route).catch(() => ({ status: 0, headers: new Headers(), body: '' }));
+  const { status, body } = await get(BASE + route).catch(() => ({ status: 0, headers: new Headers(), body: '' }));
   const $ = cheerio.load(body);
 
   const title = $('title').first().text().trim();
