@@ -1,7 +1,6 @@
 import { siteConfig } from '@/config/site';
 
-// TODO(dr-review): domain cutover date from old iCareHeal site
-const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true';
+const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING !== 'false';
 
 const aiCrawlers = [
   'GPTBot',
