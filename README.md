@@ -1,38 +1,71 @@
-# Dr Varadharajan website
+# Dr. Varadharajan V — Surgical Oncologist, Chennai
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Marketing/content site for **Dr. Varadharajan V** (M.Ch Surgical Oncology, FIAGES, FALS, FMAS),
+Surgical, Breast and Head & Neck Oncologist at Iswarya Hospital, Tharamani, Chennai.
 
-## Getting Started
+**Live site:** https://drvaradharajan.com
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router) + React 19 + TypeScript
+- **Tailwind CSS v4** via `@tailwindcss/postcss`
+- **pnpm** (see `pnpm-workspace.yaml` — `package-lock.json` is not the source of truth)
+- **sharp + tsx** for asset/audit scripts in `scripts/`
+- Forms submit through [Web3Forms](https://web3forms.com)
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev        # http://localhost:3000
+pnpm build && pnpm start
+pnpm lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy `.env.example` — all vars are optional for local dev:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | Enables the appointment form; without it the form shows a call/WhatsApp fallback |
+| `NEXT_PUBLIC_SITE_URL` | Canonical URL override; defaults to `https://drvaradharajan.com` |
+| `NEXT_PUBLIC_ALLOW_INDEXING` | Indexing is **on by default** (site is live). Set to `false` on staging/preview deploys to emit `noindex` + `robots.txt` disallow |
 
-## Learn More
+## Project layout
 
-To learn more about Next.js, take a look at the following resources:
+| Path | Contents |
+| --- | --- |
+| `src/config/site.ts` | Single source of truth: doctor info, contact details, treatments list |
+| `src/data/` | Page copy: FAQs, per-treatment content and FAQs |
+| `src/lib/` | `schema.ts` (JSON-LD graph builders), `areas.ts` (areaServed) |
+| `src/components/` | Homepage sections + shared components |
+| `src/app/` | Routes below, plus `manifest.ts`, `sitemap.ts`, `robots.txt`, `llms.txt`, `llms-full.txt` |
+| `scripts/` | Maintenance scripts (run with `npx tsx`) |
+| `docs/audit/` | SEO audit findings and fix report |
+| `_reference/` | Assets scraped from the old site (source material, not served) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`/` · `/specialities` · `/services/[slug]` (14 treatment pages) · `/patients-from-outside-chennai` · `/privacy` · `/terms`
 
-## Deploy on Vercel
+Old iCareHeal URLs redirect home via `next.config.ts` (`/website-doctor-profile/*`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | Purpose |
+| --- | --- |
+| `npx tsx scripts/generate-icons.ts` | Regenerate favicon + app/PWA icons from the logo emblem |
+| `npx tsx scripts/generate-assets.ts` | Regenerate `public/og/og-default.webp` |
+| `npx tsx scripts/optimize-images.ts` | Convert oversized images in `public/` to WebP |
+| `npx tsx scripts/audit-site.ts` | Full SEO/AEO/GEO crawl (expects dev server on `:4300` or `AUDIT_BASE`) |
+| `npx tsx scripts/check-links.ts` | Internal link check (no broken/self links) |
+| `npx tsx scripts/check-redirects.ts` | Verify legacy redirects |
+| `npx tsx scripts/validate-schema.ts` | Validate JSON-LD on built pages |
+
+## SEO notes
+
+- `robots.txt` allows all crawlers (incl. AI bots) and points at `sitemap.xml`
+- Every page emits a JSON-LD `@graph` (physician, hospital, breadcrumbs, FAQ/procedure nodes)
+- `llms.txt` / `llms-full.txt` provide machine-readable site summaries
+- After deploys, submit `https://drvaradharajan.com/sitemap.xml` in Google Search Console
