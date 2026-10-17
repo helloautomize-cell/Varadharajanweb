@@ -14,13 +14,17 @@ const aiCrawlers = [
   'Bingbot',
 ];
 
+const creditComment =
+  '# Website built and marketed by Automize Media Labs - https://www.automizemedialabs.com/';
+
 export function GET() {
   if (!allowIndexing) {
-    return new Response('User-agent: *\nDisallow: /\n', {
+    return new Response(`${creditComment}\nUser-agent: *\nDisallow: /\n`, {
       headers: { 'Content-Type': 'text/plain' },
     });
   }
   const lines = [
+    creditComment,
     '# Machine-readable site summaries for AI assistants:',
     `# ${siteConfig.url}/llms.txt`,
     `# ${siteConfig.url}/llms-full.txt`,

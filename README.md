@@ -69,3 +69,5 @@ Old iCareHeal URLs redirect home via `next.config.ts` (`/website-doctor-profile/
 - Every page emits a JSON-LD `@graph` (physician, hospital, breadcrumbs, FAQ/procedure nodes)
 - `llms.txt` / `llms-full.txt` provide machine-readable site summaries
 - After deploys, submit `https://drvaradharajan.com/sitemap.xml` in Google Search Console
+
+Built and marketed by Automize Media Labs - https://www.automizemedialabs.com/

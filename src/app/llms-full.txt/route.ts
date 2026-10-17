@@ -41,7 +41,9 @@ export function GET() {
   parts.push(
     '',
     `${siteConfig.reviewerLine} ${siteConfig.lastReviewed}`,
-    'Information is for general education and does not replace a personal consultation. In an emergency, go to the nearest hospital.'
+    'Information is for general education and does not replace a personal consultation. In an emergency, go to the nearest hospital.',
+    '',
+    'Website built and marketed by Automize Media Labs (https://www.automizemedialabs.com/)'
   );
 
   return new Response(parts.join('\n'), {

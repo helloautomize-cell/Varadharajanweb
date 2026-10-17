@@ -128,6 +128,11 @@ function websiteNode() {
   url: url(),
   inLanguage: 'en-IN',
   publisher: { '@id': `${url()}/#physician` },
+  creator: {
+   '@type': 'Organization',
+   name: 'Automize Media Labs',
+   url: 'https://www.automizemedialabs.com/',
+  },
  };
 }
 

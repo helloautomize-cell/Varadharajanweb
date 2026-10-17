@@ -43,6 +43,8 @@ export function GET() {
     '',
     `${siteConfig.reviewerLine} ${lastReviewed}`,
     'Information on this site is for general education and does not replace a personal consultation. In an emergency, go to the nearest hospital.',
+    '',
+    'Website built and marketed by Automize Media Labs (https://www.automizemedialabs.com/)',
   ];
   return new Response(lines.join('\n'), {
     headers: { 'Content-Type': 'text/plain; charset=utf-8' },

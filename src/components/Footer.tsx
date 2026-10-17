@@ -151,12 +151,24 @@ export default function Footer() {
      className="pt-8 border-t"
      style={{ borderColor: 'rgba(255,255,255,0.1)' }}
     >
-     <p className="text-center text-xs opacity-70 mb-3 max-w-3xl mx-auto">
+     <p className="text-left text-xs opacity-70 mb-3 max-w-3xl">
       Information on this website is for general education and does not replace a
       personal consultation. In an emergency, go to the nearest hospital.
      </p>
-     <p className="text-center text-sm opacity-80">
+     <p className="text-left text-sm opacity-80 mb-2">
       © Dr. Varadharajan V 2026 · {siteConfig.clinicName}, Chennai
+     </p>
+     <p className="text-left text-sm opacity-70">
+      Built &amp; Marketed by{' '}
+      <a
+       href="https://www.automizemedialabs.com/"
+       target="_blank"
+       rel="noopener nofollow"
+       className="font-medium hover:underline"
+       style={{ color: 'color-mix(in srgb, var(--color-primary) 45%, white)' }}
+      >
+       Automize Media Labs
+      </a>
      </p>
     </div>
    </div>
