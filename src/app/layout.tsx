@@ -25,10 +25,6 @@ export const metadata: Metadata = {
  },
  description:
   "Surgical oncologist in Chennai for breast, GI, gynecologic, thoracic and peritoneal cancers. Laparoscopic, robotic and HIPEC surgery at Iswarya Hospital, Tharamani.",
- authors: [
-  { name: "Automize Media Labs", url: "https://www.automizemedialabs.com/" },
- ],
- creator: "Automize Media Labs",
  openGraph: {
   siteName: "Dr. Varadharajan V",
   type: "website",
