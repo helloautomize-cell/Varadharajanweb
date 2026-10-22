@@ -17,6 +17,7 @@ export default function Header() {
   { label: 'Meet Doctor', href: '/#meet_doctor' },
   { label: 'Updates', href: '/#updates' },
   { label: 'Testimonial', href: '/#testimonials' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact Us', href: '/#location' },
  ];
 

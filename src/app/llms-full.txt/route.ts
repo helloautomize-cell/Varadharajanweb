@@ -2,6 +2,7 @@ import { siteConfig, allTreatments } from '@/config/site';
 import { treatmentContent, treatmentExtras } from '@/data/treatment-content';
 import { treatmentFaqs } from '@/data/treatment-faqs';
 import { faqs } from '@/data/faqs';
+import { posts } from '@/lib/blog';
 
 export const dynamic = 'force-static';
 
@@ -36,6 +37,28 @@ export function GET() {
     if (fq.length) {
       parts.push('## FAQs', ...fq.flatMap((f) => [`### ${f.question}`, f.answer, '']));
     }
+  }
+
+  for (const p of posts) {
+    parts.push(
+      '',
+      `# ${p.title}`,
+      '',
+      `${siteConfig.url}/blog/${p.slug}`,
+      '',
+      p.quickAnswer,
+      ''
+    );
+    for (const b of p.body) {
+      if (b.t === 'h2') parts.push(`## ${b.text}`, '');
+      else if (b.t === 'h3') parts.push(`### ${b.text}`, '');
+      else if (b.t === 'p') parts.push(b.text, '');
+      else parts.push(...b.items.map((i) => `- ${i}`), '');
+    }
+    if (p.faqs.length) {
+      parts.push('## FAQs', ...p.faqs.flatMap((f) => [`### ${f.q}`, f.a, '']));
+    }
+    parts.push('Sources:', ...p.citations.map((c) => `- ${c.name}: ${c.url}`), '');
   }
 
   parts.push(

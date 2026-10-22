@@ -212,3 +212,134 @@ export function faqNode(faqs: { question: string; answer: string }[]) {
   })),
  };
 }
+
+export interface ArticleGraphOpts {
+ path: string;
+ title: string;
+ description: string;
+ image: string;
+ section: string;
+ keywords: string[];
+ wordCount: number;
+ datePublished: string;
+ dateModified: string;
+ lastReviewed: string;
+ about: { type: string; name: string };
+ citations: { name: string; url: string }[];
+ faqs: { q: string; a: string }[];
+ breadcrumbs: { name: string; path: string }[];
+}
+
+/**
+ * Blog article @graph: MedicalWebPage + BlogPosting + FAQPage + BreadcrumbList.
+ * All @id values reuse the sitewide physician and clinic entities.
+ */
+export function articleGraph(o: ArticleGraphOpts) {
+ const pageUrl = `${url()}${o.path}`;
+ const imageUrl = `${url()}${o.image}`;
+ const graph: object[] = [
+  {
+   '@type': 'MedicalWebPage',
+   '@id': `${pageUrl}#webpage`,
+   name: o.title,
+   url: pageUrl,
+   description: o.description,
+   isPartOf: { '@id': `${url()}#website` },
+   about: { '@id': `${pageUrl}#topic` },
+   audience: { '@type': 'Patient' },
+   reviewedBy: { '@id': `${url()}#physician` },
+   lastReviewed: o.lastReviewed,
+   inLanguage: 'en-IN',
+   primaryImageOfPage: imageUrl,
+   breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+  },
+  {
+   '@type': o.about.type,
+   '@id': `${pageUrl}#topic`,
+   name: o.about.name,
+  },
+  {
+   '@type': 'BlogPosting',
+   '@id': `${pageUrl}#article`,
+   headline: o.title,
+   description: o.description,
+   image: imageUrl,
+   author: { '@id': `${url()}#physician` },
+   publisher: { '@id': `${url()}#physician` },
+   datePublished: o.datePublished,
+   dateModified: o.dateModified,
+   mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
+   inLanguage: 'en-IN',
+   wordCount: o.wordCount,
+   articleSection: o.section,
+   keywords: o.keywords.join(', '),
+   citation: o.citations.map((c) => ({
+    '@type': 'CreativeWork',
+    name: c.name,
+    url: c.url,
+   })),
+  },
+  {
+   '@type': 'BreadcrumbList',
+   '@id': `${pageUrl}#breadcrumb`,
+   itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: url() },
+    ...o.breadcrumbs.map((b, i) => ({
+     '@type': 'ListItem',
+     position: i + 2,
+     name: b.name,
+     item: `${url()}${b.path}`,
+    })),
+   ],
+  },
+  {
+   '@type': 'FAQPage',
+   '@id': `${pageUrl}#faq`,
+   mainEntity: o.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+   })),
+  },
+ ];
+ return { '@context': 'https://schema.org', '@graph': graph };
+}
+
+/** /blog index @graph: CollectionPage + ItemList of all articles. */
+export function blogIndexGraph(items: { slug: string; title: string }[]) {
+ const pageUrl = `${url()}/blog`;
+ return {
+  '@context': 'https://schema.org',
+  '@graph': [
+   {
+    '@type': 'CollectionPage',
+    '@id': `${pageUrl}#webpage`,
+    name: 'Blog: Cancer Surgery Guides and Patient Resources',
+    url: pageUrl,
+    isPartOf: { '@id': `${url()}#website` },
+    about: { '@id': `${url()}#physician` },
+    inLanguage: 'en-IN',
+    mainEntity: { '@id': `${pageUrl}#itemlist` },
+   },
+   {
+    '@type': 'ItemList',
+    '@id': `${pageUrl}#itemlist`,
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({
+     '@type': 'ListItem',
+     position: i + 1,
+     name: it.title,
+     url: `${url()}/blog/${it.slug}`,
+    })),
+   },
+   {
+    '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
+    itemListElement: [
+     { '@type': 'ListItem', position: 1, name: 'Home', item: url() },
+     { '@type': 'ListItem', position: 2, name: 'Blog', item: pageUrl },
+    ],
+   },
+  ],
+ };
+}

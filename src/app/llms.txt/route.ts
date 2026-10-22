@@ -1,5 +1,6 @@
 import { siteConfig, allTreatments } from '@/config/site';
 import { faqs } from '@/data/faqs';
+import { pillars } from '@/lib/blog';
 
 export const dynamic = 'force-static';
 
@@ -22,6 +23,13 @@ export function GET() {
     `- [Patients from outside Chennai](${siteConfig.url}/patients-from-outside-chennai): travel, WhatsApp consults and what to bring`,
     ...allTreatments.map(
       (t) => `- [${t.title}](${siteConfig.url}/services/${t.slug}): ${t.shortDescription}`
+    ),
+    `- [Blog](${siteConfig.url}/blog): 60 medically reviewed articles on cancer surgery, screening and recovery`,
+    '',
+    '## Pillar guides',
+    '',
+    ...pillars.map(
+      (p) => `- [${p.title}](${siteConfig.url}/blog/${p.slug}): ${p.description}`
     ),
     '',
     '## Services',
