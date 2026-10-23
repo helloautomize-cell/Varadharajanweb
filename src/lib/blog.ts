@@ -30,6 +30,7 @@ export interface BlogPost {
  suggested: string[];
  citations: { name: string; url: string }[];
  wordCount: number;
+ datePublished: string;
 }
 
 export const posts = rawPosts as BlogPost[];
@@ -63,9 +64,17 @@ export const clusters: Cluster[] = pillars.map((p) => ({
  anchor: `cluster-${p.cluster}`,
 }));
 
-export const POSTS_DATE_PUBLISHED = '2026-10-22';
 export const POSTS_DATE_REVIEWED = '2026-10-22';
 export const POSTS_REVIEWED_LABEL = 'October 2026';
+
+export function formatDate(iso: string): string {
+ return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-IN', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+ });
+}
 
 /** Cross-cluster pillar links from the content calendar link map. */
 const CROSS: Record<number, number[]> = {
