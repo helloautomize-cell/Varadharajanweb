@@ -14,7 +14,7 @@ import {
  bodyLinkCandidates,
  bodyContainsKeyword,
  clusters,
- POSTS_DATE_PUBLISHED,
+ formatDate,
  POSTS_DATE_REVIEWED,
  POSTS_REVIEWED_LABEL,
  type BlogPost,
@@ -51,7 +51,7 @@ export async function generateMetadata({
    images: [
     { url: `/blog/${slug}.webp`, width: 1280, height: 720, alt: post.imageAlt },
    ],
-   publishedTime: POSTS_DATE_PUBLISHED,
+   publishedTime: post.datePublished,
    modifiedTime: POSTS_DATE_REVIEWED,
    authors: [siteConfig.doctorName],
    section: post.category,
@@ -211,7 +211,7 @@ export default async function BlogPostPage({
   section: post.category,
   keywords: [post.primaryKeyword, ...post.secondaryKeywords],
   wordCount: post.wordCount,
-  datePublished: POSTS_DATE_PUBLISHED,
+  datePublished: post.datePublished,
   dateModified: POSTS_DATE_REVIEWED,
   lastReviewed: POSTS_DATE_REVIEWED,
   about: { type: post.about.t, name: post.about.n },
@@ -277,7 +277,7 @@ export default async function BlogPostPage({
      </p>
      <p className="text-sm mb-6" style={{ color: 'var(--color-text-muted)' }}>
       Published{' '}
-      <time dateTime={POSTS_DATE_PUBLISHED}>22 October 2026</time>
+      <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
       {' · '}
       Updated{' '}
       <time dateTime={POSTS_DATE_REVIEWED}>22 October 2026</time>

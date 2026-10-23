@@ -1,5 +1,5 @@
 import { siteConfig } from '@/config/site';
-import { posts, POSTS_DATE_PUBLISHED } from '@/lib/blog';
+import { posts, POSTS_DATE_REVIEWED } from '@/lib/blog';
 
 export const dynamic = 'force-static';
 
@@ -11,7 +11,7 @@ const esc = (s: string) =>
   .replace(/"/g, '&quot;');
 
 export function GET() {
- const pubDate = new Date(POSTS_DATE_PUBLISHED).toUTCString();
+ const buildDate = new Date(POSTS_DATE_REVIEWED).toUTCString();
  const items = posts
   .map(
    (p) => `  <item>
@@ -19,7 +19,7 @@ export function GET() {
    <link>${siteConfig.url}/blog/${p.slug}</link>
    <guid isPermaLink="true">${siteConfig.url}/blog/${p.slug}</guid>
    <description>${esc(p.description)}</description>
-   <pubDate>${pubDate}</pubDate>
+   <pubDate>${new Date(`${p.datePublished}T00:00:00Z`).toUTCString()}</pubDate>
    <category>${esc(p.category)}</category>
    <author>${siteConfig.email} (${esc(siteConfig.doctorName)})</author>
   </item>`
@@ -34,7 +34,7 @@ export function GET() {
   <atom:link href="${siteConfig.url}/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Medically reviewed articles on cancer surgery, screening and recovery by ${esc(siteConfig.doctorName)}, surgical oncologist in Chennai.</description>
   <language>en-in</language>
-  <lastBuildDate>${pubDate}</lastBuildDate>
+  <lastBuildDate>${buildDate}</lastBuildDate>
 ${items}
  </channel>
 </rss>`;
