@@ -532,9 +532,10 @@ export default function Location() {
       <Image
        src="/images/hospital/hospital-exterior.webp"
        alt="Iswarya Hospital exterior, OMR, Chennai"
-       fill
+       width={1036}
+       height={776}
        sizes="(max-width: 1024px) 100vw, 50vw"
-       className="object-cover"
+       className="object-cover w-full h-full"
       />
      </div>
      <div
