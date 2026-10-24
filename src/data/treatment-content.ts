@@ -23,6 +23,7 @@ export interface TreatmentExtra {
  // plus facts already on this site or in _reference/. No new statistics.
  extraIntro: IntroSection[];
  extraBullets: BulletBlock[];
+ seoTitle?: string;
  reviewStatus: 'approved' | 'pending-dr-review';
 }
 
@@ -176,18 +177,17 @@ export const treatmentContent: Record<string, TreatmentContent> = {
  hipec: {
   introSections: [
    {
-    heading: 'Advanced HIPEC Cancer Therapy',
-    body: 'HIPEC (Heated Intraperitoneal Chemotherapy) is an advanced treatment performed immediately after cytoreductive surgery to eliminate microscopic tumour cells remaining in the abdominal cavity. During the procedure, a heated chemotherapy solution is circulated for a fixed duration to enhance drug penetration and maximise cancer cell destruction. The heat improves the effectiveness of the chemotherapy while keeping systemic toxicity low because the drug remains confined within the abdomen. This combined surgical and chemotherapeutic approach offers significantly better disease control for selected abdominal cancers, particularly when complete or near-complete tumour removal is achieved during cytoreductive surgery.',
+    heading: 'What HIPEC Actually Is',
+    body: 'HIPEC stands for heated intraperitoneal chemotherapy. Right after the surgeon removes all visible tumour from inside the abdomen, a heated chemotherapy solution is circulated through the abdominal cavity for a fixed period. The heat helps the drug penetrate tissue, and because the drug stays inside the abdomen rather than travelling through the bloodstream, it reaches the microscopic deposits surgery cannot see while sparing the rest of the body most of the exposure.',
    },
    {
-    heading: 'Precision HIPEC for Abdominal Cancers',
-    body: 'HIPEC offers a focused and highly localised treatment option for cancers involving the peritoneal lining. After surgically removing visible disease, the abdomen is filled with heated chemotherapy to target remaining microscopic tumour cells that cannot be seen or safely resected. This heat-enhanced delivery improves tissue absorption and drug effectiveness, reducing the risk of recurrence. HIPEC has shown meaningful survival benefits in well-selected patients with ovarian, colorectal, gastric, appendiceal cancers, and peritoneal surface malignancies. When combined with optimal cytoreductive surgery, it provides a powerful therapeutic strategy that improves long-term outcomes and disease control.',
+    heading: 'Who It Is Considered For',
+    body: 'HIPEC is used for cancers that spread along the peritoneal surfaces, the lining of the abdomen, rather than through the blood to distant organs. Selected patients with ovarian, colorectal, gastric and appendiceal cancers, pseudomyxoma peritonei or peritoneal mesothelioma may benefit. It only makes sense when all visible disease can be removed first, so staging scans, and often a look inside with a camera, come before any decision. Fitness for a long operation matters as much as the tumour itself.',
    },
    {
-    heading: 'Targeted Intra-Abdominal Chemotherapy',
-    body: 'HIPEC allows surgeons to deliver chemotherapy directly to the source of disease at higher concentrations than traditional intravenous methods, without exposing the entire body to high drug levels. Because the heated chemotherapy remains within the abdominal cavity, patients experience fewer systemic side effects, improved tolerance, and enhanced treatment precision. This approach is especially effective for cancers that spread within the peritoneal cavity, where microscopic deposits are difficult to detect or remove surgically. HIPEC significantly improves local tumour control, reduces recurrence rates, and offers selected patients a meaningful improvement in long-term survival when paired with cytoreductive surgery.',
-   },
-  ],
+    heading: 'A Major Operation, Not a Chemotherapy Drip',
+    body: 'Patients sometimes hear the word chemotherapy and picture a day-ward drip. CRS-HIPEC is a major abdominal operation that can take many hours, followed by a monitored hospital stay and weeks of recovery at home. The chemotherapy part is more targeted than a conventional drip, but the surgery is the larger event. Whether the potential benefit justifies that for a particular patient is a judgement made case by case at the tumour board.',
+   },  ],
   bulletBlocks: [
    {
     heading: 'Why HIPEC Is Used',
@@ -201,8 +201,8 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     ],
    },
    {
-    heading: 'Who Are Suitable Candidates',
-    subheading: 'For patients with specific peritoneal-based cancers.',
+    heading: 'Who May Be Considered for HIPEC',
+    subheading: 'Patients with peritoneal surface cancers.',
     items: [
      'Those diagnosed with peritoneal surface malignancies (PSM)',
      'Patients with ovarian, colorectal, gastric, or appendiceal cancers',
@@ -212,8 +212,8 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     ],
    },
    {
-    heading: 'Advantages of HIPEC',
-    subheading: 'Improved outcomes with heat-enhanced chemotherapy delivery.',
+    heading: 'What HIPEC Offers',
+    subheading: 'How heated, targeted chemotherapy helps.',
     items: [
      'Higher local drug concentration without systemic side effects',
      'Better local disease control and reduced recurrence rates',
@@ -227,18 +227,17 @@ export const treatmentContent: Record<string, TreatmentContent> = {
  'complex-head-neck-resection': {
   introSections: [
    {
-    heading: 'Advanced Head & Neck Resection with Reconstruction',
-    body: 'Complex Head and Neck Resection with Microvascular Reconstruction involves removing cancerous tumours in critical areas, oral cavity, throat, jaw, or neck, while restoring function and appearance using advanced free-flap techniques. After tumour removal, tissue from the forearm, thigh, or fibula is transferred with its blood vessels and connected to neck vessels using microsurgery. This allows restoration of speech, swallowing, chewing, and facial structure. The procedure is essential for achieving oncologic safety while preserving quality of life, especially in extensive or anatomically challenging head and neck cancers.',
+    heading: 'Removing the Tumour and Rebuilding in One Operation',
+    body: 'When a head and neck cancer is large enough that removing it would leave a significant gap in the jaw, tongue, throat or skin, reconstruction is planned as part of the same operation rather than a later one. The standard method is free flap transfer: living tissue, with its own artery and vein, is moved from the forearm, thigh or lower leg to rebuild what was removed, and the vessels are joined to neck vessels under a microscope.',
    },
    {
-    heading: 'Precision Oncologic Resection & Microvascular Free-Flap Surgery',
-    body: 'This surgery combines aggressive cancer clearance with delicate reconstructive techniques to rebuild structures affected by tumour removal. Microvascular reconstruction ensures transplanted tissue receives stable blood supply, enabling better healing and long-term function. It is used for cancers affecting the tongue, jawbone, buccal mucosa, larynx, and extensive soft-tissue areas. By integrating oncology and reconstructive expertise, the procedure helps patients regain vital functions like swallowing and speech, supports aesthetics, and reduces long-term disability. It is a cornerstone treatment for large, invasive, or recurrent head and neck tumours.',
+    heading: 'Why the Reconstruction Matters as Much as the Removal',
+    body: 'The structures being rebuilt govern eating, speaking and appearance. A flat closure is simpler in theatre but can leave a patient unable to swallow normally or speak clearly for life. Free flap reconstruction uses tissue matched to the defect, bone for a jaw, soft tissue for tongue or skin, so the result works as well as it reasonably can rather than simply closing the wound. Recovery includes speech and swallowing therapy, often with nutrition support until eating is safe again.',
    },
    {
-    heading: 'Functional Reconstruction After Advanced Head & Neck Surgery',
-    body: 'This approach focuses on restoring both structure and function after complex tumour removal. Microvascular free-flap reconstruction uses living tissue to rebuild areas critical for breathing, speaking, and eating. Surgeons precisely reconnect tiny arteries and veins to maintain optimal tissue viability. This technique is particularly beneficial after major resections involving the mandible, tongue, or pharynx. The result is improved oncologic outcomes, enhanced functional recovery, and significantly better cosmetic results. Patients experience improved quality of life, reduced complications, and higher long-term satisfaction after comprehensive surgical management.',
-   },
-  ],
+    heading: 'Planning Before Consent',
+    body: 'Cases like this are mapped out on scans first: the size and position of the tumour, which structures it touches, what will need to come out and what tissue is needed to rebuild. Donor-site vessels are checked beforehand, and airway and feeding plans are made in advance. The surgical plan, the reconstruction option chosen and the realistic recovery are all explained before consent, so there are few surprises in theatre.',
+   },  ],
   bulletBlocks: [
    {
     heading: 'Why This Surgery Is Needed',
@@ -263,8 +262,8 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     ],
    },
    {
-    heading: 'Benefits of Microvascular Reconstruction',
-    subheading: 'Superior healing, function, and aesthetics after major surgery.',
+    heading: 'What Free Flap Reconstruction Achieves',
+    subheading: 'Restoring function and appearance after major resection.',
     items: [
      'Provides living tissue with its own blood supply for stable healing',
      'Improves speech, swallowing, chewing, and facial structure',
@@ -311,18 +310,17 @@ export const treatmentContent: Record<string, TreatmentContent> = {
  'laparoscopic-robotic-gi-surgery': {
   introSections: [
    {
-    heading: 'Advanced Laparoscopic & Robotic GI Surgery',
-    body: 'Laparoscopic and robotic GI surgery are minimally invasive techniques used to treat a wide range of gastrointestinal conditions, including stomach, colorectal, hepatobiliary, and small bowel diseases. Surgeons operate through tiny keyhole incisions using a high-definition camera for magnified views. Robotic systems further enhance precision with wristed instruments and 3D visualisation, enabling safer and more controlled movements. These approaches reduce blood loss, pain, hospital stay, and complications while maintaining excellent surgical accuracy. They are now standard for many GI cancers, benign diseases, and reconstructive procedures.',
+    heading: 'Keyhole Surgery for Abdominal Disease',
+    body: 'Laparoscopic surgery operates through several small ports using a camera and long instruments instead of one large incision. For gastrointestinal work this covers cancers of the stomach, colon and rectum as well as benign conditions such as hernias, gallbladder disease and reflux. Smaller wounds generally mean less pain, earlier return of bowel function and a shorter stay in hospital, without changing what the operation is meant to achieve.',
    },
    {
-    heading: 'Precision GI Surgery With Minimally Invasive Technology',
-    body: 'Minimally invasive GI surgery allows surgeons to access complex abdominal structures with exceptional clarity and precision. Laparoscopy offers enhanced visualisation, while robotic systems provide superior dexterity, making it easier to perform complex dissections around critical vessels and organs. These methods improve patient comfort, preserve organ function, and accelerate return to normal activity. They are highly effective for colorectal cancers, gastric tumours, gallbladder issues, hernias, and several benign and malignant GI conditions. When used in the right patient, these techniques significantly enhance outcomes and long-term recovery.',
+    heading: 'What the Robot Adds',
+    body: 'A robotic system gives the surgeon a magnified three-dimensional view and instruments that bend and rotate beyond what a wrist can do. That extra control earns its keep in tight spaces, deep in the pelvis or close to major vessels, where millimetres matter. The robot does not operate on its own; every movement comes from the surgeon at the console, and the platform is chosen because the case calls for it, not because the machine happens to be available.',
    },
    {
-    heading: 'Modern Gastrointestinal Surgery for Faster Recovery',
-    body: 'Robotic and laparoscopic GI surgery are designed to reduce the physical impact of surgery without compromising oncologic or functional results. By avoiding large incisions, these methods lead to quicker mobilisation, reduced wound complications, and minimal scarring. They allow surgeons to perform intricate tasks through small ports using advanced instruments, making them ideal for complex colorectal, gastric, pancreatic, and hernia surgeries. Patients benefit from less postoperative discomfort, lower infection rates, and shorter hospital stays, all contributing to improved recovery, better quality of life, and excellent surgical precision.',
-   },
-  ],
+    heading: 'Same Operation, Different Access',
+    body: 'A cancer operation is judged by whether the tumour comes out completely with clear margins, not by the size of the incision. Keyhole surgery is offered only where it can meet that standard as reliably as open surgery. For very large tumours, disease involving several organs, or abdomens heavily scarred by earlier operations, open surgery is still the safer route, and a planned keyhole procedure occasionally converts to open if that becomes the right call.',
+   },  ],
   bulletBlocks: [
    {
     heading: 'Why Laparoscopic / Robotic GI Surgery Is Used',
@@ -336,19 +334,19 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     ],
    },
    {
-    heading: 'Who Are Suitable Candidates',
-    subheading: 'Patients selected based on disease type and surgical complexity.',
+    heading: 'Who May Be Offered Keyhole Surgery',
+    subheading: 'Patients selected on disease type and surgical complexity.',
     items: [
      'Individuals with stomach, colorectal, liver, or small-bowel diseases',
      'Patients with early-stage or selected advanced GI cancers',
      'People requiring hernia, gallbladder, or reflux surgery',
-     'Patients medically fit for laparoscopic or robotic anesthesia',
+     'Patients medically fit for laparoscopic or robotic anaesthesia',
      'Individuals assessed by a multidisciplinary GI or oncology team',
     ],
    },
    {
-    heading: 'Advantages',
-    subheading: 'Faster recovery, better comfort, and excellent surgical precision.',
+    heading: 'What Patients Usually Notice',
+    subheading: 'The practical differences after keyhole surgery.',
     items: [
      'Smaller incisions and reduced postoperative pain',
      'Quicker return to daily activities and work',
@@ -359,7 +357,7 @@ export const treatmentContent: Record<string, TreatmentContent> = {
    },
    {
     heading: 'What to Expect After Surgery',
-    subheading: 'Smooth recovery supported by enhanced care protocols.',
+    subheading: 'The typical recovery after keyhole GI surgery.',
     items: [
      'Early walking encouraged within hours of surgery',
      'Minimal wound discomfort due to small port incisions',
@@ -457,18 +455,17 @@ export const treatmentContent: Record<string, TreatmentContent> = {
  'breast-oncoplasty': {
   introSections: [
    {
-    heading: 'Cancer Removal With Cosmetic Preservation',
-    body: 'Breast oncoplasty combines cancer removal with plastic surgical techniques to preserve the breast\'s shape, symmetry, and cosmetic appearance. It is performed during breast-conserving surgery to remove the tumour with safe margins while maintaining optimal aesthetic outcomes. Modern oncoplastic methods allow larger tumours to be removed without deformity, reducing the need for mastectomy in many cases. This approach benefits women by improving confidence, emotional wellbeing, and long-term quality of life, while ensuring oncologic safety remains uncompromised through precise surgical planning and multidisciplinary evaluation.',
+    heading: 'Removing the Cancer and Reshaping in One Step',
+    body: 'Breast oncoplasty combines two goals in a single operation: removing the tumour with safe margins, and reshaping the breast so it keeps a natural appearance. Standard breast-conserving surgery can leave a visible dent where tissue was taken out, especially with larger tumours or certain positions in the breast. Oncoplastic techniques rearrange the remaining breast tissue, or sometimes reduce and lift both breasts symmetrically, to avoid that distortion.',
    },
    {
-    heading: 'Integrating Oncology and Reconstructive Principles',
-    body: 'Oncoplastic breast surgery integrates the principles of oncology and reconstructive surgery, giving women better functional and cosmetic results after tumour removal. Techniques include glandular rearrangement, volume replacement, and symmetry procedures on the opposite breast when required. These methods allow surgeons to achieve clear surgical margins without compromising appearance. Breast oncoplasty is especially beneficial for moderate to large tumours in cosmetically sensitive areas, helping maintain natural breast contour while reducing complications like deformities or asymmetry. This approach enhances both cancer control and patient satisfaction.',
+    heading: 'Oncology First, Plastic Surgery Second',
+    body: "The cancer rules the plan. Clear margins come before cosmetics in every decision, and oncoplasty is only offered where conservation is safe for the tumour. Where the cancer's size or position means the breast cannot be conserved without compromising margins, mastectomy with reconstruction options is discussed instead. When conservation is safe, oncoplastic methods widen who can keep their breast.",
    },
    {
-    heading: 'Modern Techniques for Better Surgical Outcomes',
-    body: 'Modern oncoplasty allows surgeons to perform breast-conserving surgery with greater flexibility and cosmetic predictability. By combining tumour excision with immediate reshaping, surgeons can restore breast form, avoid visible defects, and improve long-term appearance. This technique is ideal for patients with larger tumours, small breast volumes, or lesions in challenging quadrants. With careful planning and multidisciplinary coordination, oncoplasty provides excellent oncologic safety while significantly improving post-surgical aesthetics.',
-   },
-  ],
+    heading: 'Who Tends to Benefit',
+    body: 'Oncoplasty is most useful for moderate to large tumours relative to breast size, tumours in cosmetically sensitive positions such as near the nipple or the lower breast, and patients who wish to avoid mastectomy where it is medically reasonable to do so. Radiation usually follows breast conservation, and planning accounts for how the reshaped tissue will settle over the months after treatment.',
+   },  ],
   bulletBlocks: [
    {
     heading: 'Breast Cancer Symptoms',
@@ -751,7 +748,7 @@ export const treatmentContent: Record<string, TreatmentContent> = {
    },
    {
     heading: 'Laparoscopic or Robotic, How the Choice Is Made',
-    body: 'Standard laparoscopy suits most routine keyhole procedures and is widely available. Robotic assistance tends to earn its place in more demanding territory: deep pelvic work, fine dissection close to major vessels, or reconstruction steps where the extra instrument control genuinely changes what can be done safely through small ports. The decision is made on the specifics of the case, not on the novelty of the technology, the goal is always the safest route to a complete operation, whichever platform delivers it.',
+    body: 'Standard laparoscopy suits most routine keyhole procedures and is widely available. Robotic assistance tends to earn its place in more demanding territory: deep pelvic work, fine dissection close to major vessels, or reconstruction steps where the extra instrument control genuinely changes what can be done safely through small ports. The decision is made on the specifics of the case, not on the novelty of the technology. The goal is always the safest route to a complete operation, whichever platform delivers it.',
    },
   ],
   bulletBlocks: [
@@ -961,18 +958,17 @@ export const treatmentContent: Record<string, TreatmentContent> = {
  'vats-lobectomy': {
   introSections: [
    {
-    heading: 'Minimally Invasive Lung Lobe Removal',
-    body: 'VATS Lobectomy (Video-Assisted Thoracoscopic Surgery) is a minimally invasive procedure used to remove a diseased lobe of the lung using small keyhole incisions. This technique allows surgeons to access the lung with a camera and specialised instruments, avoiding the large cuts used in traditional open surgery. VATS improves surgical precision, reduces postoperative pain, shortens hospital stay, and enhances recovery. It is routinely performed for early-stage lung cancer, selected benign lung lesions, and certain infections, offering excellent long-term oncologic outcomes and faster return to normal activities.',
+    heading: 'Removing a Lung Lobe Through Small Incisions',
+    body: 'VATS stands for video-assisted thoracoscopic surgery. Instead of spreading the ribs through a long chest incision, the surgeon works through 2 or 3 small ports with a camera and fine instruments to remove a lobe of the lung, most often for early-stage lung cancer. The same lobe and lymph nodes come out as in open surgery; it is the route in that is smaller, not the operation.',
    },
    {
-    heading: 'A Safer Alternative to Open Thoracotomy',
-    body: 'VATS Lobectomy provides a safe and effective alternative to open thoracotomy for many patients with lung cancer. By using a high-definition thoracoscopic camera, surgeons achieve better visualisation of lung structures while causing minimal trauma to muscles and ribs. This reduces complications such as bleeding, infections, and prolonged pain. Patients benefit from improved breathing, quicker mobilisation, and smaller scars. VATS is widely accepted as the gold standard for early-stage lung cancer in suitable candidates and offers survival outcomes comparable to open surgery with significantly better postoperative comfort.',
+    heading: 'How It Differs From Open Chest Surgery',
+    body: 'A traditional thoracotomy is a big operation on the chest wall as well as the lung, which is why recovery is slow and painful. Because VATS spares the ribs and chest muscles, patients usually have less pain, smaller scars and a shorter stay, most going home within about three to five days. Studies comparing the two approaches in suitable patients show equivalent cancer outcomes, which is why VATS is preferred for early peripheral lung cancers where anatomy allows.',
    },
    {
-    heading: 'Precise Tumour Removal With Minimal Chest Wall Trauma',
-    body: 'VATS Lobectomy enables precise removal of lung tumours with minimal chest wall disruption. Lymph node dissection is performed through the same incisions, ensuring accurate cancer staging and complete surgical removal. Patients undergoing VATS typically experience less need for pain medication, improved lung expansion, and faster rehabilitation. This technique is ideal for patients who value quicker recovery without compromising oncologic safety.',
-   },
-  ],
+    heading: 'When Open Surgery Is Still the Right Call',
+    body: 'Larger or centrally placed tumours, or those involving the airway or major vessels, may not be safely removable through ports. Lung function testing also comes first: removing a lobe is only advised if the remaining lung can support breathing comfortably afterwards. The recommendation follows the scans and the breathing tests together, not a preference for keyhole surgery.',
+   },  ],
   bulletBlocks: [
    {
     heading: 'What VATS Lobectomy Is',
@@ -997,19 +993,19 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     ],
    },
    {
-    heading: 'Who Are Suitable Candidates',
-    subheading: 'Patients selected based on tumour location, stage, and lung function.',
+    heading: 'Who Is a Candidate for VATS',
+    subheading: 'Patients selected on tumour position, stage and lung function.',
     items: [
      'Individuals with early-stage non-small cell lung cancer',
      'Patients with peripheral lung tumours accessible through VATS',
-     'Those medically fit for general anesthesia and single-lung ventilation',
+     'Those medically fit for general anaesthesia and single-lung ventilation',
      'Patients with benign lung conditions requiring lobectomy',
      'Individuals assessed and approved by a thoracic surgery team',
     ],
    },
    {
-    heading: 'Advantages of VATS Lobectomy',
-    subheading: 'Better recovery and equal oncologic outcomes compared to open surgery.',
+    heading: 'What VATS Offers',
+    subheading: 'Recovery advantages with the same cancer clearance.',
     items: [
      'Less postoperative pain and quicker return to daily activities',
      'Smaller incisions and better cosmetic results',
@@ -1019,8 +1015,8 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     ],
    },
    {
-    heading: 'What to Expect After Surgery',
-    subheading: 'Smooth recovery supported by enhanced recovery protocols.',
+    heading: 'What to Expect After VATS',
+    subheading: 'The typical recovery after keyhole lung surgery.',
     items: [
      'Chest drain initially placed to remove air and fluid',
      'Patients encouraged to walk within 24 hours',
@@ -1035,6 +1031,7 @@ export const treatmentContent: Record<string, TreatmentContent> = {
 
 export const treatmentExtras: Record<string, TreatmentExtra> = {
  'surgical-oncology': {
+  seoTitle: 'Surgical Oncology Treatment in Chennai | Dr Varadharajan V',
   keyFacts: [
    'Covers surgical treatment across breast, GI, gynaecological, thoracic and peritoneal cancers',
    'Open, laparoscopic and robotic approaches are chosen case by case',
@@ -1059,7 +1056,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   related: ['breast-oncoplasty', 'benign-breast-condition-surgery', 'surgical-oncology'],
   metaDescription:
-   'Breast cancer surgery in Chennai: lumpectomy, mastectomy and sentinel node biopsy with clear margins, at Iswarya Hospital, Tharamani.',
+   'Breast cancer surgery in Chennai: lumpectomy, mastectomy and sentinel node biopsy with clear margins, by Dr. Varadharajan V at Iswarya Hospital, Tharamani.',
   bodyLocation: 'Breast',
   extraIntro: [
    {
@@ -1102,6 +1099,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   reviewStatus: 'pending-dr-review',
  },
  'breast-oncoplasty': {
+  seoTitle: 'Breast Oncoplasty Surgery in Chennai | Dr Varadharajan V',
   keyFacts: [
    'Combines complete tumour removal with plastic surgical reshaping of the breast',
    'Designed for patients suitable for breast conservation',
@@ -1170,6 +1168,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   reviewStatus: 'approved',
  },
  'gi-oncology': {
+  seoTitle: 'GI Cancer Surgery (Oncology) in Chennai | Dr Varadharajan V',
   keyFacts: [
    'Covers stomach, colorectal, liver, pancreatic and other abdominal cancers',
    'Laparoscopic or robotic approaches are used where they achieve equal clearance',
@@ -1222,6 +1221,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   reviewStatus: 'pending-dr-review',
  },
  hipec: {
+  seoTitle: 'HIPEC Cancer Treatment in Chennai | Dr Varadharajan V',
   keyFacts: [
    'Heated chemotherapy delivered inside the abdomen during cancer surgery',
    'For selected peritoneal surface cancers such as ovarian, colorectal and appendiceal',
@@ -1387,7 +1387,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   related: ['laparoscopic-robotic-gi-surgery', 'vats-lobectomy', 'gi-oncology'],
   metaDescription:
-   'Minimal access surgery in Chennai: laparoscopic and robotic procedures with smaller incisions and quicker recovery, at Iswarya Hospital.',
+   'Minimal access surgery in Chennai: laparoscopic and robotic procedures with smaller incisions and quicker recovery, by Dr. Varadharajan V at Iswarya Hospital.',
   extraIntro: [
    {
     heading: 'Who Is a Good Candidate for Keyhole Surgery',
@@ -1481,6 +1481,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   reviewStatus: 'pending-dr-review',
  },
  'thoracic-cancer': {
+  seoTitle: 'Thoracic Cancer Surgery in Chennai | Dr Varadharajan V',
   keyFacts: [
    'Surgical treatment of lung and chest cavity cancers',
    'VATS keyhole approach used where tumour size and position allow',
@@ -1490,13 +1491,14 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   related: ['vats-lobectomy', 'surgical-oncology', 'minimal-access-surgery'],
   metaDescription:
-   'Thoracic cancer surgery in Chennai for lung and chest tumours, including VATS keyhole resection where suitable, at Iswarya Hospital.',
+   'Thoracic cancer surgery in Chennai for lung and chest tumours, including VATS keyhole resection where suitable, by Dr. Varadharajan V at Iswarya Hospital.',
   bodyLocation: 'Chest',
   extraIntro: [],
   extraBullets: [],
   reviewStatus: 'approved',
  },
  'vats-lobectomy': {
+  seoTitle: 'VATS Lung Lobectomy in Chennai | Dr Varadharajan V',
   keyFacts: [
    'Removal of a lung lobe through 2 to 3 small incisions using a camera',
    'The same lobe and lymph nodes are removed as in open surgery',
@@ -1506,7 +1508,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   related: ['thoracic-cancer', 'minimal-access-surgery'],
   metaDescription:
-   'VATS lobectomy in Chennai: keyhole lung lobe removal with small incisions and faster recovery, at Iswarya Hospital by Dr. Varadharajan V.',
+   'VATS lobectomy in Chennai: keyhole lung lobe removal through 2 to 3 small incisions, with the same lymph node dissection as open surgery, at Iswarya Hospital by Dr. Varadharajan V.',
   bodyLocation: 'Lung',
   extraIntro: [
    {
@@ -1558,7 +1560,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   related: ['complex-head-neck-resection', 'surgical-oncology'],
   metaDescription:
-   'Head and neck cancer surgery in Chennai for oral, throat, thyroid and neck cancers, planned to protect function, at Iswarya Hospital.',
+   'Head and neck cancer surgery in Chennai for oral, throat, thyroid and neck cancers, planned to protect speech, swallowing and appearance, at Iswarya Hospital.',
   bodyLocation: 'Head and neck',
   extraIntro: [],
   extraBullets: [],
@@ -1574,7 +1576,7 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   related: ['head-and-neck-cancer', 'surgical-oncology'],
   metaDescription:
-   'Complex head and neck resection with free flap reconstruction in Chennai, restoring speech, swallowing and appearance, at Iswarya Hospital.',
+   'Complex head and neck resection with free flap reconstruction in Chennai for larger tumours, restoring speech, swallowing and appearance, at Iswarya Hospital.',
   bodyLocation: 'Head and neck',
   extraIntro: [
    {
@@ -1616,4 +1618,39 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   ],
   reviewStatus: 'pending-dr-review',
  },
+};
+
+/**
+ * One-line quotable definition of each treatment's primary entity, rendered
+ * inside the hero so it lands in the first 100 words. Existing facts only.
+ */
+export const treatmentDefinitions: Record<string, string> = {
+ 'surgical-oncology':
+  'Surgical oncology is the branch of cancer care that removes tumours through an operation, planned alongside chemotherapy and radiation where needed.',
+ 'breast-cancer-surgeries':
+  'Breast cancer surgery removes a cancerous tumour from the breast, either by lumpectomy (removing only the tumour) or mastectomy (removing the whole breast), usually with lymph node assessment.',
+ 'breast-oncoplasty':
+  'Breast oncoplasty is breast-conserving cancer surgery where the tumour is removed with clear margins and the breast is reshaped in the same operation to preserve its natural appearance.',
+ 'benign-breast-condition-surgery':
+  'Benign breast condition surgery removes non-cancerous lumps such as fibroadenomas and cysts, usually through a small incision as a day procedure.',
+ 'gi-oncology':
+  'GI oncology is the surgical treatment of gastrointestinal cancers, including stomach, colorectal, liver, pancreatic and bile duct tumours.',
+ hipec:
+  'HIPEC (heated intraperitoneal chemotherapy) is a treatment where heated chemotherapy is circulated inside the abdomen immediately after visible tumour is removed, to target microscopic disease.',
+ 'laparoscopic-robotic-gi-surgery':
+  'Laparoscopic and robotic GI surgery are keyhole techniques for operating on abdominal cancers and conditions through small incisions, with the robot giving the surgeon wristed instruments and a 3D view.',
+ 'retroperitoneal-tumor-surgery':
+  'Retroperitoneal tumour surgery removes growths from the space behind the intestines, aiming for complete removal with clear margins, sometimes with an adjacent organ such as a kidney.',
+ 'minimal-access-surgery':
+  'Minimal access surgery uses small incisions, a camera and fine instruments to perform operations that once required a large open cut, while meeting the same cancer-clearance standard.',
+ 'gynaecological-malignancies':
+  'Gynaecological cancer surgery treats cancers of the ovary, uterus, cervix and vulva, using keyhole staging for early disease and open cytoreduction for advanced disease.',
+ 'thoracic-cancer':
+  'Thoracic cancer surgery removes tumours of the lung and chest cavity, using keyhole VATS techniques for suitable cases and open surgery for larger or central tumours.',
+ 'vats-lobectomy':
+  'VATS lobectomy is the removal of a diseased lung lobe through 2 to 3 small incisions guided by a camera, with the same lymph node dissection as open surgery.',
+ 'head-and-neck-cancer':
+  'Head and neck cancer surgery removes cancers of the mouth, throat, thyroid and neck, planned to protect speech, swallowing and appearance alongside complete clearance.',
+ 'complex-head-neck-resection':
+  'Complex head and neck resection removes larger tumours and rebuilds the area in the same operation using free flap microsurgery, where living tissue is transferred with its own blood supply.',
 };

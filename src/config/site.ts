@@ -82,6 +82,7 @@ export interface SiteConfig {
  stats: { value: string; label: string }[];
  reviewerLine: string;
  lastReviewed: string;
+ firstPublished: string;
  heroHeadline: string;
  heroSubheading: string;
  bioLongForm: string;
@@ -148,7 +149,7 @@ export const allTreatments: Treatment[] = [
   slug: 'gi-oncology',
   title: 'GI Oncology',
   category: 'GI & Abdominal',
-  shortDescription: 'Comprehensive surgical treatment for gastrointestinal cancers and tumors.',
+  shortDescription: 'Comprehensive surgical treatment for gastrointestinal cancers and tumours.',
   tagline: 'Surgical management of stomach, colorectal, liver, and pancreatic cancers',
   hasFullContent: true,
  },
@@ -170,9 +171,9 @@ export const allTreatments: Treatment[] = [
  },
  {
   slug: 'retroperitoneal-tumor-surgery',
-  title: 'Retroperitoneal Tumor Surgery',
+  title: 'Retroperitoneal Tumour Surgery',
   category: 'GI & Abdominal',
-  shortDescription: 'Specialized surgery for tumors located in the retroperitoneal space.',
+  shortDescription: 'Specialised surgery for tumours in the retroperitoneal space.',
   tagline: 'Specialised surgery for tumours in a technically demanding part of the abdomen',
   hasFullContent: true,
  },
@@ -253,7 +254,6 @@ export const siteConfig: SiteConfig = {
  mapLat: 12.9803155,
  mapLng: 80.2529862,
  workingHours: "Mon to Sat, 9:00 AM to 5:00 PM · Sunday closed",
- // TODO(dr-review): domain cutover date from old iCareHeal site
  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://drvaradharajan.com",
  registrationDisplay: "Tamil Nadu Medical Council Reg. No. 90663",
  languages: [
@@ -277,10 +277,12 @@ export const siteConfig: SiteConfig = {
  reviewerLine:
   "Medically reviewed by Dr. Varadharajan V, Surgical Oncologist (M.Ch Surgical Oncology), Iswarya Hospital, Chennai, Tamil Nadu, India · Tamil Nadu Medical Council Reg. No. 90663 · Last reviewed:",
  lastReviewed: "2026-09-28",
- heroHeadline: "Integrated Oncosurgical Care in Chennai",
- heroSubheading: "Multi-organ cancer care with advanced robotic and minimally invasive techniques.",
- bioLongForm: "Dr. Varadharajan V is a highly trained Surgical Oncologist committed to delivering ethical, patient-centric, and evidence-based cancer care. With strong academic credentials and extensive hands-on experience across multiple oncological subspecialties, he is skilled in managing a wide spectrum of malignancies, including breast, gastrointestinal, gynecologic, and peritoneal surface cancers. His clinical foundation comes from institutions such as Sri Ramachandra Institute of Higher Education and Gleneagles Global Health City, where he has served in senior oncology roles. His professional journey reflects a blend of clinical expertise, academic dedication, and surgical excellence. He has presented numerous papers at national and international oncology conferences including ASCO, ESMO, ESSO, IFHNOS, and NATCON, demonstrating his commitment to advancing oncologic knowledge. His publications in reputed indexed journals like the Indian Journal of Surgical Oncology, BMJ Case Reports, Frontiers in Health Informatics, and Diagnostic Pathology highlight his contributions to research and innovation. Known for his meticulous approach, integrity, and compassionate patient care, Dr. Varadharajan consistently strives to improve patient outcomes through evidence-based practice and advanced surgical techniques. He remains deeply committed to continuous learning, innovation, and contributing to the global oncology community.",
- visionLongForm: "Dr. Varadharajan's vision is rooted in delivering oncology care that is ethical, precise, and centred around the patient's holistic wellbeing. He believes that modern surgical oncology must combine scientific rigor with compassion, ensuring that every individual receives personalised, evidence-based treatment tailored to their diagnosis and clinical needs. His commitment extends beyond surgery, focusing on early detection, multidisciplinary planning, and long-term survivorship support. His expertise covers a wide range of cancers, with strong proficiency in breast oncology, gastrointestinal malignancies, gynecological oncology, and peritoneal surface cancers. He has trained extensively in minimally invasive and robotic oncosurgical techniques, which allow for faster recovery, better cosmetic outcomes, and reduced surgical morbidity. His fellowship training with FIAGES, FALS, and FMAS further strengthens his operative skillset in advanced laparoscopic and endoscopic procedures. Dr. Varadharajan remains actively involved in academic oncology, contributing through research publications, international conference presentations, and collaborative studies. His work reflects a dedication to innovation and continual improvement in cancer care. Guided by integrity, professionalism, and empathy, he aims to empower patients and their families with clarity, confidence, and the highest quality of oncologic treatment.",
+ // Date the site first went live on drvaradharajan.com (best known date; client to confirm)
+ firstPublished: "2026-09-28",
+ heroHeadline: "Surgical Oncologist in Chennai",
+ heroSubheading: "Dr. Varadharajan V performs breast, GI, gynaecological, thoracic and peritoneal cancer surgery at Iswarya Hospital, Tharamani, using laparoscopic, robotic and HIPEC techniques.",
+ bioLongForm: "Dr. Varadharajan V is a surgical oncologist at Iswarya Hospital, Tharamani, Chennai. He holds an M.Ch in Surgical Oncology with fellowships in minimal access surgery (FIAGES, FALS, FMAS), and treats cancers of the breast, gastrointestinal tract, gynaecological system, chest, head and neck, and peritoneal surface. He trained and worked in senior oncology roles at Sri Ramachandra Institute of Higher Education and Gleneagles Global Health City. He has presented research at conferences including ASCO, ESMO, ESSO, IFHNOS and NATCON, and published in journals such as the Indian Journal of Surgical Oncology, BMJ Case Reports, Frontiers in Health Informatics and Diagnostic Pathology.",
+ visionLongForm: "His approach is straightforward: remove the cancer completely and safely, and be honest about what surgery can and cannot do. Where a keyhole or robotic approach can match the result of open surgery, he offers it; where it cannot, he says so. Major decisions are made at a multidisciplinary tumour board rather than by one doctor alone. He consults in English, Tamil, Hindi, Telugu and Kannada, and sees patients from across Tamil Nadu, neighbouring states and overseas. A first opinion on WhatsApp video is available for patients who would otherwise need to travel before knowing their options.",
  socialLinks: [
   { platform: 'facebook', url: 'https://www.facebook.com/dr.varadharajan/' },
   { platform: 'linkedin', url: 'https://www.linkedin.com/in/dr-varadharajan-vijayakumar-9b205224/' },

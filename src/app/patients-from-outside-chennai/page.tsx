@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
 import { pageGraph } from '@/lib/schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ReviewerLine from '@/components/ReviewerLine';
+import FAQ from '@/components/FAQ';
+import { faqNode } from '@/lib/schema';
 import { Phone, MessageCircle, Plane, Train } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -11,12 +14,32 @@ export const metadata: Metadata = {
   alternates: { canonical: '/patients-from-outside-chennai' },
 };
 
+const travelFaqs = [
+ {
+  question: 'Can I get an opinion before travelling to Chennai?',
+  answer: 'Yes. Share your biopsy reports, scans and discharge summaries on WhatsApp and a video consultation with Dr. Varadharajan V can be arranged. That first review usually decides whether travelling is worthwhile.',
+ },
+ {
+  question: 'What documents should I bring for a surgical consultation?',
+  answer: 'Bring biopsy or pathology reports with slides or blocks if available, CT, MRI or PET-CT scans on CD or as links, previous discharge summaries and a list of your current medicines. Reports in any language are acceptable.',
+ },
+ {
+  question: 'How do international patients get a visa for treatment in India?',
+  answer: 'Patients generally apply for an e-Medical Visa, and attendants for an e-Medical Attendant Visa, through the official portal at indianvisaonline.gov.in. Depending on stay length, FRRO registration may be required after arrival.',
+ },
+ {
+  question: 'How far is Iswarya Hospital from the airport and railway stations?',
+  answer: 'The hospital is on OMR in Tharamani, about 15 km from Chennai International Airport and 15 to 18 km from Chennai Egmore and Central stations. App-based cabs and prepaid airport taxis reach it directly.',
+ },
+];
+
 const graph = pageGraph({
   path: '/patients-from-outside-chennai',
   name: 'Patients from Outside Chennai',
   description:
     'Guidance for patients travelling to Iswarya Hospital, Tharamani, Chennai for surgical oncology care.',
   breadcrumbs: [{ name: 'Patients from Outside Chennai', path: '/patients-from-outside-chennai' }],
+  extra: [faqNode(`${siteConfig.url}/patients-from-outside-chennai`, travelFaqs)],
 });
 
 const waLink = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
@@ -102,6 +125,7 @@ export default function PatientsTravelPage() {
             opinion without travelling, what to bring, and how to plan the trip.
           </p>
 
+          <ReviewerLine />
           {sections.map((s) => (
             <div key={s.heading} className="mb-10">
               <h2
@@ -122,6 +146,7 @@ export default function PatientsTravelPage() {
             </div>
           ))}
 
+          <FAQ items={travelFaqs} id="travel-faq" />
           <div
             className="p-8 rounded-2xl text-center"
             style={{

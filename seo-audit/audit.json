@@ -1,0 +1,316 @@
+{
+  "auditDate": "2026-10-24",
+  "site": "https://drvaradharajan.com",
+  "method": "next build + next start (Next.js 16.3.5), curl with Googlebot/Bingbot/GPTBot/OAI-SearchBot/ChatGPT-User/ClaudeBot/PerplexityBot UAs on localhost:3000 and live domain",
+  "overallScore": 65,
+  "scores": {
+    "crawlingAiBotAccess": 88,
+    "technical": 74,
+    "schema": 72,
+    "eeat": 52,
+    "pillarLinking": 58,
+    "faqs": 76,
+    "entitiesSemantics": 55,
+    "keywords": 66,
+    "contentHumanness": 58,
+    "aeoGeoReadiness": 52
+  },
+  "checklist": [
+    {"id": 1, "check": "robots.txt exists, references sitemap, no asset blocking", "result": "PASS"},
+    {"id": 2, "check": "AI bots allowed", "result": "PARTIAL", "evidence": "Claude-User and Perplexity-User not named in src/app/robots.txt/route.ts:5-15; covered only by User-agent: *"},
+    {"id": 3, "check": "No 403/429/challenge for bots", "result": "PASS", "evidence": "All tested bot UAs return 200 on live domain; no middleware"},
+    {"id": 4, "check": "sitemap complete, real lastmod", "result": "PARTIAL", "evidence": "All 19 URLs present; identical lastmod 2026-09-28 on all (src/app/sitemap.ts:6)"},
+    {"id": 5, "check": "llms.txt exists", "result": "PASS", "evidence": "/llms.txt and /llms-full.txt routes"},
+    {"id": 6, "check": "No accidental noindex", "result": "PASS", "evidence": "NEXT_PUBLIC_ALLOW_INDEXING gate is build-time; preview deployments not auto-protected"},
+    {"id": 7, "check": "metadataBase + self canonicals", "result": "PASS"},
+    {"id": 8, "check": "One site version, others 301/308", "result": "PARTIAL", "evidence": "https://www.drvaradharajan.com returns 200, no redirect to apex; trailing-slash and http->https 308s OK"},
+    {"id": 9, "check": "Real 404s", "result": "PASS"},
+    {"id": 10, "check": "Content/FAQs/byline/dates/links/schema in raw HTML", "result": "PASS"},
+    {"id": 11, "check": "No client-only content", "result": "PARTIAL", "evidence": "Treatments.tsx useState('General') renders only 1 of 14 cards in server HTML"},
+    {"id": 12, "check": "All internal links real <a href>", "result": "PASS"},
+    {"id": 13, "check": "Unique titles 50-60, meta 140-160", "result": "PARTIAL", "evidence": "Titles <50 on 6 service pages (HIPEC 36); meta <140 on 6 pages"},
+    {"id": 14, "check": "One H1, clean H2/H3", "result": "PARTIAL", "evidence": "1 H1 everywhere; footer nav groups use h2 on every page"},
+    {"id": 15, "check": "Clean descriptive URLs", "result": "PASS"},
+    {"id": 16, "check": "Alt text, dimensions, next/image", "result": "PARTIAL", "evidence": "Alts present but all 14 /images/treatments/{slug}.svg return 404"},
+    {"id": 17, "check": "OG + Twitter tags", "result": "PASS"},
+    {"id": 18, "check": "Visible breadcrumbs on inner pages", "result": "PARTIAL", "evidence": "Missing on /privacy and /terms though BreadcrumbList schema emitted"},
+    {"id": 19, "check": "CWV mobile thresholds", "result": "UNVERIFIED", "evidence": "Lighthouse not run; SSG pages ~140-190KB, next/font, priority hero"},
+    {"id": 20, "check": "No broken internal links", "result": "PASS"},
+    {"id": 21, "check": "One connected @graph, stable @ids", "result": "PARTIAL", "evidence": "Two separate ld+json @graph blocks per page (layout siteGraph + page pageGraph)"},
+    {"id": 22, "check": "Article schema fields", "result": "PARTIAL", "evidence": "MedicalWebPage lacks author, datePublished, dateModified, citation; about is plain string"},
+    {"id": 23, "check": "Physician schema", "result": "PASS"},
+    {"id": 24, "check": "MedicalProcedure on service pages", "result": "PASS"},
+    {"id": 25, "check": "BreadcrumbList inner pages, FAQPage where FAQs", "result": "PASS"},
+    {"id": 26, "check": "Schema matches content", "result": "PARTIAL", "evidence": "Breadcrumb schema w/o visible breadcrumb on legal pages; audience mis-typed as Patient; FAQPage no @id"},
+    {"id": 27, "check": "Dedicated doctor profile page", "result": "PARTIAL", "evidence": "Only homepage #meet_doctor section; no dedicated URL"},
+    {"id": 28, "check": "Written by + reviewed by + dates near top", "result": "PARTIAL", "evidence": "ReviewerLine mid-page on service pages only; no written-by, no published date; absent on home and /patients-from-outside-chennai"},
+    {"id": 29, "check": "Trust pages in footer", "result": "PARTIAL", "evidence": "Missing About, Contact, Editorial Policy, Medical Disclaimer pages"},
+    {"id": 30, "check": "Authoritative citations", "result": "FAIL", "evidence": "Zero PubMed/WHO/ICMR/NIH/guideline links site-wide"},
+    {"id": 31, "check": "No risky claims", "result": "PASS", "evidence": "Borderline: 'improves survival outcomes', 'gold standard', 'cure rates' uncited"},
+    {"id": 32, "check": "When to see a doctor guidance", "result": "PARTIAL", "evidence": "Explicit only on breast-oncoplasty; equivalents on most service pages"},
+    {"id": 33, "check": "First-hand experience + Indian context", "result": "PARTIAL", "evidence": "Stats/context present; no INR costs, insurance, or stay specifics"},
+    {"id": 34, "check": "NAP identical", "result": "PASS"},
+    {"id": 35, "check": "Pillars with 5 supporting articles", "result": "FAIL", "evidence": "No article layer exists; only hub->14 service pages"},
+    {"id": 36, "check": "Pillar links supporting in body", "result": "PARTIAL"},
+    {"id": 37, "check": "Supporting links pillar early + 2 siblings", "result": "PARTIAL", "evidence": "Pillar link only via breadcrumbs; related blocks link 2-3 siblings"},
+    {"id": 38, "check": "Links to service + doctor page", "result": "PARTIAL", "evidence": "No doctor page exists"},
+    {"id": 39, "check": "Descriptive varied anchors", "result": "PASS"},
+    {"id": 40, "check": "No orphans, <=3 clicks", "result": "PASS"},
+    {"id": 41, "check": "4-8 unique FAQs per content page", "result": "PARTIAL", "evidence": "4 per service page; none on /specialities or /patients-from-outside-chennai"},
+    {"id": 42, "check": "Direct answer, 40-60 words", "result": "PARTIAL", "evidence": "Answers run 60-110 words"},
+    {"id": 43, "check": "FAQs in raw HTML matching schema", "result": "PASS"},
+    {"id": 44, "check": "Entity coverage per page", "result": "PARTIAL", "evidence": "Cost missing everywhere; symptoms/tests uneven"},
+    {"id": 45, "check": "Entity defined first 100 words", "result": "PARTIAL"},
+    {"id": 46, "check": "H2 answers question naming entity", "result": "PARTIAL"},
+    {"id": 47, "check": "Medical + plain term pairing", "result": "PASS"},
+    {"id": 48, "check": "Keyword placement", "result": "PARTIAL", "evidence": "Home H1 'Integrated Oncosurgical Care in Chennai' omits 'surgical oncologist'"},
+    {"id": 49, "check": "No cannibalisation", "result": "PARTIAL", "evidence": "minimal-access vs laparoscopic-robotic; thoracic vs vats overlap"},
+    {"id": 50, "check": "Quotable specifics", "result": "PARTIAL", "evidence": "Numbers unsourced; no INR costs, comparison tables, numbered steps"},
+    {"id": 51, "check": "ChatGPT tells", "result": "PARTIAL", "evidence": "elevate, holistically, journey, empower, patient-centric, triplets in faqs.ts and site.ts bio/vision; legacy intros"},
+    {"id": 52, "check": "Claude tells", "result": "PASS", "evidence": "No em dashes; comma-splice artifacts remain where dashes were removed"},
+    {"id": 53, "check": "General AI tells", "result": "PARTIAL", "evidence": "Identical section template on all 14 service pages; mixed spellings"},
+    {"id": 54, "check": "Agent fingerprints", "result": "PARTIAL", "evidence": "2x TODO(dr-review); 9/14 treatmentExtras pending-dr-review; 14 missing SVG assets"},
+    {"id": 55, "check": "lang/favicon/manifest/HTTPS", "result": "PASS"},
+    {"id": 56, "check": "Unique local pages + GBP NAP", "result": "PARTIAL", "evidence": "NAP consistent; GBP match unverifiable; Iswarya Hospital vs old 'Iswarya Cancer Centre'"},
+    {"id": 57, "check": "Entity sameAs + consistent terms", "result": "PARTIAL", "evidence": "No Wikipedia/Wikidata/MeSH sameAs; tumour/tumor, gynaecological/gynecologic, anaesthesia/anesthesia drift"},
+    {"id": 58, "check": "PAA/cost/vs coverage", "result": "PARTIAL", "evidence": "Some vs coverage; zero cost coverage"},
+    {"id": 59, "check": "Reading level + fact flags", "result": "PASS", "evidence": "Grade ~8-9; flagged uncited 'gold standard'/'improves survival' and stats basis"},
+    {"id": 60, "check": "No self-serving ratings/fake testimonials", "result": "PARTIAL", "evidence": "3 hardcoded first-name-only testimonials with fixed 5-star icons"},
+    {"id": 61, "check": "NMC/DMR Act compliance", "result": "PASS"},
+    {"id": 62, "check": "External link rel attributes", "result": "PASS"},
+    {"id": 63, "check": "Top-5 AI query readiness", "result": "PARTIAL", "evidence": "See AUDIT_REPORT.md section 6"}
+  ],
+  "issues": [
+    {
+      "id": "ISS-01", "priority": "P0",
+      "title": "All 14 treatment-card images return 404",
+      "checklistIds": [16],
+      "affected": ["src/components/TreatmentCard.tsx", "/specialities", "/", "all /services/* related blocks"],
+      "evidence": "TreatmentCard renders /images/treatments/{slug}.svg; directory contains only photos/v2/*.webp; GET returns 404",
+      "fix": "Provide the 14 SVG icons in public/images/treatments/ or repoint TreatmentCard to photos/v2/{slug}.webp"
+    },
+    {
+      "id": "ISS-02", "priority": "P0",
+      "title": "No informational article layer; pillar->supporting model absent",
+      "checklistIds": [35, 36, 37],
+      "affected": ["site-wide"],
+      "evidence": "src/app has no article routes; content is service descriptions only",
+      "fix": "Build article layer per cluster (symptoms, tests, comparisons, cost, recovery); do not change existing URLs"
+    },
+    {
+      "id": "ISS-03", "priority": "P1",
+      "title": "www host serves 200 without redirecting to apex",
+      "checklistIds": [8],
+      "affected": ["https://www.drvaradharajan.com"],
+      "evidence": "curl -I https://www.drvaradharajan.com -> 200 same app; no 301 to apex",
+      "fix": "Vercel domain-level 308 redirect www -> apex (hosting config, not code)"
+    },
+    {
+      "id": "ISS-04", "priority": "P1",
+      "title": "No dedicated doctor profile page",
+      "checklistIds": [27, 38],
+      "affected": ["site-wide", "src/lib/schema.ts Physician.url"],
+      "evidence": "Credentials only in homepage #meet_doctor section",
+      "fix": "Create doctor profile page with existing data; point bylines and Physician.url at it"
+    },
+    {
+      "id": "ISS-05", "priority": "P1",
+      "title": "Missing trust pages: About, Contact, Editorial Policy, Medical Disclaimer",
+      "checklistIds": [29],
+      "affected": ["src/app/", "src/components/Footer.tsx"],
+      "fix": "Create pages from existing site data; promote inline disclaimer to a page; link all in footer"
+    },
+    {
+      "id": "ISS-06", "priority": "P1",
+      "title": "Zero medical citations site-wide",
+      "checklistIds": [30, 59],
+      "affected": ["src/data/treatment-content.ts", "src/data/treatment-faqs.ts", "src/data/faqs.ts"],
+      "fix": "Add Sources sections with authoritative citations; never invent citations - flag items needing doctor input"
+    },
+    {
+      "id": "ISS-07", "priority": "P1",
+      "title": "CSP frame-src blocks YouTube embeds",
+      "checklistIds": [],
+      "affected": ["next.config.ts", "src/components/Videos.tsx", "/"],
+      "evidence": "frame-src allows only maps.google.com + www.google.com",
+      "fix": "Add https://www.youtube-nocookie.com (and youtube.com) to frame-src"
+    },
+    {
+      "id": "ISS-08", "priority": "P1",
+      "title": "Treatments tabs hide 13 of 14 cards from raw HTML",
+      "checklistIds": [11],
+      "affected": ["src/components/Treatments.tsx", "/"],
+      "evidence": "useState('General') -> only General card in server HTML",
+      "fix": "Render all categories server-side; use JS only for optional filtering"
+    },
+    {
+      "id": "ISS-09", "priority": "P1",
+      "title": "Home H1/first-100-words do not define 'surgical oncologist in Chennai'",
+      "checklistIds": [45, 48],
+      "affected": ["src/components/Hero.tsx", "src/config/site.ts heroHeadline/heroSubheading"],
+      "fix": "H1 contains primary entity; add definitional lead sentence"
+    },
+    {
+      "id": "ISS-10", "priority": "P1",
+      "title": "Schema gaps",
+      "checklistIds": [21, 22, 25, 26],
+      "affected": ["src/lib/schema.ts", "src/app/privacy/page.tsx", "src/app/terms/page.tsx"],
+      "evidence": "2 @graph blocks/page; missing author/datePublished/dateModified; about as string; audience mis-typed; FAQPage no @id; breadcrumb schema w/o visible breadcrumb on legal pages",
+      "fix": "Merge graph per page; add author/dates; type about entity; fix audience; FAQPage @id; render Breadcrumbs on legal pages"
+    },
+    {
+      "id": "ISS-11", "priority": "P1",
+      "title": "No cost, insurance, or comparison content anywhere",
+      "checklistIds": [33, 44, 50, 58],
+      "affected": ["all /services/*"],
+      "fix": "Add INR cost guidance + insurance notes + comparison tables; flag price figures as client input if unknown"
+    },
+    {
+      "id": "ISS-12", "priority": "P1",
+      "title": "AI-flavored copy: home FAQs, bio/vision, legacy intro templates",
+      "checklistIds": [51, 52, 53],
+      "affected": ["src/data/faqs.ts", "src/config/site.ts:282-283", "src/data/treatment-content.ts (hipec, complex-head-neck-resection, laparoscopic-robotic-gi-surgery, vats-lobectomy, breast-oncoplasty introSections)", "src/data/treatment-faqs.ts (comma splices)"],
+      "fix": "Rewrite flagged blocks in plain register; remove banned words; fix comma splices"
+    },
+    {
+      "id": "ISS-13", "priority": "P2",
+      "title": "Title/meta length misses",
+      "checklistIds": [13],
+      "affected": ["titles <50: hipec(36), gi-oncology(42), vats-lobectomy(45), thoracic-cancer(46), surgical-oncology(48), breast-oncoplasty(48), /specialities(47), /patients-from-outside-chennai(49), /privacy(44), /terms(42)", "meta <140: breast-cancer-surgeries(133), minimal-access-surgery(136), thoracic-cancer(132), vats-lobectomy(137), head-and-neck-cancer(133), complex-head-neck-resection(139)"],
+      "fix": "Lengthen titles to 50-60 and metas to 140-160 with entity + location + differentiator"
+    },
+    {
+      "id": "ISS-14", "priority": "P2",
+      "title": "robots.txt missing Claude-User and Perplexity-User named rules",
+      "checklistIds": [2],
+      "affected": ["src/app/robots.txt/route.ts"],
+      "fix": "Add both user agents to aiCrawlers list"
+    },
+    {
+      "id": "ISS-15", "priority": "P2",
+      "title": "Sitemap uniform lastmod for all URLs",
+      "checklistIds": [4],
+      "affected": ["src/app/sitemap.ts"],
+      "fix": "Use real per-page lastmod dates"
+    },
+    {
+      "id": "ISS-16", "priority": "P2",
+      "title": "No Written by / datePublished; reviewer line missing on home and patients page",
+      "checklistIds": [28],
+      "affected": ["src/components/ReviewerLine.tsx", "src/app/page.tsx", "src/app/patients-from-outside-chennai/page.tsx", "src/app/services/[slug]/page.tsx"],
+      "fix": "Add written-by + published/modified dates near top of content pages; add ReviewerLine to / and /patients-from-outside-chennai"
+    },
+    {
+      "id": "ISS-17", "priority": "P2",
+      "title": "Visible breadcrumbs missing on /privacy and /terms",
+      "checklistIds": [18, 26],
+      "affected": ["src/app/privacy/page.tsx", "src/app/terms/page.tsx"],
+      "fix": "Render Breadcrumbs component matching existing schema"
+    },
+    {
+      "id": "ISS-18", "priority": "P2",
+      "title": "Terminology drift (tumour/tumor, gynaecological/gynecologic, anaesthesia/anesthesia)",
+      "checklistIds": [53, 57],
+      "affected": ["src/config/site.ts", "src/data/*.ts", "src/components/*"],
+      "fix": "Standardise on British/Indian English (tumour, gynaecological, anaesthesia); update display strings, not URLs"
+    },
+    {
+      "id": "ISS-19", "priority": "P2",
+      "title": "No entity sameAs links (Wikipedia/Wikidata/MeSH)",
+      "checklistIds": [57],
+      "affected": ["src/lib/schema.ts"],
+      "fix": "Add sameAs on MedicalProcedure/Physician nodes where canonical entity URLs exist"
+    },
+    {
+      "id": "ISS-20", "priority": "P2",
+      "title": "Cannibalisation risk pairs",
+      "checklistIds": [49],
+      "affected": ["minimal-access-surgery vs laparoscopic-robotic-gi-surgery", "thoracic-cancer vs vats-lobectomy"],
+      "fix": "Differentiate intent in titles/H1s/copy or consolidate signals via canonical internal linking"
+    },
+    {
+      "id": "ISS-21", "priority": "P2",
+      "title": "Per-page OG images not set",
+      "checklistIds": [17],
+      "affected": ["src/app/services/[slug]/page.tsx generateMetadata"],
+      "fix": "Set openGraph.images to treatmentPhotos[slug] per page"
+    },
+    {
+      "id": "ISS-22", "priority": "P2",
+      "title": "Structural noise: footer h2s, generic video titles, dead Update cards",
+      "checklistIds": [14],
+      "affected": ["src/components/Footer.tsx", "src/components/Videos.tsx", "src/components/Updates.tsx"],
+      "fix": "Demote footer headings to p/strong; give videos real titles; link Update cards or remove CTA"
+    },
+    {
+      "id": "ISS-23", "priority": "P2",
+      "title": "Unverified hardcoded testimonials with 5-star icons",
+      "checklistIds": [60],
+      "affected": ["src/components/Testimonials.tsx"],
+      "fix": "Verify real patient quotes with client; attribute source or remove stars/quotes"
+    },
+    {
+      "id": "ISS-24", "priority": "P2",
+      "title": "Comma-splice artifacts from dash removal",
+      "checklistIds": [52],
+      "affected": ["src/data/treatment-faqs.ts", "src/data/treatment-content.ts"],
+      "fix": "Copyedit splices into proper sentences during rewrite pass"
+    },
+    {
+      "id": "ISS-25", "priority": "P2",
+      "title": "Preview indexing gap (build-time NEXT_PUBLIC_ALLOW_INDEXING)",
+      "checklistIds": [6],
+      "affected": ["src/app/layout.tsx", "src/app/robots.txt/route.ts"],
+      "fix": "Ensure preview deployments set NEXT_PUBLIC_ALLOW_INDEXING=false; document in .env.example (already documented - verify Vercel env)"
+    },
+    {
+      "id": "ISS-26", "priority": "P2",
+      "title": "10/14 service extras marked pending-dr-review",
+      "checklistIds": [54],
+      "affected": ["src/data/treatment-content.ts treatmentExtras"],
+      "evidence": "reviewStatus 'pending-dr-review' on breast-cancer-surgeries, breast-oncoplasty, gi-oncology, hipec, laparoscopic-robotic-gi-surgery, retroperitoneal-tumor-surgery, minimal-access-surgery, gynaecological-malignancies, vats-lobectomy, complex-head-neck-resection",
+      "fix": "Doctor sign-off needed on keyFacts/extraIntro/extraBullets content"
+    },
+    {
+      "id": "P3-TODO", "priority": "P3",
+      "title": "2x TODO(dr-review) comments",
+      "checklistIds": [54],
+      "affected": ["src/config/site.ts:256", "src/app/sitemap.ts:4"],
+      "fix": "Resolve or remove after domain cutover confirmation"
+    },
+    {
+      "id": "P3-CWV", "priority": "P3",
+      "title": "Core Web Vitals unmeasured",
+      "checklistIds": [19],
+      "fix": "Run Lighthouse mobile on /, /specialities, a service page, a doctor page once it exists"
+    }
+  ],
+  "needsFromClient": [
+    "Verify the 3 homepage testimonials are real patient quotes; provide source/attribution",
+    "Confirm clinic legal name: 'Iswarya Hospital' vs old site's 'Iswarya Cancer Centre'",
+    "Confirm years-of-experience figure (old site claimed 14+; absent on new site)",
+    "Confirm Google Business Profile name/address/phone/categories match site NAP",
+    "Publishable cost guidance (consult fee, indicative surgery ranges, insurance/TPA notes)",
+    "Doctor sign-off on the 10 treatmentExtras blocks marked pending-dr-review"
+  ],
+  "clusters": {
+    "hub": "/specialities",
+    "pseudoPillar": "/services/surgical-oncology",
+    "clusters": [
+      {"name": "Breast", "services": ["breast-cancer-surgeries", "breast-oncoplasty", "benign-breast-condition-surgery"], "supportingArticles": []},
+      {"name": "GI & Abdominal", "services": ["gi-oncology", "hipec", "laparoscopic-robotic-gi-surgery", "retroperitoneal-tumor-surgery", "minimal-access-surgery"], "supportingArticles": []},
+      {"name": "Gynae/Thoracic/Head-Neck", "services": ["gynaecological-malignancies", "thoracic-cancer", "vats-lobectomy", "head-and-neck-cancer", "complex-head-neck-resection"], "supportingArticles": []},
+      {"name": "General", "services": ["surgical-oncology"], "supportingArticles": []}
+    ],
+    "note": "No pillar->supporting-article structure exists anywhere; all supportingArticles lists are empty."
+  },
+  "aiLikeness": {
+    "/": 65, "/specialities": 30, "/patients-from-outside-chennai": 25, "/privacy": 15, "/terms": 15,
+    "/services/surgical-oncology": 40, "/services/breast-cancer-surgeries": 40, "/services/breast-oncoplasty": 60,
+    "/services/benign-breast-condition-surgery": 35, "/services/gi-oncology": 35, "/services/hipec": 65,
+    "/services/laparoscopic-robotic-gi-surgery": 60, "/services/retroperitoneal-tumor-surgery": 35,
+    "/services/minimal-access-surgery": 40, "/services/gynaecological-malignancies": 40,
+    "/services/thoracic-cancer": 40, "/services/vats-lobectomy": 55,
+    "/services/head-and-neck-cancer": 40, "/services/complex-head-neck-resection": 65
+  }
+}

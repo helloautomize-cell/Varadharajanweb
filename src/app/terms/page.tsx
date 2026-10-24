@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
 import { pageGraph } from '@/lib/schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
  title: { absolute: 'Terms of Use | Dr. Varadharajan V, Chennai' },
@@ -86,6 +87,7 @@ export default function TermsPage() {
     style={{ padding: 'var(--section-padding-y) 0', backgroundColor: 'var(--color-off-white)' }}
    >
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+     <Breadcrumbs items={[{ name: 'Terms of Use', path: '/terms' }]} />
      <h1
       className="text-3xl sm:text-4xl font-bold mb-3"
       style={{ color: 'var(--color-primary-dark)' }}

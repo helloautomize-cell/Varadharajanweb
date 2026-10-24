@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
+import { siteGraph } from '@/lib/schema';
 
 export const metadata: Metadata = {
  title: { absolute: 'Page Not Found | Dr Varadharajan V' },
@@ -9,6 +10,11 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
  return (
+  <>
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph()) }}
+   />
   <section
    className="flex-1 flex items-center justify-center w-full"
    style={{ padding: 'var(--section-padding-y) 0' }}
@@ -48,5 +54,6 @@ export default function NotFound() {
     </div>
    </div>
   </section>
+  </>
  );
 }

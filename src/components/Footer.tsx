@@ -16,7 +16,7 @@ export default function Footer() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
      {/* Specialities */}
      <div>
-      <h2 className="text-lg font-bold mb-4">Specialities</h2>
+      <p className="text-lg font-bold mb-4">Specialities</p>
       <ul className="space-y-2">
        <li>
         <Link href="/specialities" className="hover:opacity-80 transition-opacity">
@@ -38,7 +38,7 @@ export default function Footer() {
 
      {/* Treatments */}
      <div>
-      <h2 className="text-lg font-bold mb-4">Treatments</h2>
+      <p className="text-lg font-bold mb-4">Treatments</p>
       <ul className="space-y-2">
        {allTreatments.map((treatment) => (
         <li key={treatment.slug}>
@@ -55,7 +55,7 @@ export default function Footer() {
 
      {/* Contact Us */}
      <div>
-      <h2 className="text-lg font-bold mb-4">Contact Us</h2>
+      <p className="text-lg font-bold mb-4">Contact Us</p>
       <div className="space-y-3">
        <a
         href={`mailto:${siteConfig.email}`}
@@ -71,10 +71,10 @@ export default function Footer() {
         <Phone size={16} />
         {siteConfig.displayPhone}
        </a>
-       <Link href="/#location" className="block hover:opacity-80 transition-opacity">
+       <Link href="/contact" className="block hover:opacity-80 transition-opacity">
         Location
        </Link>
-       <Link href="/#location" className="block hover:opacity-80 transition-opacity">
+       <Link href="/contact" className="block hover:opacity-80 transition-opacity">
         Book an Appointment
        </Link>
        <a
@@ -92,8 +92,23 @@ export default function Footer() {
 
      {/* Policy */}
      <div>
-      <h2 className="text-lg font-bold mb-4">Policy</h2>
+      <p className="text-lg font-bold mb-4">About &amp; Policy</p>
       <ul className="space-y-2">
+       <li>
+        <Link href="/about" className="hover:opacity-80 transition-opacity">
+         About Dr. Varadharajan
+        </Link>
+       </li>
+       <li>
+        <Link href="/editorial-policy" className="hover:opacity-80 transition-opacity">
+         Editorial Policy
+        </Link>
+       </li>
+       <li>
+        <Link href="/medical-disclaimer" className="hover:opacity-80 transition-opacity">
+         Medical Disclaimer
+        </Link>
+       </li>
        <li>
         <Link href="/terms" className="hover:opacity-80 transition-opacity">
          Terms of Use
@@ -117,7 +132,7 @@ export default function Footer() {
 
      {/* Social Media */}
      <div>
-      <h2 className="text-lg font-bold mb-4">Social Media</h2>
+      <p className="text-lg font-bold mb-4">Social Media</p>
       <div className="flex gap-4 mb-4">
        {siteConfig.socialLinks.map((link) => {
         return link.url ? (

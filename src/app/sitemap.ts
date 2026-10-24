@@ -2,7 +2,6 @@ import type { MetadataRoute } from 'next';
 import { allTreatments, siteConfig } from '@/config/site';
 import { posts, POSTS_DATE_REVIEWED } from '@/lib/blog';
 
-// TODO(dr-review): domain cutover date from old iCareHeal site
 const SITE_URL = siteConfig.url;
 const LAST_MODIFIED = new Date(siteConfig.lastReviewed);
 
@@ -25,6 +24,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
    lastModified: LAST_MODIFIED,
    changeFrequency: 'monthly',
    priority: 0.7,
+  },
+  {
+   url: `${SITE_URL}/about`,
+   lastModified: LAST_MODIFIED,
+   changeFrequency: 'monthly',
+   priority: 0.8,
+  },
+  {
+   url: `${SITE_URL}/contact`,
+   lastModified: LAST_MODIFIED,
+   changeFrequency: 'monthly',
+   priority: 0.8,
+  },
+  {
+   url: `${SITE_URL}/editorial-policy`,
+   lastModified: LAST_MODIFIED,
+   changeFrequency: 'yearly',
+   priority: 0.3,
+  },
+  {
+   url: `${SITE_URL}/medical-disclaimer`,
+   lastModified: LAST_MODIFIED,
+   changeFrequency: 'yearly',
+   priority: 0.3,
   },
   ...allTreatments.map((treatment) => ({
    url: `${SITE_URL}/services/${treatment.slug}`,

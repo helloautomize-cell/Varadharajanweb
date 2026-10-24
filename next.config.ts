@@ -14,7 +14,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https:",
       "font-src 'self'",
-      "frame-src https://maps.google.com https://www.google.com",
+      "frame-src https://maps.google.com https://www.google.com https://www.youtube.com https://www.youtube-nocookie.com",
       "connect-src 'self' https://api.web3forms.com",
       "form-action 'self' https://api.web3forms.com",
     ].join("; "),
@@ -28,6 +28,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Apex is canonical: www host must 308 to it
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.drvaradharajan.com" }],
+        destination: "https://drvaradharajan.com/:path*",
+        permanent: true,
+      },
       // Old iCareHeal single-page site URLs
       {
         source: "/website-doctor-profile/:path*",

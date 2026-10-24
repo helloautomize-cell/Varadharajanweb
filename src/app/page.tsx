@@ -15,6 +15,7 @@ import { faqs } from '@/data/faqs';
 import { siteConfig } from '@/config/site';
 import { pageGraph, faqNode } from '@/lib/schema';
 import StatsStrip from '@/components/StatsStrip';
+import ReviewerLine from '@/components/ReviewerLine';
 
 export const metadata: Metadata = {
  // absolute is required: the layout title.template only applies to nested
@@ -31,9 +32,10 @@ const graph = pageGraph({
  path: '/',
  name: siteConfig.doctorName,
  description:
-  'Surgical oncologist in Chennai for breast, GI, gynecologic, thoracic and peritoneal cancers at Iswarya Hospital, Tharamani.',
+  'Surgical oncologist in Chennai for breast, GI, gynaecological, thoracic and peritoneal cancers at Iswarya Hospital, Tharamani.',
  image: '/og/og-default.webp',
- extra: [faqNode(faqs)],
+ aboutId: `${siteConfig.url}/#physician`,
+ extra: [faqNode(siteConfig.url, faqs)],
 });
 
 export default function Home() {
@@ -53,6 +55,7 @@ export default function Home() {
    <Updates />
    <Videos />
    <Gallery />
+   <ReviewerLine />
    <FAQ />
    <Location />
    <ConsultCTA />
