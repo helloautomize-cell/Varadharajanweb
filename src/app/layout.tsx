@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig } from "@/config/site";
-import { siteGraph } from "@/lib/schema";
 
 const figtree = Figtree({
  variable: "--font-figtree",
@@ -52,10 +51,6 @@ export default function RootLayout({
    className={`${figtree.variable} h-full antialiased`}
   >
    <body className="min-h-full flex flex-col">
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph()) }}
-    />
     <a
      href="#main-content"
      className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-black"

@@ -11,13 +11,13 @@ export default function Header() {
 
  const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/#why_choose' },
+  { label: 'About Us', href: '/about' },
   { label: 'Our Specialities', href: '/specialities' },
   { label: 'Healthcare Services', href: '/#specialities' },
-  { label: 'Meet Doctor', href: '/#meet_doctor' },
+  { label: 'Meet Doctor', href: '/about' },
   { label: 'Updates', href: '/#updates' },
   { label: 'Testimonial', href: '/#testimonials' },
-  { label: 'Contact Us', href: '/#location' },
+  { label: 'Contact Us', href: '/contact' },
  ];
 
  return (

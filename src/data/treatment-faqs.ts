@@ -12,7 +12,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Will my operation be open or minimally invasive?',
-   answer: 'It depends on the tumour, its location, and your overall health. Laparoscopic and robotic techniques are used wherever they can achieve the same complete removal as open surgery, offering smaller incisions and faster recovery. For very large or complex tumours, open surgery may still be the safer choice, the recommendation is always based on your specific case.',
+   answer: 'It depends on the tumour, its location, and your overall health. Laparoscopic and robotic techniques are used wherever they can achieve the same complete removal as open surgery, offering smaller incisions and faster recovery. For very large or complex tumours, open surgery may still be the safer choice. The recommendation is always based on your specific case.',
   },
   {
    question: 'What happens at a first surgical consultation?',
@@ -22,7 +22,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
  'breast-cancer-surgeries': [
   {
    question: 'Will I need a mastectomy, or can my breast be conserved?',
-   answer: 'The choice depends on tumour size, location, type, and your own preference, there is no single rule. Many patients are suitable for breast-conserving surgery (lumpectomy), sometimes with oncoplastic reshaping for a better cosmetic result. Mastectomy is recommended only when conservation would compromise safe margins or when you prefer it. Both options are explained fully before you decide.',
+   answer: 'The choice depends on tumour size, location, type, and your own preference. There is no single rule. Many patients are suitable for breast-conserving surgery (lumpectomy), sometimes with oncoplastic reshaping for a better cosmetic result. Mastectomy is recommended only when conservation would compromise safe margins or when you prefer it. Both options are explained fully before you decide.',
   },
   {
    question: 'What is a sentinel lymph node biopsy?',
@@ -62,7 +62,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Does choosing a better cosmetic result weaken the cancer treatment?',
-   answer: 'No. Oncoplastic surgery follows the same clear-margin standard as standard breast-conserving surgery. The reshaping is planned around the cancer removal, never instead of it, and studies support comparable cancer control when margins are clear. Oncology leads; the plastic surgical technique follows.',
+   answer: 'No. Oncoplastic surgery follows the same clear-margin standard as standard breast-conserving surgery. The reshaping is planned around the cancer removal, never instead of it. Studies support comparable cancer control when margins are clear. Oncology leads; the plastic surgical technique follows.',
   },
   {
    question: 'Will my other breast be operated on too?',
@@ -76,7 +76,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
  'gi-oncology': [
   {
    question: 'Can gastrointestinal cancers be removed with keyhole surgery?',
-   answer: 'Many can. For suitable stomach, colorectal, and other GI tumours, laparoscopic or robotic techniques achieve the same thorough removal through small port incisions, with less pain and faster recovery. Larger or more complex tumours may still need open surgery, the decision is based on staging and your specific anatomy.',
+   answer: 'Many can. For suitable stomach, colorectal, and other GI tumours, laparoscopic or robotic techniques achieve the same thorough removal through small port incisions, with less pain and faster recovery. Larger or more complex tumours may still need open surgery. The decision is based on staging and your specific anatomy.',
   },
   {
    question: 'How is it decided whether my GI tumour is operable?',
@@ -84,7 +84,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Will I need a stoma bag after bowel cancer surgery?',
-   answer: 'Some bowel operations require a temporary stoma to protect healing, and a small number need a permanent one. Many patients need no stoma at all, it depends on tumour position and how the bowel is rejoined. If a stoma is a possibility for your operation, it is explained and planned for well in advance.',
+   answer: 'Some bowel operations require a temporary stoma to protect healing, and a small number need a permanent one. Many patients need no stoma at all. It depends on tumour position and how the bowel is rejoined. If a stoma is a possibility for your operation, it is explained and planned for well in advance.',
   },
   {
    question: 'What happens to my digestion after GI cancer surgery?',
@@ -112,7 +112,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
  'laparoscopic-robotic-gi-surgery': [
   {
    question: 'Does the robot perform the surgery on its own?',
-   answer: 'No. The robotic system is entirely controlled by the surgeon at every moment, it cannot act independently. It translates the surgeon\'s hand movements into precise, wristed instrument motion inside the body with a magnified 3D view, which is what makes delicate dissection around vessels and organs safer.',
+   answer: 'No. The robotic system is entirely controlled by the surgeon at every moment. It cannot act independently. It translates the surgeon\'s hand movements into precise, wristed instrument motion inside the body with a magnified 3D view, which is what makes delicate dissection around vessels and organs safer.',
   },
   {
    question: 'Which GI conditions can be treated with laparoscopic or robotic surgery?',
@@ -152,7 +152,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'When would a surgeon recommend open surgery instead?',
-   answer: 'Very large tumours, disease involving multiple organs, extensive scarring from previous operations, and emergencies are situations where open access is safer. Occasionally a planned keyhole procedure converts to open mid-surgery if that becomes the safer course, this is a safety decision, not a failure.',
+   answer: 'Very large tumours, disease involving multiple organs, extensive scarring from previous operations, and emergencies are situations where open access is safer. Occasionally a planned keyhole procedure converts to open mid-surgery if that becomes the safer course. This is a safety decision, not a failure.',
   },
   {
    question: 'What is the difference between laparoscopic and robotic surgery?',
@@ -166,7 +166,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
  'gynaecological-malignancies': [
   {
    question: 'Can my gynaecological cancer be treated with keyhole surgery?',
-   answer: 'Often, yes for early-stage disease. Early uterine and cervical cancers are commonly managed with laparoscopic or robotic hysterectomy and staging through small incisions. Advanced ovarian cancer usually requires open surgery to remove disease thoroughly from multiple areas of the abdomen, the approach is matched to your stage.',
+   answer: 'Often, yes for early-stage disease. Early uterine and cervical cancers are commonly managed with laparoscopic or robotic hysterectomy and staging through small incisions. Advanced ovarian cancer usually requires open surgery to remove disease thoroughly from multiple areas of the abdomen. The approach is matched to your stage.',
   },
   {
    question: 'Will surgery affect my ability to have children?',
@@ -174,7 +174,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Will I need chemotherapy after gynaecological cancer surgery?',
-   answer: 'It depends on the final pathology and staging. Some early cancers need nothing further after complete surgical removal; others, particularly ovarian cancer, are followed by chemotherapy. The removed tissue determines the stage, and the stage determines what comes next, decided through multidisciplinary review.',
+   answer: 'It depends on the final pathology and staging. Some early cancers need nothing further after complete surgical removal; others, particularly ovarian cancer, are followed by chemotherapy. The removed tissue determines the stage, and the stage determines what comes next, and this is decided through multidisciplinary review.',
   },
   {
    question: 'Does abnormal bleeding always mean cancer?',
@@ -188,7 +188,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'How do doctors check I am fit enough for lung surgery?',
-   answer: 'Lung function testing measures whether you can safely tolerate removal of part of the lung, alongside cardiac assessment and evaluation of your overall fitness for anaesthesia. This testing shapes the surgical recommendation as much as the scans do, an operation is only planned within what your remaining lung can support.',
+   answer: 'Lung function testing measures whether you can safely tolerate removal of part of the lung, alongside cardiac assessment and evaluation of your overall fitness for anaesthesia. This testing shapes the surgical recommendation as much as the scans do. An operation is only planned within what your remaining lung can support.',
   },
   {
    question: 'Will I be able to breathe normally after part of my lung is removed?',
@@ -210,7 +210,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Does VATS remove the cancer as completely as open surgery?',
-   answer: 'Yes. The entire lobe is removed along with lymph node dissection for accurate staging, the same oncologic standard as open thoracotomy. VATS is widely accepted as the gold standard for early-stage lung cancer in suitable patients, with survival outcomes comparable to open surgery.',
+   answer: 'Yes. The entire lobe is removed along with lymph node dissection for accurate staging. That is the same oncologic standard as open thoracotomy. VATS is widely accepted as the gold standard for early-stage lung cancer in suitable patients, with survival outcomes comparable to open surgery.',
   },
   {
    question: 'When can I go home after a VATS lobectomy?',
@@ -228,7 +228,7 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Will lymph nodes in my neck need to be removed?',
-   answer: 'When there is a risk the cancer has spread to neck nodes, their removal is combined with the primary operation, this both treats existing spread and gives accurate staging information. Whether it is needed in your case is decided from imaging and examination before surgery.',
+   answer: 'When there is a risk the cancer has spread to neck nodes, their removal is combined with the primary operation. This both treats existing spread and gives accurate staging information. Whether it is needed in your case is decided from imaging and examination before surgery.',
   },
   {
    question: 'What support is available during recovery?',
@@ -250,7 +250,20 @@ export const treatmentFaqs: Record<string, FaqItem[]> = {
   },
   {
    question: 'Will I look normal after reconstruction?',
-   answer: 'Microvascular reconstruction aims for the most natural appearance and function achievable, it uses living tissue precisely matched to the defect, giving considerably better cosmetic and functional results than basic repair. Complete invisibility of surgery is not always possible, but the goal is a return to normal social life.',
+   answer: 'Microvascular reconstruction aims for the most natural appearance and function achievable. It uses living tissue precisely matched to the defect, giving considerably better cosmetic and functional results than basic repair. Complete invisibility of surgery is not always possible, but the goal is a return to normal social life.',
   },
  ],
 };
+
+/**
+ * A cost/insurance question appended to every service page's FAQ list.
+ * The answer is deliberately non-numeric: real fee figures are a
+ * NEEDS-CLIENT item in the audit, so nothing is invented here.
+ */
+export function costFaq(treatmentTitle: string): { question: string; answer: string } {
+ return {
+  question: `How much does ${treatmentTitle.toLowerCase()} cost in Chennai?`,
+  answer:
+   'The cost depends on the specific procedure, hospital stay and your overall treatment plan, so a figure is only fair after your reports are reviewed. A written estimate is provided after consultation, and the hospital billing desk assists with insurance and TPA claims.',
+ };
+}

@@ -5,9 +5,9 @@ import { Play } from 'lucide-react';
 import MobileCarousel from '@/components/MobileCarousel';
 
 const videos = [
- { id: 'jCkym_mbXY8', title: 'Video 1' },
- { id: 'i9x8mau2kGY', title: 'Video 2' },
- { id: 'FDpyrlgc6-U', title: 'Video 3' },
+ { id: 'jCkym_mbXY8', title: 'Dr. Varadharajan on the WHO cancer warning (Polimer News, Tamil)' },
+ { id: 'i9x8mau2kGY', title: 'Myths and facts of mouth cancer (Iswarya Hospital)' },
+ { id: 'FDpyrlgc6-U', title: 'Does fasting benefit the body? Dr. Varadharajan explains (Polimer News, Tamil)' },
 ];
 
 export default function Videos() {

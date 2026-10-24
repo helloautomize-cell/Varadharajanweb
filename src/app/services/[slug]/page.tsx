@@ -4,14 +4,16 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { CheckCircle2, MessageCircle } from 'lucide-react';
 import { allTreatments, siteConfig } from '@/config/site';
-import { treatmentContent, treatmentExtras } from '@/data/treatment-content';
-import { treatmentFaqs } from '@/data/treatment-faqs';
+import { treatmentContent, treatmentExtras, treatmentDefinitions } from '@/data/treatment-content';
+import { treatmentFaqs, costFaq } from '@/data/treatment-faqs';
+import { treatmentSources, procedureSameAs, sourceLabel, WHO_CANCER_FACT_SHEET } from '@/data/sources';
 import { pageGraph, procedureNode, faqNode } from '@/lib/schema';
 import FAQ from '@/components/FAQ';
 import Location from '@/components/Location';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import LinkedParagraph from '@/components/LinkedParagraph';
 import ReviewerLine from '@/components/ReviewerLine';
+import Byline from '@/components/Byline';
 import TreatmentCard from '@/components/TreatmentCard';
 
 export const dynamicParams = false;
@@ -48,13 +50,22 @@ export async function generateMetadata({
  const extra = treatmentExtras[slug];
  const fullTitle = `${treatment.title} in Chennai | Dr Varadharajan V`;
  // keep titles under 60 chars; drop the city qualifier only when needed
- const title = fullTitle.length <= 60 ? fullTitle : `${treatment.title} | Dr Varadharajan V`;
+ const title = extra?.seoTitle ?? (fullTitle.length <= 60 ? fullTitle : `${treatment.title} | Dr Varadharajan V`);
  return {
   // absolute bypasses the layout title template so this exact format is kept
   title: { absolute: title },
   description: extra?.metaDescription ?? treatment.shortDescription,
   alternates: {
    canonical: `/services/${slug}`,
+  },
+  openGraph: {
+   title,
+   description: extra?.metaDescription ?? treatment.shortDescription,
+   ...(treatmentPhotos[slug] ? { images: [{ url: treatmentPhotos[slug], width: 1200, height: 900 }] } : {}),
+  },
+  twitter: {
+   title,
+   description: extra?.metaDescription ?? treatment.shortDescription,
   },
  };
 }
@@ -72,8 +83,13 @@ export default async function ServicePage({
  const extra = treatmentExtras[slug];
  const photo = treatmentPhotos[slug];
 
- const pageFaqs = treatmentFaqs[slug] ?? [];
+ const pageFaqs = [...(treatmentFaqs[slug] ?? []), costFaq(treatment.title)];
+ const sources = treatmentSources[slug] ?? [];
+ const definition = treatmentDefinitions[slug];
 
+ const pageUrl = `${siteConfig.url}/services/${slug}`;
+ const procedureId = `${pageUrl}#procedure`;
+ const citations = treatmentSources[slug] ?? [WHO_CANCER_FACT_SHEET];
  const graph = pageGraph({
   path: `/services/${slug}`,
   name: treatment.title,
@@ -83,9 +99,11 @@ export default async function ServicePage({
    { name: 'Specialities', path: '/specialities' },
    { name: treatment.title, path: `/services/${slug}` },
   ],
+  aboutId: procedureId,
+  citations,
   extra: [
-   procedureNode(slug, treatment.title, treatment.shortDescription, extra?.bodyLocation),
-   ...(pageFaqs.length > 0 ? [faqNode(pageFaqs)] : []),
+   procedureNode(slug, treatment.title, treatment.shortDescription, extra?.bodyLocation, procedureSameAs[slug]),
+   ...(pageFaqs.length > 0 ? [faqNode(pageUrl, pageFaqs)] : []),
   ],
  });
 
@@ -133,11 +151,19 @@ export default async function ServicePage({
         {treatment.title}
        </h1>
        <p
-        className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto lg:mx-0"
+        className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto lg:mx-0"
         style={{ color: 'var(--color-text-muted)' }}
        >
         {treatment.tagline}
        </p>
+       {definition && (
+        <p
+         className="text-base mb-8 max-w-2xl mx-auto lg:mx-0"
+         style={{ color: 'var(--color-text-muted)' }}
+        >
+         {definition}
+        </p>
+       )}
        <Link
         href="#location"
         className="hidden lg:inline-block px-8 py-3 text-white font-medium"
@@ -338,6 +364,8 @@ export default async function ServicePage({
     );
    })()}
 
+   <Byline />
+
    <ReviewerLine />
 
    {/* About the Doctor */}
@@ -395,6 +423,35 @@ export default async function ServicePage({
 
    {/* Page-specific FAQs */}
    {pageFaqs.length > 0 && <FAQ items={pageFaqs} id="service-faq" />}
+
+   {/* Sources and further reading */}
+   {sources.length > 0 && (
+    <section className="reveal w-full" style={{ padding: '0 0 var(--section-padding-y)' }}>
+     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2
+       className="text-xl font-bold mb-4"
+       style={{ color: 'var(--color-primary-dark)' }}
+      >
+       Sources and further reading
+      </h2>
+      <ul className="space-y-2">
+       {sources.map((s) => (
+        <li key={s}>
+         <a
+          href={s}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2"
+          style={{ color: 'var(--color-primary)' }}
+         >
+          {sourceLabel(s)}
+         </a>
+        </li>
+       ))}
+      </ul>
+     </div>
+    </section>
+   )}
 
    {/* Related treatments */}
    {relatedTreatments.length > 0 && (

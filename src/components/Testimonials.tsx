@@ -1,4 +1,4 @@
-import { Quote, Star } from 'lucide-react';
+import { Quote } from 'lucide-react';
 import MobileCarousel from '@/components/MobileCarousel';
 
 const testimonials = [
@@ -56,16 +56,6 @@ export default function Testimonials() {
        >
         {testimonial.text}
        </p>
-       <div className="flex gap-1 mb-4">
-        {[...Array(5)].map((_, i) => (
-         <Star
-          key={i}
-          size={16}
-          fill="#FBBF24"
-          style={{ color: '#FBBF24' }}
-         />
-        ))}
-       </div>
        <h3
         className="font-semibold"
         style={{ color: 'var(--color-primary-dark)' }}

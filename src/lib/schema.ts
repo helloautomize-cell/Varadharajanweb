@@ -66,7 +66,7 @@ function physicianNode() {
   telephone: `+${siteConfig.phone}`,
   email: siteConfig.email,
   image: `${url()}/images/doctor/bio-photo.webp`,
-  url: url(),
+  url: `${url()}/about`,
   worksFor: { '@id': `${url()}/#clinic` },
   hospitalAffiliation: { '@id': `${url()}/#clinic` },
   areaServed: areaServedSchema(),
@@ -131,14 +131,6 @@ function websiteNode() {
  };
 }
 
-/** Sitewide @graph emitted from the root layout: WebSite + Physician + Clinic. */
-export function siteGraph() {
- return {
-  '@context': 'https://schema.org',
-  '@graph': [websiteNode(), physicianNode(), clinicNode()],
- };
-}
-
 export interface PageGraphOpts {
  path: string;
  name: string;
@@ -146,34 +138,60 @@ export interface PageGraphOpts {
  image?: string;
  /** Breadcrumb labels; omit for home. */
  breadcrumbs?: { name: string; path: string }[];
+ /** @id the page is "about", e.g. `${pageUrl}#procedure` on service pages. */
+ aboutId?: string;
+ /** Source/citation URLs the page content draws on. */
+ citations?: string[];
  /** Extra nodes, e.g. MedicalProcedure, FAQPage. */
  extra?: object[];
+ /** Include WebSite+Physician+Clinic nodes (default true, one graph per page). */
+ includeSite?: boolean;
 }
 
-/** Per-page @graph: MedicalWebPage (+ BreadcrumbList on inner pages) + extras. */
-export function pageGraph({ path, name, description, image, breadcrumbs, extra = [] }: PageGraphOpts) {
- const pageUrl = `${url()}${path}`;
- const graph: object[] = [
-  {
-   '@type': 'MedicalWebPage',
-   '@id': `${pageUrl}#webpage`,
-   name,
-   url: pageUrl,
-   description,
-   isPartOf: { '@id': `${url()}/#website` },
-   about: name,
-   audience: { '@type': 'Patient' },
-   reviewedBy: { '@id': `${url()}/#physician` },
-   lastReviewed: siteConfig.lastReviewed,
-   inLanguage: 'en-IN',
-   ...(image ? { primaryImageOfPage: `${url()}${image}` } : {}),
-   ...(breadcrumbs ? { breadcrumb: { '@id': `${pageUrl}#breadcrumb` } } : {}),
-  },
- ];
+/**
+ * The single JSON-LD @graph for a page: WebSite + Physician + Clinic +
+ * MedicalWebPage (+ BreadcrumbList) + any extras, all linked by stable @ids.
+ */
+export function pageGraph({
+ path,
+ name,
+ description,
+ image,
+ breadcrumbs,
+ aboutId,
+ citations,
+ extra = [],
+ includeSite = true,
+}: PageGraphOpts) {
+ const pageUrl = `${url()}${path === '/' ? '' : path}`;
+ const graph: object[] = [];
+ if (includeSite) {
+  graph.push(websiteNode(), physicianNode(), clinicNode());
+ }
+ graph.push({
+  '@type': 'MedicalWebPage',
+  '@id': `${pageUrl}/#webpage`,
+  name,
+  url: pageUrl || url(),
+  description,
+  isPartOf: { '@id': `${url()}/#website` },
+  ...(aboutId ? { about: { '@id': aboutId } } : {}),
+  audience: { '@type': 'PeopleAudience', audienceType: 'patients and caregivers' },
+  author: { '@id': `${url()}/#physician` },
+  reviewedBy: { '@id': `${url()}/#physician` },
+  publisher: { '@id': `${url()}/#physician` },
+  datePublished: siteConfig.firstPublished,
+  dateModified: siteConfig.lastReviewed,
+  lastReviewed: siteConfig.lastReviewed,
+  inLanguage: 'en-IN',
+  ...(image ? { primaryImageOfPage: `${url()}${image}` } : {}),
+  ...(breadcrumbs ? { breadcrumb: { '@id': `${pageUrl}/#breadcrumb` } } : {}),
+  ...(citations && citations.length > 0 ? { citation: citations } : {}),
+ });
  if (breadcrumbs && breadcrumbs.length > 0) {
   graph.push({
    '@type': 'BreadcrumbList',
-   '@id': `${pageUrl}#breadcrumb`,
+   '@id': `${pageUrl}/#breadcrumb`,
    itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: url() },
     ...breadcrumbs.map((b, i) => ({
@@ -189,7 +207,21 @@ export function pageGraph({ path, name, description, image, breadcrumbs, extra =
  return { '@context': 'https://schema.org', '@graph': graph };
 }
 
-export function procedureNode(slug: string, name: string, description: string, bodyLocation?: string) {
+/** Standalone graph with just the site entity nodes (e.g. for not-found). */
+export function siteGraph() {
+ return {
+  '@context': 'https://schema.org',
+  '@graph': [websiteNode(), physicianNode(), clinicNode()],
+ };
+}
+
+export function procedureNode(
+ slug: string,
+ name: string,
+ description: string,
+ bodyLocation?: string,
+ sameAs?: string[],
+) {
  return {
   '@type': 'MedicalProcedure',
   '@id': `${url()}/services/${slug}#procedure`,
@@ -199,12 +231,14 @@ export function procedureNode(slug: string, name: string, description: string, b
   ...(bodyLocation ? { bodyLocation } : {}),
   url: `${url()}/services/${slug}`,
   provider: { '@id': `${url()}/#physician` },
+  ...(sameAs && sameAs.length > 0 ? { sameAs } : {}),
  };
 }
 
-export function faqNode(faqs: { question: string; answer: string }[]) {
+export function faqNode(pageUrl: string, faqs: { question: string; answer: string }[]) {
  return {
   '@type': 'FAQPage',
+  '@id': `${pageUrl}/#faq`,
   mainEntity: faqs.map((faq) => ({
    '@type': 'Question',
    name: faq.question,

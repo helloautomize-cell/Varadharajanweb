@@ -21,11 +21,12 @@ export default function TreatmentCard({
   >
    <div className="mb-4">
     <Image
-     src={`/images/treatments/${treatment.slug}.svg`}
-     alt={`${treatment.title} illustration`}
+     src={`/images/treatments/photos/v2/${treatment.slug}.webp`}
+     alt={`${treatment.title} at Iswarya Hospital, Chennai`}
      width={imageSize}
      height={imageSize}
-     unoptimized
+     className="object-cover"
+     style={{ borderRadius: '12px' }}
     />
    </div>
    <h3

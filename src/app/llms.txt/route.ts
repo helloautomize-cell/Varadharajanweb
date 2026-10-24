@@ -18,6 +18,8 @@ export function GET() {
     '## Key pages',
     '',
     `- [Home](${siteConfig.url}/): overview, credentials, FAQs and contact`,
+    `- [About Dr. Varadharajan V](${siteConfig.url}/about): profile, qualifications, TNMC registration, memberships`,
+    `- [Contact](${siteConfig.url}/contact): address, phone, hours, appointment form and map`,
     `- [Specialities](${siteConfig.url}/specialities): all surgical oncology services grouped by system`,
     `- [Patients from outside Chennai](${siteConfig.url}/patients-from-outside-chennai): travel, WhatsApp consults and what to bring`,
     ...allTreatments.map(

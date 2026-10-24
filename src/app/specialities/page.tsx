@@ -5,11 +5,31 @@ import TreatmentCard from '@/components/TreatmentCard';
 import TreatmentPhotoBand from '@/components/TreatmentPhotoBand';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ReviewerLine from '@/components/ReviewerLine';
-import { pageGraph } from '@/lib/schema';
+import FAQ from '@/components/FAQ';
+import { pageGraph, faqNode } from '@/lib/schema';
 import { Phone, MessageCircle } from 'lucide-react';
 
+const specialitiesFaqs = [
+ {
+  question: 'Which speciality should I consult for my diagnosis?',
+  answer: 'Match the speciality to the organ involved: breast surgery for breast tumours, GI oncology for stomach or bowel cancers, and so on. If you are unsure, share your reports by phone or WhatsApp and we will point you to the right consultation.',
+ },
+ {
+  question: 'Are all these surgeries done by one surgeon?',
+  answer: 'Yes. Dr. Varadharajan V is a surgical oncologist covering breast, GI, gynaecological, thoracic, head and neck, and peritoneal cancers, so patients are not passed between multiple surgeons as the diagnosis becomes clearer.',
+ },
+ {
+  question: 'Do you offer laparoscopic or robotic surgery for all specialities?',
+  answer: 'Keyhole techniques are used wherever they can achieve the same complete removal as open surgery. Suitability depends on the tumour, its position and stage, and is decided case by case after reviewing your scans.',
+ },
+ {
+  question: 'How do I book a consultation for a speciality?',
+  answer: 'Call +91 94442 64315 or message on WhatsApp to request an appointment. Consultations run Monday to Saturday, 9 AM to 5 PM at Iswarya Hospital, Tharamani, Chennai.',
+ },
+];
+
 export const metadata: Metadata = {
-  title: { absolute: 'Our Specialities in Chennai | Dr Varadharajan V' },
+  title: { absolute: 'Cancer Surgery Specialities in Chennai | Dr Varadharajan V' },
   description:
     'All surgical oncology specialities at Iswarya Hospital, Chennai: breast, GI, gynaecological, thoracic, head and neck, HIPEC and minimal access surgery.',
   alternates: {
@@ -23,6 +43,7 @@ const graph = pageGraph({
   description:
     'Surgical oncology specialities at Iswarya Hospital, Chennai: breast, GI, gynaecological, thoracic, head and neck, HIPEC and minimal access surgery.',
   breadcrumbs: [{ name: 'Specialities', path: '/specialities' }],
+  extra: [faqNode(`${siteConfig.url}/specialities`, specialitiesFaqs)],
 });
 
 export default function SpecialitiesPage() {
@@ -176,6 +197,8 @@ export default function SpecialitiesPage() {
           </div>
 
           <ReviewerLine />
+
+          <FAQ items={specialitiesFaqs} id="specialities-faq" />
 
           {/* CTA */}
           <div
