@@ -50,3 +50,12 @@ Note: per project rules, no branch/commits — all changes are uncommitted in th
 - Testimonial verification (ISS-23): quotes kept, stars removed, awaiting client confirmation.
 - `pending-dr-review` flags (ISS-26): doctor sign-off.
 - CWV (P3-CWV): Lighthouse run pending.
+
+## Merge origin/main (blog layer) + re-audit — 24 Oct 2026
+
+- Merged `origin/main` (4 commits: 10-pillar/50-support blog, feed.xml, staggered publish dates) into `seo-fixes/2026-10-24`. One conflict (`Header.tsx`) resolved: kept `/about`+`/contact` nav links AND added `/blog`.
+- `articleGraph`/`blogIndexGraph` (new from remote): prepended WebSite+Physician+MedicalClinic nodes so blog pages emit a complete graph (layout no longer carries siteGraph); `audience` corrected to PeopleAudience; `author` added to MedicalWebPage.
+- Blog bylines + AuthorBox repointed `/#meet_doctor`→`/about`, `/#location`→`/contact`.
+- Re-audit of the blog layer (ISS-02 now resolved): 60 posts, all titles in range, all descriptions 140–160, every article has citations + quickAnswer + FAQs (6 each). One gap: `advanced-cancer-surgery` had 3 FAQs → added a 4th.
+- Banned-word scan of blog content: clean (no delve/elevate/empower/holistic/em-dashes). Note: blog data uses US spelling "tumor" in places vs the site's British "tumour" — flagged for a future consistency pass.
+- Verify: tsc clean, `next build` clean — 95 static routes.

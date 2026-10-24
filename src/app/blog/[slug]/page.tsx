@@ -268,7 +268,7 @@ export default async function BlogPostPage({
      <p className="text-sm mb-2" style={{ color: 'var(--color-text-muted)' }}>
       Written by{' '}
       <Link
-       href="/#meet_doctor"
+       href="/about"
        className="underline underline-offset-2 font-medium"
        style={{ color: 'var(--color-primary)' }}
       >
@@ -421,7 +421,7 @@ export default async function BlogPostPage({
       If you or a family member is dealing with {post.category.toLowerCase()},
       the safest next step is a personal evaluation.{' '}
       <Link
-       href="/#location"
+       href="/contact"
        className="underline underline-offset-2 font-medium"
        style={{ color: 'var(--color-primary)' }}
       >
@@ -431,7 +431,7 @@ export default async function BlogPostPage({
      </p>
      <p style={{ color: 'var(--color-text-muted)', lineHeight: '1.7' }}>
       <Link
-       href="/#location"
+       href="/contact"
        className="underline underline-offset-2 font-medium"
        style={{ color: 'var(--color-primary)' }}
       >

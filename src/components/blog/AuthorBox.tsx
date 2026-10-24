@@ -71,7 +71,7 @@ export default function AuthorBox() {
        </p>
        <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
         <Link
-         href="/#meet_doctor"
+         href="/about"
          className="px-6 py-2.5 font-medium text-sm border"
          style={{
           color: 'var(--color-primary)',
@@ -82,7 +82,7 @@ export default function AuthorBox() {
          Meet Dr. Varadharajan
         </Link>
         <Link
-         href="/#location"
+         href="/contact"
          className="px-6 py-2.5 text-white font-medium text-sm"
          style={{
           backgroundColor: 'var(--color-primary)',
