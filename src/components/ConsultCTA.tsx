@@ -10,6 +10,7 @@ export default function ConsultCTA() {
     color: '#ffffff',
     padding: 'var(--section-padding-y) 0',
    }}
+   data-ga-cta-location="consult_cta"
   >
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex flex-col md:flex-row items-center gap-8">
@@ -56,6 +57,8 @@ export default function ConsultCTA() {
         color: 'var(--color-primary-dark)',
         borderRadius: 'var(--radius-button)',
        }}
+       data-ga-event="book_appointment_click"
+       data-ga-cta-text="Book an appointment"
       >
        Book an appointment
       </Link>

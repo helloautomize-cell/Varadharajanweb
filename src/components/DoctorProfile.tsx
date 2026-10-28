@@ -14,6 +14,7 @@ export default function DoctorProfile() {
     padding: 'var(--section-padding-y) 0',
     backgroundColor: 'var(--color-off-white)',
    }}
+   data-ga-cta-location="doctor_profile"
   >
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -222,6 +223,8 @@ export default function DoctorProfile() {
          color: 'var(--color-primary)',
          borderRadius: 'var(--radius-button)',
         }}
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="In Person"
        >
         <User size={20} />
         In Person
@@ -235,6 +238,8 @@ export default function DoctorProfile() {
         backgroundColor: 'var(--color-primary)',
         borderRadius: 'var(--radius-button)',
        }}
+       data-ga-event="book_appointment_click"
+       data-ga-cta-text="Book an appointment"
       >
        Book an appointment
       </Link>

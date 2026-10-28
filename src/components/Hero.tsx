@@ -11,6 +11,7 @@ export default function Hero() {
     padding: 'var(--section-padding-y) 0',
     background: 'linear-gradient(135deg, var(--color-accent-tint) 0%, white 100%)',
    }}
+   data-ga-cta-location="hero"
   >
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 lg:items-center">
@@ -39,6 +40,8 @@ export default function Hero() {
          backgroundColor: 'var(--color-primary)',
          borderRadius: 'var(--radius-button)',
         }}
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="Book an appointment"
        >
         Book an appointment
        </Link>

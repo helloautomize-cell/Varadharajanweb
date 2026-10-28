@@ -20,6 +20,7 @@ export default function Updates() {
    id="updates"
    className="reveal w-full"
    style={{ padding: 'var(--section-padding-y) 0' }}
+   data-ga-cta-location="updates"
   >
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2

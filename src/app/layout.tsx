@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import ScrollReveal from "@/components/ScrollReveal";
+import ClickTracker from "@/components/analytics/ClickTracker";
 import { siteConfig } from "@/config/site";
 
 const figtree = Figtree({
@@ -62,7 +64,9 @@ export default function RootLayout({
     <Footer />
     <MobileStickyBar />
     <ScrollReveal />
+    <ClickTracker />
    </body>
+   <GoogleAnalytics gaId="G-C0LQSLHZE2" />
   </html>
  );
 }

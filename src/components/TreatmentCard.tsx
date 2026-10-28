@@ -18,6 +18,9 @@ export default function TreatmentCard({
     borderRadius: '16px',
     boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
    }}
+   data-ga-event="cta_click"
+   data-ga-cta-text={treatment.title}
+   data-ga-cta-location="treatment_card"
   >
    <div className="mb-4">
     <Image

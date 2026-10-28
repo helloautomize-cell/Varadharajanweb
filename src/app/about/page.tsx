@@ -130,6 +130,7 @@ export default function AboutPage() {
      <div
       className="p-8 rounded-2xl text-center"
       style={{ backgroundColor: '#ffffff', borderRadius: '16px', boxShadow: '0 4px 16px rgba(0,0,0,0.06)' }}
+      data-ga-cta-location="cta_block"
      >
       <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
        Book a consultation
