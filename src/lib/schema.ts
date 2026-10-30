@@ -18,6 +18,22 @@ const geo = {
  longitude: siteConfig.mapLng,
 };
 
+const openingHours = {
+ '@type': 'OpeningHoursSpecification',
+ dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+ opens: '09:00',
+ closes: '17:00',
+};
+
+// No consultation fee is published anywhere on the site; '₹₹' is a neutral
+// price-level indicator until the client confirms a fee range.
+const priceRange = '₹₹';
+
+const socialSameAs = [
+ ...siteConfig.socialLinks.filter((s) => s.url).map((s) => s.url),
+ siteConfig.googleBusinessProfile,
+].filter(Boolean);
+
 const languages = siteConfig.languages.map((l) => ({
  '@type': 'Language',
  name: l.name,
@@ -85,12 +101,11 @@ function physicianNode() {
     url: `https://wa.me/${siteConfig.whatsapp}`,
    },
   ],
-  sameAs: [
-   ...siteConfig.socialLinks.filter((s) => s.url).map((s) => s.url),
-   siteConfig.googleBusinessProfile,
-  ].filter(Boolean),
+  sameAs: socialSameAs,
   address: postalAddress,
   geo,
+  openingHoursSpecification: openingHours,
+  priceRange,
  };
 }
 
@@ -107,16 +122,34 @@ function clinicNode() {
   address: postalAddress,
   geo,
   hasMap: `https://www.google.com/maps/search/?api=1&query=${siteConfig.mapLat},${siteConfig.mapLng}`,
-  openingHoursSpecification: {
-   '@type': 'OpeningHoursSpecification',
-   dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-   opens: '09:00',
-   closes: '17:00',
-  },
+  openingHoursSpecification: openingHours,
+  priceRange,
   medicalSpecialty: 'Oncologic',
   availableLanguage: languages,
   areaServed: areaServedSchema(),
   employee: { '@id': `${url()}/#physician` },
+ };
+}
+
+/**
+ * The site's publisher entity (the practice brand). The clinic node is a
+ * MedicalOrganization subtype, but articles/pages are published by the
+ * practice itself, so a distinct Organization @id keeps the roles clean and
+ * carries the logo Google's Article checks require on publisher.
+ */
+function organizationNode() {
+ return {
+  '@type': 'Organization',
+  '@id': `${url()}/#organization`,
+  name: siteConfig.doctorName,
+  url: url(),
+  logo: `${url()}/images/logo.png`,
+  image: `${url()}/images/hospital/hospital-exterior.webp`,
+  telephone: `+${siteConfig.phone}`,
+  email: siteConfig.email,
+  address: postalAddress,
+  sameAs: socialSameAs,
+  founder: { '@id': `${url()}/#physician` },
  };
 }
 
@@ -127,7 +160,7 @@ function websiteNode() {
   name: siteConfig.doctorName,
   url: url(),
   inLanguage: 'en-IN',
-  publisher: { '@id': `${url()}/#physician` },
+  publisher: { '@id': `${url()}/#organization` },
  };
 }
 
@@ -166,7 +199,7 @@ export function pageGraph({
  const pageUrl = `${url()}${path === '/' ? '' : path}`;
  const graph: object[] = [];
  if (includeSite) {
-  graph.push(websiteNode(), physicianNode(), clinicNode());
+  graph.push(websiteNode(), organizationNode(), physicianNode(), clinicNode());
  }
  graph.push({
   '@type': 'MedicalWebPage',
@@ -179,7 +212,7 @@ export function pageGraph({
   audience: { '@type': 'PeopleAudience', audienceType: 'patients and caregivers' },
   author: { '@id': `${url()}/#physician` },
   reviewedBy: { '@id': `${url()}/#physician` },
-  publisher: { '@id': `${url()}/#physician` },
+  publisher: { '@id': `${url()}/#organization` },
   datePublished: siteConfig.firstPublished,
   dateModified: siteConfig.lastReviewed,
   lastReviewed: siteConfig.lastReviewed,
@@ -211,7 +244,7 @@ export function pageGraph({
 export function siteGraph() {
  return {
   '@context': 'https://schema.org',
-  '@graph': [websiteNode(), physicianNode(), clinicNode()],
+  '@graph': [websiteNode(), organizationNode(), physicianNode(), clinicNode()],
  };
 }
 
@@ -273,6 +306,7 @@ export function articleGraph(o: ArticleGraphOpts) {
  const imageUrl = `${url()}${o.image}`;
  const graph: object[] = [
   websiteNode(),
+  organizationNode(),
   physicianNode(),
   clinicNode(),
   {
@@ -286,6 +320,7 @@ export function articleGraph(o: ArticleGraphOpts) {
    audience: { '@type': 'PeopleAudience', audienceType: 'patients and caregivers' },
    author: { '@id': `${url()}#physician` },
    reviewedBy: { '@id': `${url()}#physician` },
+   publisher: { '@id': `${url()}#organization` },
    lastReviewed: o.lastReviewed,
    inLanguage: 'en-IN',
    primaryImageOfPage: imageUrl,
@@ -303,7 +338,7 @@ export function articleGraph(o: ArticleGraphOpts) {
    description: o.description,
    image: imageUrl,
    author: { '@id': `${url()}#physician` },
-   publisher: { '@id': `${url()}#physician` },
+   publisher: { '@id': `${url()}#organization` },
    datePublished: o.datePublished,
    dateModified: o.dateModified,
    mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
@@ -350,6 +385,7 @@ export function blogIndexGraph(items: { slug: string; title: string }[]) {
   '@context': 'https://schema.org',
   '@graph': [
    websiteNode(),
+   organizationNode(),
    physicianNode(),
    clinicNode(),
    {
