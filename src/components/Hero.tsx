@@ -88,7 +88,8 @@ export default function Hero() {
          width={400}
          height={400}
          className="w-full h-full object-cover"
-         priority
+         sizes="(min-width: 432px) 400px, calc(100vw - 32px)"
+         preload
         />
        </div>
 

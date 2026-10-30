@@ -64,7 +64,8 @@ export default function AboutPage() {
         width={220}
         height={220}
         className="w-full h-full object-cover"
-        priority
+        sizes="(min-width: 252px) 220px, calc(100vw - 32px)"
+        preload
        />
       </div>
       <div>

@@ -5,7 +5,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
-import ScrollReveal from "@/components/ScrollReveal";
 import ClickTracker from "@/components/analytics/ClickTracker";
 import { siteConfig } from "@/config/site";
 
@@ -63,7 +62,6 @@ export default function RootLayout({
     <main id="main-content" className="flex-1 flex flex-col">{children}</main>
     <Footer />
     <MobileStickyBar />
-    <ScrollReveal />
     <ClickTracker />
    </body>
    <GoogleAnalytics gaId="G-C0LQSLHZE2" />
