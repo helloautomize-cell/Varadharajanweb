@@ -76,6 +76,22 @@ export function formatDate(iso: string): string {
  });
 }
 
+/** Card meta date: "2 October 2026". Parsed in UTC so the day never shifts. */
+export function formatCardDate(iso: string): string {
+ return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-IN', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+ });
+}
+
+/** Read-time label for cards; falls back to ~200 wpm when data lacks one. */
+export function readTimeLabel(post: BlogPost): string {
+ if (post.readTime) return post.readTime;
+ return `${Math.max(1, Math.ceil(post.wordCount / 200))} min read`;
+}
+
 /** Cross-cluster pillar links from the content calendar link map. */
 const CROSS: Record<number, number[]> = {
  1: [6, 8, 10],
