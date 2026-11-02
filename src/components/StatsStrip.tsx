@@ -3,7 +3,7 @@ import { siteConfig } from '@/config/site';
 export default function StatsStrip() {
  return (
   <section
-   aria-label="Experience figures"
+   aria-label="Credentials"
    className="reveal w-full"
    style={{
     backgroundColor: 'var(--color-primary-dark)',

@@ -87,7 +87,8 @@ export default function DoctorProfile() {
           className="text-sm"
           style={{ color: 'var(--color-text-muted)' }}
          >
-          {siteConfig.stats.map((st) => `${st.value} ${st.label}`).join(', ')}
+          Senior oncology roles at Sri Ramachandra Institute of Higher
+          Education and Gleneagles Global Health City
          </p>
         </div>
         <div>

@@ -36,7 +36,8 @@ const facts: { label: string; value: string }[] = [
  },
  {
   label: 'Experience',
-  value: siteConfig.stats.map((s) => `${s.value} ${s.label}`).join(', '),
+  value:
+   'Senior oncology roles at Sri Ramachandra Institute of Higher Education and Gleneagles Global Health City',
  },
 ];
 

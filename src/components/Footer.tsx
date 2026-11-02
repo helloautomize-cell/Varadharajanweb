@@ -174,7 +174,7 @@ export default function Footer() {
       © Dr. Varadharajan V 2026 · {siteConfig.clinicName}, Chennai
      </p>
      <p className="text-left text-sm opacity-70">
-      Built &amp; Marketed by{' '}
+      Website by{' '}
       <a
        href="https://www.automizemedialabs.com/"
        target="_blank"

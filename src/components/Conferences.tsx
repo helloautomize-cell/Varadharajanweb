@@ -39,7 +39,7 @@ export default function Conferences() {
      className="text-3xl sm:text-4xl font-bold text-center mb-4"
      style={{ color: 'var(--color-primary-dark)' }}
     >
-     Conferences &amp; Global Recognition
+     Conferences and continuing education
     </h2>
     <p
      className="text-center text-lg mb-12 max-w-2xl mx-auto"

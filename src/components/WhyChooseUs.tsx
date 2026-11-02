@@ -6,12 +6,12 @@ const features = [
  {
   icon: Stethoscope,
   title: "Focused Surgical Oncology Practice",
-  description: "Extensive experience in surgical oncology across breast, GI, gynecologic, thoracic and peritoneal cancers."
+  description: "Focused practice in surgical oncology across breast, GI, gynecologic, thoracic and peritoneal cancers."
  },
  {
   icon: ShieldCheck,
   title: "Robotic & Minimally Invasive Surgery",
-  description: "Advanced techniques that reduce pain, speed recovery and minimise scarring."
+  description: "Techniques that may reduce pain and shorten recovery for suitable cases, when they can match open surgery's result."
  },
  {
   icon: HeartHandshake,
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
      className="text-3xl sm:text-4xl font-bold text-center mb-12"
      style={{ color: 'var(--color-primary-dark)' }}
     >
-     Why Choose Dr. Varadharajan V for Cancer Care
+     How treatment is planned here
     </h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -43,7 +43,8 @@ const sections: { heading: string; body: string[] }[] = [
  {
   heading: 'Cookies and analytics',
   body: [
-   'This website does not use analytics cookies, advertising trackers, or profiling tools. The only third-party embed is a Google Maps frame on the contact section, which is covered by Google\'s own privacy policy.',
+   'This site does not use advertising trackers or profiling tools. Third-party embeds are a Google Maps frame on the contact section and YouTube video players on the homepage, each covered by Google\'s privacy policy; the YouTube player loads only when a video is clicked.',
+   'Analytics cookies (Google Analytics) are used only with your consent. If you decline in the cookie notice, no analytics runs; if you accept, anonymised usage statistics help us understand which pages are useful.',
   ],
  },
  {

@@ -4,7 +4,6 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import DoctorProfile from '@/components/DoctorProfile';
 import Conferences from '@/components/Conferences';
 import Treatments from '@/components/Treatments';
-import Testimonials from '@/components/Testimonials';
 import Updates from '@/components/Updates';
 import Videos from '@/components/Videos';
 import Gallery from '@/components/Gallery';
@@ -51,7 +50,6 @@ export default function Home() {
    <DoctorProfile />
    <Conferences />
    <Treatments />
-   <Testimonials />
    <Updates />
    <Videos />
    <Gallery />

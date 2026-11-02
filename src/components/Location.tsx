@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
+import { trackEvent } from '@/lib/analytics';
 import { MapPin, Clock, Mail, Phone, CheckCircle2, MessageCircle } from 'lucide-react';
 
 const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
@@ -32,6 +33,7 @@ export default function Location() {
 
  const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
+  trackEvent('appointment_form_submit', { consultation_mode: formData.mode });
   setStatus('sending');
   try {
    const res = await fetch('https://api.web3forms.com/submit', {
@@ -473,6 +475,12 @@ export default function Location() {
           autoComplete="off"
           aria-hidden="true"
          />
+
+         <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
+          We use your name, phone and message only to arrange this
+          consultation. They are not used for marketing and are deleted on
+          request. See our Privacy Policy.
+         </p>
 
          <div className="flex items-start gap-3">
           <input

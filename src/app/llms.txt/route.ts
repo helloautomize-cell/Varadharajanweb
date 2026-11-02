@@ -14,7 +14,6 @@ export function GET() {
     '',
     `> ${siteConfig.doctorName} is a Surgical Oncologist (${siteConfig.credentials}) practising at ${siteConfig.clinicName}, Tharamani, Chennai, India. Qualifications: ${siteConfig.qualifications}. ${siteConfig.registrationDisplay}. Consults in ${siteConfig.languages.map((l) => l.name).join(', ')}. Memberships: ${siteConfig.memberships.map((m) => m.abbr).join(', ')}.`,
     '',
-    `Experience: ${siteConfig.stats.map((s) => `${s.value} ${s.label}`).join(', ')}.`,
     '',
     '## Key pages',
     '',
@@ -54,7 +53,7 @@ export function GET() {
     `${siteConfig.reviewerLine} ${lastReviewed}`,
     'Information on this site is for general education and does not replace a personal consultation. In an emergency, go to the nearest hospital.',
     '',
-    'Website built and marketed by Automize Media Labs (https://www.automizemedialabs.com/)',
+    'Website by Automize Media Labs (https://www.automizemedialabs.com/)',
   ];
   return new Response(lines.join('\n'), {
     headers: { 'Content-Type': 'text/plain; charset=utf-8' },

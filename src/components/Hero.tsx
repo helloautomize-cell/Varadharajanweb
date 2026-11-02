@@ -88,32 +88,6 @@ export default function Hero() {
          priority
         />
        </div>
-
-       {/* Floating Stat Card, inset on mobile so it can't slide under
-         the sticky bottom bar; floats off the corner on desktop */}
-       <div
-        className="absolute bottom-3 left-3 sm:bottom-0 sm:left-0 sm:-translate-x-[10%] sm:translate-y-[10%] bg-white p-4"
-        style={{
-         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-         border: '1px solid rgba(0, 0, 0, 0.1)',
-         borderRadius: 'var(--radius-button)',
-        }}
-       >
-        <div className="text-center">
-         <div
-          className="text-2xl font-bold"
-          style={{ color: 'var(--color-primary)' }}
-         >
-          {siteConfig.stats[0].value}
-         </div>
-         <div
-          className="text-sm"
-          style={{ color: 'var(--color-text-muted)' }}
-         >
-          {siteConfig.stats[0].label}
-         </div>
-        </div>
-       </div>
       </div>
      </div>
     </div>

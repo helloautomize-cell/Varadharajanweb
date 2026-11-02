@@ -16,7 +16,6 @@ export default function Header() {
   { label: 'Healthcare Services', href: '/#specialities' },
   { label: 'Meet Doctor', href: '/about' },
   { label: 'Updates', href: '/#updates' },
-  { label: 'Testimonial', href: '/#testimonials' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact Us', href: '/contact' },
  ];

@@ -17,7 +17,7 @@ const aiCrawlers = [
 ];
 
 const creditComment =
-  '# Website built and marketed by Automize Media Labs - https://www.automizemedialabs.com/';
+  '# Website by Automize Media Labs - https://www.automizemedialabs.com/';
 
 export function GET() {
   if (!allowIndexing) {

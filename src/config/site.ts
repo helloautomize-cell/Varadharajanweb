@@ -270,9 +270,9 @@ export const siteConfig: SiteConfig = {
   { abbr: "SSO", name: "Society of Surgical Oncology" },
  ],
  stats: [
-  { value: "5,000+", label: "breast surgeries" },
-  { value: "3,500+", label: "minimal access surgeries" },
-  { value: "25,000+", label: "lives touched" },
+  { value: "M.Ch", label: "Surgical Oncology" },
+  { value: "FIAGES · FALS · FMAS", label: "fellowships in minimal access surgery" },
+  { value: "ASCO · ESMO · ESSO", label: "conference presentations" },
  ],
  reviewerLine:
   "Medically reviewed by Dr. Varadharajan V, Surgical Oncologist (M.Ch Surgical Oncology), Iswarya Hospital, Chennai, Tamil Nadu, India · Tamil Nadu Medical Council Reg. No. 90663 · Last reviewed:",

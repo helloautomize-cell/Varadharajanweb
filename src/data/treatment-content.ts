@@ -217,7 +217,7 @@ export const treatmentContent: Record<string, TreatmentContent> = {
     items: [
      'Higher local drug concentration without systemic side effects',
      'Better local disease control and reduced recurrence rates',
-     'Proven survival benefit in well-selected patients',
+     'Survival benefit reported in well-selected patients; suitability is decided at the tumour board.',
      'Minimises exposure to whole-body chemotherapy toxicity',
      'Complements cytoreductive surgery for superior overall outcomes',
     ],
@@ -1050,7 +1050,6 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   keyFacts: [
    'Covers lumpectomy, mastectomy and lymph node surgery for breast cancer',
    'Breast conservation is offered whenever safe margins allow',
-   'More than 5,000 breast surgeries performed',
    'Performed at Iswarya Hospital, Tharamani, Chennai',
    'Video consultation available on WhatsApp',
   ],
@@ -1103,7 +1102,6 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   keyFacts: [
    'Combines complete tumour removal with plastic surgical reshaping of the breast',
    'Designed for patients suitable for breast conservation',
-   'More than 5,000 breast surgeries performed',
    'Performed at Iswarya Hospital, Tharamani, Chennai',
    'Video consultation available on WhatsApp',
   ],
@@ -1277,7 +1275,6 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   keyFacts: [
    'Keyhole surgery for GI cancers and benign conditions using laparoscopic or robotic systems',
    'The robot is fully controlled by the surgeon at every step',
-   'More than 3,500 minimal access surgeries performed',
    'Performed at Iswarya Hospital, Tharamani, Chennai',
    'Video consultation available on WhatsApp',
   ],
@@ -1381,7 +1378,6 @@ export const treatmentExtras: Record<string, TreatmentExtra> = {
   keyFacts: [
    'Keyhole techniques for suitable cancers and general surgical conditions',
    'Smaller incisions mean less pain and a faster return to activity',
-   'More than 3,500 minimal access surgeries performed',
    'Performed at Iswarya Hospital, Tharamani, Chennai',
    'Video consultation available on WhatsApp',
   ],

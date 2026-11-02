@@ -1,5 +1,5 @@
 /* TEAM */
-Built & marketed by: Automize Media Labs
+Website by: Automize Media Labs
 Site: https://www.automizemedialabs.com/
 
 /* SITE */

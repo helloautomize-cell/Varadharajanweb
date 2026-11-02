@@ -84,9 +84,8 @@ export default function SpecialitiesPage() {
             className="text-lg leading-relaxed mb-4 max-w-4xl"
             style={{ color: 'var(--color-text-muted)' }}
           >
-            His experience includes {siteConfig.stats[0].value} {siteConfig.stats[0].label},{' '}
-            {siteConfig.stats[1].value} {siteConfig.stats[1].label} and{' '}
-            {siteConfig.stats[2].value} {siteConfig.stats[2].label}. For patients unsure of the
+            Senior oncology roles at Sri Ramachandra Institute of Higher Education
+            and Gleneagles Global Health City. For patients unsure of the
             next step, an in-person consultation or a first opinion by video consultation on
             WhatsApp is available, and patients travelling from other cities can find practical
             guidance on this site.
