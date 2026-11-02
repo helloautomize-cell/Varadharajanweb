@@ -67,8 +67,8 @@ function physicianNode() {
   email: siteConfig.email,
   image: `${url()}/images/doctor/bio-photo.webp`,
   url: `${url()}/about`,
-  worksFor: { '@id': `${url()}/#clinic` },
-  hospitalAffiliation: { '@id': `${url()}/#clinic` },
+  worksFor: { '@id': `${url()}/#organization` },
+  hospitalAffiliation: { '@id': `${url()}/#organization` },
   areaServed: areaServedSchema(),
   availableService: allTreatments.map((t) => ({
    '@id': `${url()}/services/${t.slug}#procedure`,
@@ -94,10 +94,10 @@ function physicianNode() {
  };
 }
 
-function clinicNode() {
+function organizationNode() {
  return {
   '@type': ['MedicalClinic', 'MedicalOrganization'],
-  '@id': `${url()}/#clinic`,
+  '@id': `${url()}/#organization`,
   name: siteConfig.clinicName,
   url: url(),
   logo: `${url()}/images/logo.png`,
@@ -127,7 +127,7 @@ function websiteNode() {
   name: siteConfig.doctorName,
   url: url(),
   inLanguage: 'en-IN',
-  publisher: { '@id': `${url()}/#physician` },
+  publisher: { '@id': `${url()}/#organization` },
  };
 }
 
@@ -149,7 +149,7 @@ export interface PageGraphOpts {
 }
 
 /**
- * The single JSON-LD @graph for a page: WebSite + Physician + Clinic +
+ * The single JSON-LD @graph for a page: WebSite + Physician + Organization +
  * MedicalWebPage (+ BreadcrumbList) + any extras, all linked by stable @ids.
  */
 export function pageGraph({
@@ -166,7 +166,7 @@ export function pageGraph({
  const pageUrl = `${url()}${path === '/' ? '' : path}`;
  const graph: object[] = [];
  if (includeSite) {
-  graph.push(websiteNode(), physicianNode(), clinicNode());
+  graph.push(websiteNode(), physicianNode(), organizationNode());
  }
  graph.push({
   '@type': 'MedicalWebPage',
@@ -179,7 +179,7 @@ export function pageGraph({
   audience: { '@type': 'PeopleAudience', audienceType: 'patients and caregivers' },
   author: { '@id': `${url()}/#physician` },
   reviewedBy: { '@id': `${url()}/#physician` },
-  publisher: { '@id': `${url()}/#physician` },
+  publisher: { '@id': `${url()}/#organization` },
   datePublished: siteConfig.firstPublished,
   dateModified: siteConfig.lastReviewed,
   lastReviewed: siteConfig.lastReviewed,
@@ -211,7 +211,7 @@ export function pageGraph({
 export function siteGraph() {
  return {
   '@context': 'https://schema.org',
-  '@graph': [websiteNode(), physicianNode(), clinicNode()],
+  '@graph': [websiteNode(), physicianNode(), organizationNode()],
  };
 }
 
@@ -274,18 +274,19 @@ export function articleGraph(o: ArticleGraphOpts) {
  const graph: object[] = [
   websiteNode(),
   physicianNode(),
-  clinicNode(),
+  organizationNode(),
   {
    '@type': 'MedicalWebPage',
    '@id': `${pageUrl}#webpage`,
    name: o.title,
    url: pageUrl,
    description: o.description,
-   isPartOf: { '@id': `${url()}#website` },
+   isPartOf: { '@id': `${url()}/#website` },
    about: { '@id': `${pageUrl}#topic` },
    audience: { '@type': 'PeopleAudience', audienceType: 'patients and caregivers' },
-   author: { '@id': `${url()}#physician` },
-   reviewedBy: { '@id': `${url()}#physician` },
+   author: { '@id': `${url()}/#physician` },
+   reviewedBy: { '@id': `${url()}/#physician` },
+   publisher: { '@id': `${url()}/#organization` },
    lastReviewed: o.lastReviewed,
    inLanguage: 'en-IN',
    primaryImageOfPage: imageUrl,
@@ -302,8 +303,8 @@ export function articleGraph(o: ArticleGraphOpts) {
    headline: o.title,
    description: o.description,
    image: imageUrl,
-   author: { '@id': `${url()}#physician` },
-   publisher: { '@id': `${url()}#physician` },
+   author: { '@id': `${url()}/#physician` },
+   publisher: { '@id': `${url()}/#organization` },
    datePublished: o.datePublished,
    dateModified: o.dateModified,
    mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
@@ -351,14 +352,14 @@ export function blogIndexGraph(items: { slug: string; title: string }[]) {
   '@graph': [
    websiteNode(),
    physicianNode(),
-   clinicNode(),
+   organizationNode(),
    {
     '@type': 'CollectionPage',
     '@id': `${pageUrl}#webpage`,
     name: 'Blog: Cancer Surgery Guides and Patient Resources',
     url: pageUrl,
-    isPartOf: { '@id': `${url()}#website` },
-    about: { '@id': `${url()}#physician` },
+    isPartOf: { '@id': `${url()}/#website` },
+    about: { '@id': `${url()}/#physician` },
     inLanguage: 'en-IN',
     mainEntity: { '@id': `${pageUrl}#itemlist` },
    },
