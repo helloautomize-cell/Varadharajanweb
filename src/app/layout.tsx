@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import ScrollReveal from "@/components/ScrollReveal";
+import Analytics from "@/components/AnalyticsLoader";
 import { siteConfig } from "@/config/site";
 
 const figtree = Figtree({
@@ -33,6 +34,9 @@ export const metadata: Metadata = {
  twitter: {
   card: "summary_large_image",
  },
+ ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION
+  ? { verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION } }
+  : {}),
  ...(allowIndexing ? {} : { robots: { index: false, follow: false } }),
 };
 
@@ -62,6 +66,7 @@ export default function RootLayout({
     <Footer />
     <MobileStickyBar />
     <ScrollReveal />
+    <Analytics />
    </body>
   </html>
  );
