@@ -128,6 +128,7 @@ export default async function ServicePage({
      padding: 'var(--section-padding-y) 0',
      background: 'linear-gradient(135deg, var(--color-accent-tint) 0%, white 100%)',
     }}
+    data-ga-cta-location="service_hero"
    >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <Breadcrumbs
@@ -171,6 +172,8 @@ export default async function ServicePage({
          backgroundColor: 'var(--color-primary)',
          borderRadius: 'var(--radius-button)',
         }}
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="Book an appointment"
        >
         Book an appointment
        </Link>
@@ -216,6 +219,8 @@ export default async function ServicePage({
          backgroundColor: 'var(--color-primary)',
          borderRadius: 'var(--radius-button)',
         }}
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="Book an appointment"
        >
         Book an appointment
        </Link>
@@ -369,7 +374,11 @@ export default async function ServicePage({
    <ReviewerLine />
 
    {/* About the Doctor */}
-   <section className="reveal w-full" style={{ padding: 'var(--section-padding-y) 0' }}>
+   <section
+    className="reveal w-full"
+    style={{ padding: 'var(--section-padding-y) 0' }}
+    data-ga-cta-location="doctor_card"
+   >
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
      <div
       className="p-8 rounded-2xl flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left"
@@ -414,6 +423,8 @@ export default async function ServicePage({
         backgroundColor: 'var(--color-primary)',
         borderRadius: 'var(--radius-button)',
        }}
+       data-ga-event="book_appointment_click"
+       data-ga-cta-text="Book Appointment"
       >
        Book Appointment
       </Link>
@@ -458,6 +469,7 @@ export default async function ServicePage({
     <section
      className="reveal w-full"
      style={{ padding: 'var(--section-padding-y) 0', backgroundColor: 'var(--color-off-white)' }}
+     data-ga-cta-location="related_treatments"
     >
      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2
@@ -476,6 +488,8 @@ export default async function ServicePage({
         href="/patients-from-outside-chennai"
         className="underline underline-offset-2"
         style={{ color: 'var(--color-primary)' }}
+        data-ga-event="cta_click"
+        data-ga-cta-text="Travelling for treatment?"
        >
         Travelling for treatment?
        </Link>{' '}

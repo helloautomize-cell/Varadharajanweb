@@ -60,23 +60,27 @@ select:focus-visible,
   }
 }
 
-/* Subtle scroll-reveal for top-level sections applied via ScrollReveal
-   (IntersectionObserver). Entirely absent under prefers-reduced-motion. */
+/* Subtle scroll-reveal for top-level sections, driven purely by CSS
+   (scroll-driven animation-timeline) so paint never waits for hydration.
+   Unsupported browsers simply render the content without the animation.
+   Entirely absent under prefers-reduced-motion. */
 @media (prefers-reduced-motion: no-preference) {
-  .reveal {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  .reveal.reveal-visible {
-    opacity: 1;
-    transform: none;
+  @supports (animation-timeline: view()) {
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      animation: reveal-in 0.5s ease forwards;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+      content-visibility: auto;
+      contain-intrinsic-size: auto 480px;
+    }
   }
 
-  /* Hero load-in: staggered ~100ms per element */
+  /* Hero load-in: staggered ~100ms per element. Transform-only so the
+     elements stay painted (opacity: 0 here would defer LCP) */
   .hero-stagger {
-    opacity: 0;
-    animation: hero-fade-up 0.6s ease forwards;
+    animation: hero-fade-up 0.6s ease both;
   }
   .hero-stagger-2 {
     animation-delay: 0.1s;
@@ -98,9 +102,14 @@ select:focus-visible,
 
 @keyframes hero-fade-up {
   from {
-    opacity: 0;
     transform: translateY(12px) scale(0.98);
   }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes reveal-in {
   to {
     opacity: 1;
     transform: none;

@@ -50,6 +50,9 @@ export default function Videos() {
         <div
          className="w-full h-full flex items-center justify-center cursor-pointer relative"
          onClick={() => setActiveVideo(video.id)}
+         data-ga-event="cta_click"
+         data-ga-cta-text="Play video"
+         data-ga-cta-location="videos"
          style={{
           backgroundImage: `url(https://img.youtube.com/vi/${video.id}/hqdefault.jpg)`,
           backgroundSize: 'cover',

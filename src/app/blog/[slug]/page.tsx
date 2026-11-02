@@ -409,6 +409,7 @@ export default async function BlogPostPage({
    <section
     className="w-full"
     style={{ padding: 'var(--section-padding-y) 0', backgroundColor: 'var(--color-accent-tint)' }}
+    data-ga-cta-location="blog_next_steps"
    >
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
      <h2
@@ -424,6 +425,8 @@ export default async function BlogPostPage({
        href="/contact"
        className="underline underline-offset-2 font-medium"
        style={{ color: 'var(--color-primary)' }}
+       data-ga-event="book_appointment_click"
+       data-ga-cta-text="Book an appointment"
       >
        Book an appointment with Dr. Varadharajan
       </Link>{' '}
@@ -434,6 +437,8 @@ export default async function BlogPostPage({
        href="/contact"
        className="underline underline-offset-2 font-medium"
        style={{ color: 'var(--color-primary)' }}
+       data-ga-event="cta_click"
+       data-ga-cta-text="Clinic location and directions"
       >
        Find the clinic location, hours and directions
       </Link>{' '}

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
-import { trackEvent } from '@/lib/analytics';
+import { GA_EVENTS, trackEvent } from '@/lib/analytics';
 import { MapPin, Clock, Mail, Phone, CheckCircle2, MessageCircle } from 'lucide-react';
 
 const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
@@ -33,7 +33,6 @@ export default function Location() {
 
  const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
-  trackEvent('appointment_form_submit', { consultation_mode: formData.mode });
   setStatus('sending');
   try {
    const res = await fetch('https://api.web3forms.com/submit', {
@@ -52,9 +51,28 @@ export default function Location() {
     }),
    });
    const data = await res.json();
-   setStatus(data.success ? 'sent' : 'error');
+   if (data.success) {
+    setStatus('sent');
+    trackEvent(GA_EVENTS.generateLead, {
+     form_name: 'appointment_form',
+     form_location: 'form',
+     page_path: window.location.pathname,
+    });
+   } else {
+    setStatus('error');
+    trackEvent(GA_EVENTS.formSubmitError, {
+     form_name: 'appointment_form',
+     error_type: 'server',
+     page_path: window.location.pathname,
+    });
+   }
   } catch {
    setStatus('error');
+   trackEvent(GA_EVENTS.formSubmitError, {
+    form_name: 'appointment_form',
+    error_type: 'network',
+    page_path: window.location.pathname,
+   });
   }
  };
 
@@ -84,6 +102,7 @@ export default function Location() {
        borderRadius: '16px',
        boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
       }}
+      data-ga-cta-location="contact_info"
      >
       <h3
        className="text-xl font-bold mb-6"
@@ -208,6 +227,8 @@ export default function Location() {
         href="/patients-from-outside-chennai"
         className="text-sm underline underline-offset-2"
         style={{ color: 'var(--color-primary)' }}
+        data-ga-event="cta_click"
+        data-ga-cta-text="Travelling for treatment?"
        >
         Travelling for treatment?
        </Link>
@@ -222,6 +243,7 @@ export default function Location() {
        borderRadius: '16px',
        boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
       }}
+      data-ga-cta-location="form"
      >
       {!WEB3FORMS_ACCESS_KEY ? (
        <div className="text-center py-8" role="status">

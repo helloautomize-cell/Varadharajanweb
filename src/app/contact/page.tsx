@@ -29,6 +29,7 @@ export default function ContactPage() {
    <section
     className="reveal w-full"
     style={{ padding: 'var(--section-padding-y) 0 var(--section-padding-y) 0' }}
+    data-ga-cta-location="contact_intro"
    >
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
      <Breadcrumbs items={[{ name: 'Contact', path: '/contact' }]} />

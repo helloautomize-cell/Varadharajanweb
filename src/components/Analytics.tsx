@@ -1,56 +1,34 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { CONSENT_KEY, GA_ID, trackEvent, type AnalyticsConsent } from '@/lib/analytics';
-
-function loadGa() {
- if (document.getElementById('ga4-script')) return;
- const script = document.createElement('script');
- script.id = 'ga4-script';
- script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
- script.async = true;
- document.head.appendChild(script);
- window.dataLayer = window.dataLayer || [];
- window.gtag = (...args: unknown[]) => {
-  window.dataLayer?.push(args);
- };
- window.gtag('js', new Date());
- window.gtag('config', GA_ID, { anonymize_ip: true });
-}
-
-function onDocumentClick(e: MouseEvent) {
- const anchor = (e.target as Element | null)?.closest?.('a[href]');
- if (!anchor) return;
- const href = anchor.getAttribute('href') ?? '';
- if (href.startsWith('tel:')) {
-  trackEvent('call_click', { link_url: href });
- } else if (href.includes('wa.me') || href.includes('whatsapp')) {
-  trackEvent('whatsapp_click', { link_url: href });
- } else if (href.includes('#location') || href.endsWith('/contact')) {
-  trackEvent('booking_click', { link_url: href });
- }
-}
+import { GoogleAnalytics } from '@next/third-parties/google';
+import ClickTracker from '@/components/analytics/ClickTracker';
+import { CONSENT_KEY, GA_ID, type AnalyticsConsent } from '@/lib/analytics';
 
 /**
  * Consent-gated GA4 loader, mounted client-only via AnalyticsLoader.
- * Renders nothing when NEXT_PUBLIC_GA_ID is unset. Analytics cookies load
- * only after the visitor accepts; the choice is kept in localStorage.
+ * Renders nothing when GA_ID is unset. The GA4 tag and click tracking mount
+ * only after the visitor accepts analytics cookies; the choice is kept in
+ * localStorage, so nothing is captured before consent.
  */
 export default function Analytics() {
  const [consent, setConsent] = useState<AnalyticsConsent | null>(() => {
+  if (typeof window === 'undefined') return null;
   const stored = window.localStorage.getItem(CONSENT_KEY);
   return stored === 'accepted' || stored === 'declined' ? stored : null;
  });
 
- useEffect(() => {
-  if (consent !== 'accepted') return;
-  loadGa();
-  document.addEventListener('click', onDocumentClick);
-  return () => document.removeEventListener('click', onDocumentClick);
- }, [consent]);
-
- if (!GA_ID || consent) return null;
+ if (!GA_ID) return null;
+ if (consent === 'accepted') {
+  return (
+   <>
+    <GoogleAnalytics gaId={GA_ID} />
+    <ClickTracker />
+   </>
+  );
+ }
+ if (consent) return null;
 
  const choose = (value: AnalyticsConsent) => {
   window.localStorage.setItem(CONSENT_KEY, value);

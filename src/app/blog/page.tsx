@@ -1,7 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import { posts, clusters, supportsOf, pillars, type BlogPost } from '@/lib/blog';
+import {
+ posts,
+ clusters,
+ supportsOf,
+ pillars,
+ formatCardDate,
+ readTimeLabel,
+ type BlogPost,
+} from '@/lib/blog';
 import { blogIndexGraph } from '@/lib/schema';
 import { siteConfig } from '@/config/site';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -53,6 +61,16 @@ function PostCard({ post }: { post: BlogPost }) {
     >
      {post.title}
     </h3>
+    <p
+     className="text-xs mb-2"
+     style={{ color: 'var(--color-text-muted)' }}
+    >
+     Written by {siteConfig.doctorName}
+     {' • '}
+     <time dateTime={post.datePublished}>{formatCardDate(post.datePublished)}</time>
+     {' • '}
+     {readTimeLabel(post)}
+    </p>
     <p
      className="text-sm"
      style={{ color: 'var(--color-text-muted)', lineHeight: '1.6' }}

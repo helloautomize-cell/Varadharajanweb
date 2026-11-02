@@ -23,7 +23,7 @@ export default function Header() {
  return (
   <>
    {/* Top Bar - Desktop Only */}
-   <div className="hidden md:block" style={{ backgroundColor: 'var(--color-off-white)' }}>
+   <div className="hidden md:block" style={{ backgroundColor: 'var(--color-off-white)' }} data-ga-cta-location="header">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div className="flex justify-end items-center py-2 space-x-6">
       <a
@@ -54,6 +54,7 @@ export default function Header() {
      borderBottom: '1px solid rgba(0,0,0,0.1)',
      boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     }}
+    data-ga-cta-location="header"
    >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div className="flex justify-between items-center h-16">
@@ -65,7 +66,8 @@ export default function Header() {
         width={625}
         height={125}
         className="h-10 w-auto"
-        priority
+        sizes="200px"
+        preload
        />
       </Link>
 
@@ -92,6 +94,8 @@ export default function Header() {
          backgroundColor: 'var(--color-primary)',
          borderRadius: 'var(--radius-button)',
         }}
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="Book an appointment"
        >
         Book an appointment
        </Link>
@@ -122,6 +126,7 @@ export default function Header() {
        backgroundColor: '#ffffff',
       }}
       onClick={(e) => e.stopPropagation()}
+      data-ga-cta-location="mobile_menu"
      >
       <div className="flex justify-end mb-8">
        <button
@@ -155,6 +160,8 @@ export default function Header() {
          borderRadius: 'var(--radius-button)',
         }}
         onClick={() => setIsMenuOpen(false)}
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="Book an appointment"
        >
         Book an appointment
        </Link>

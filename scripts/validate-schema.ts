@@ -101,7 +101,7 @@ async function main() {
     }
 
     // clinic name exact
-    const clinic = nodes.find((n) => String(n['@id'] ?? '').endsWith('#organization'));
+    const clinic = nodes.find((n) => String(n['@id'] ?? '').endsWith('#clinic'));
     if (clinic && clinic.name !== 'Iswarya Hospital')
       fail(route, `clinic name "${clinic.name}"`);
 

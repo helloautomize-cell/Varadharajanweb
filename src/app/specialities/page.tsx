@@ -96,6 +96,8 @@ export default function SpecialitiesPage() {
               href="/patients-from-outside-chennai"
               className="underline underline-offset-2"
               style={{ color: 'var(--color-primary)' }}
+              data-ga-event="cta_click"
+              data-ga-cta-text="Travelling for treatment?"
             >
               Travelling for treatment?
             </Link>
@@ -207,6 +209,7 @@ export default function SpecialitiesPage() {
               borderRadius: '16px',
               boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
             }}
+            data-ga-cta-location="cta_block"
           >
             <h2
               className="text-2xl font-bold mb-3"

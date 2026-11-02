@@ -154,6 +154,7 @@ export default function PatientsTravelPage() {
               borderRadius: '16px',
               boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
             }}
+            data-ga-cta-location="cta_block"
           >
             <h2
               className="text-2xl font-bold mb-4"

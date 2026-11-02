@@ -11,6 +11,7 @@ export default function Footer() {
     color: '#ffffff',
     padding: '64px 0 32px',
    }}
+   data-ga-cta-location="footer"
   >
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
@@ -74,7 +75,12 @@ export default function Footer() {
        <Link href="/contact" className="block hover:opacity-80 transition-opacity">
         Location
        </Link>
-       <Link href="/contact" className="block hover:opacity-80 transition-opacity">
+       <Link
+        href="/contact"
+        className="block hover:opacity-80 transition-opacity"
+        data-ga-event="book_appointment_click"
+        data-ga-cta-text="Book an Appointment"
+       >
         Book an Appointment
        </Link>
        <a
@@ -155,6 +161,8 @@ export default function Footer() {
         backgroundColor: 'var(--color-primary)',
         borderRadius: 'var(--radius-button)',
        }}
+       data-ga-event="book_appointment_click"
+       data-ga-cta-text="Book an appointment"
       >
        Book an appointment
       </Link>

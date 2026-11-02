@@ -18,6 +18,7 @@ export default function AuthorBox() {
    className="reveal w-full"
    style={{ padding: 'var(--section-padding-y) 0' }}
    aria-label="About the author"
+   data-ga-cta-location="author_box"
   >
    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div
@@ -78,6 +79,8 @@ export default function AuthorBox() {
           borderColor: 'var(--color-primary)',
           borderRadius: 'var(--radius-button)',
          }}
+         data-ga-event="cta_click"
+         data-ga-cta-text="Meet Dr. Varadharajan"
         >
          Meet Dr. Varadharajan
         </Link>
@@ -88,6 +91,8 @@ export default function AuthorBox() {
           backgroundColor: 'var(--color-primary)',
           borderRadius: 'var(--radius-button)',
          }}
+         data-ga-event="book_appointment_click"
+         data-ga-cta-text="Book Appointment"
         >
          Book Appointment
         </Link>
