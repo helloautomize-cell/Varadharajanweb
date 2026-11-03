@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
@@ -65,6 +66,12 @@ export default function RootLayout({
     <Footer />
     <MobileStickyBar />
     <Analytics />
+        {/* Vercel Web Analytics: cookieless, no personal data, counts every
+            visit regardless of the cookie banner. GA4 stays consent-based. */}
+        <Script id="vercel-web-analytics" strategy="afterInteractive">
+          {`window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};`}
+        </Script>
+        <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
    </body>
   </html>
  );
